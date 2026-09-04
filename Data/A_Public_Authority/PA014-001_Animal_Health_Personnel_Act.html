@@ -1,0 +1,702 @@
+
+<!DOCTYPE html
+>
+<html lang="no" class="no-js">
+
+<head>
+	
+	<!-- Le styles -->
+	<link href="/resources/css/bootstrap.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-block/ss-symbolicons-block.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-line/ss-symbolicons-line.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/feed/ss-feed-icons.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-standard/ss-standard.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-social-regular/ss-social.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/select2/select2.css?26-08-20-1607" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+	<!-- Modaal -->
+	<link rel="stylesheet" href="/resources/css/modaal.min.css">
+
+		<link href="/resources/css/app.css?26-08-20-1607" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<link href="/resources/css/ld-ie.css?26-08-20-1607" rel="stylesheet">
+	<![endif]-->
+		<link href="/resources/css/document/lovdata.document.gratis.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.tables.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.web.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.css?26-08-20-1607" rel="stylesheet">
+
+
+	<!-- Le scripts -->
+	<script src="/resources/js/jquery-3.7.1.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/mathjax/tex-mml-chtml.js?26-08-20-1607"></script>
+		<script>
+			var dev = false;
+		</script>
+		<!-- Plausible -->
+		<script defer data-domain="lovdata.no" src="https://plausible.io/js/plausible.js"></script>
+		<!-- End Plausible -->
+
+	<script src="/resources/js/modernizr.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/bootstrap.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/jquery.throttle.js?26-08-20-1607"></script>
+	<script src="/resources/js/jquery.form.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/json2.js?26-08-20-1607"></script>
+	<script src="/resources/js/jstorage.js?26-08-20-1607"></script>
+	<script src="/resources/select2/select2.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/app.js?26-08-20-1607"></script>
+		<script src="/resources/js/app-lovdata.js?26-08-20-1607"></script>
+	<script src="/resources/js/highlighter.js?26-08-20-1607"></script>
+	<!-- Modaal -->
+	<script src="/resources/js/modaal.min.js"></script>
+
+	<link rel="icon" href="/resources/img/logo/new/lovdata-logosymbol-stortingsrod.svg" type="image/svg+xml" sizes="16x16 32x32 48x48 64x64">
+	<link rel="apple-touch-icon-precomposed" href="/resources/img/logo/new/lovdata-logosymbol-stortingsrod.svg" type="image/svg+xml" sizes="152x152">
+
+	<meta charset="utf-8">
+	<title>Lov om veterinærer og annet dyrehelsepersonell [dyrehelsepersonelloven] - Lovdata</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="google-site-verification" content="ENJVlOsNC5zBiaC_PChgiRbBrUBjN6P-Owo6nwS9--Q"/>
+	<meta name="application-name" content="Lovdata"/>
+	<meta property="fb:admins" content="711945576, 714678011"/>
+		<meta name="robots" content="noodp">
+		<meta name="description" content="Dyrehelsepersonelloven">
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:description" content="Dyrehelsepersonelloven">
+		<meta name="twitter:site" content="@lovdata"/>
+		<meta name="twitter:title" content="Lov om veterinærer og annet dyrehelsepersonell [dyrehelsepersonelloven]"/>
+</head>
+
+	<body class="template-document">
+
+	<div aria-hidden="true" class="print-logo">
+		<img src="/resources/img/logo/new/lovdata-logo-primaer.svg" alt="Lovdata-logo"/>
+	</div>
+
+	<div id="skiplinks">
+		<a href="#main-content">Til hovedinnhold</a>
+	</div>
+
+<header>
+	<div class="ld-navbar" id="ld-navbar">
+
+		<a class="logo" href="/" aria-label="Til forsiden"></a>
+
+				<button class="open-search" aria-label="Åpne søk">
+			<i class="ss-icon ss-symbolicons-block" aria-hidden="true">&#x1F50D;</i>
+		</button>
+
+		<div class="middleContainer">
+			<a tabindex="0" role="button" aria-label="Åpne/lukk meny" class="menu_toggler" aria-expanded="false">
+				<span></span>
+			</a>
+
+			<form class="mainSearch" role="search" id="sok" action="/sok" METHOD="get">
+
+
+				<script>
+					document.addEventListener("DOMContentLoaded", function () {
+						const searchInput = document.getElementById("globSearch");
+						const form = document.querySelector("form");
+
+						form.addEventListener("submit", function () {
+							searchInput.classList.add("loading");
+						});
+
+						searchInput.addEventListener('keydown', event => { //Turn textarea into input.
+							if (event.code === 'Enter') {
+								event.preventDefault();
+								form.submit();
+								searchInput.classList.add("loading");
+							}
+						});
+					});
+
+					var searchInDocumentPlaceholder = '';
+					var searchInDocument = '';
+
+					// JavaScript function to monitor input and apply changes
+					document.addEventListener("DOMContentLoaded", function () {
+						const searchInput = document.getElementById("globSearch");
+						const form = document.getElementById("sok");
+						const wordCounter = document.getElementById("word-counter");
+						const freeSearchHelpText = document.getElementById("freesearch-help-text");
+						const bottomInfo = document.getElementById("search-bottom-info");
+
+						searchInput.placeholder = 'Søk med opp til fem søkeord eller skriv lengre for å gjøre et frisøk'
+
+						// Handle changes to the form class and action
+						searchInput.addEventListener("input", function () {
+							var startsWithQuote = (searchInput.value.startsWith("\"") || searchInput.value.startsWith("\'") || searchInput.value.startsWith("«"));
+							var blankSpaceCount = (searchInput.value.match(/ ./g) || []).length;
+							if (blankSpaceCount !== 0) {
+								blankSpaceCount += 1;
+							}
+
+							if (blankSpaceCount > 5 && !startsWithQuote) {
+								wordCounter.style.visibility = "visible"
+								searchInput.classList.add("expanded");
+
+								// Change the form action to "/frisok"
+								form.setAttribute("action", "/frisok");
+								form.setAttribute("method", "POST");
+								wordCounter.innerHTML = searchInput.value.length + "/500";
+								freeSearchHelpText.innerHTML = 'Nå gjør du et frisøk. Du kan stille et spørsmål, forklare en situasjon eller beskrive hva du leter etter.'
+								searchInput.classList.add("frisok-icon")
+							} else {
+								if (blankSpaceCount === 0) {
+									bottomInfo.style.display = "none"
+								} else {
+									bottomInfo.style.display = "flex"
+									wordCounter.innerHTML = blankSpaceCount + "/5";
+									freeSearchHelpText.innerHTML = 'Bruk mer enn fem søkeord for å gjøre et frisøk.'
+								}
+
+								searchInput.classList.remove("expanded");
+								searchInput.classList.remove("frisok-icon")
+
+								form.setAttribute("action", "/sok"); // Set the form action back to "/sok"
+								form.setAttribute("method", "GET");
+							}
+						});
+
+						const updateHeightOfSearchBox = () => {
+							var expandedSearchField = 0
+							searchInput.style.height = 'auto';
+							const newHeightOfInput = expandedSearchField + searchInput.scrollHeight;
+							searchInput.style.height = newHeightOfInput + 'px';
+						};
+						searchInput.addEventListener('input', updateHeightOfSearchBox);
+					});
+				</script>
+
+				<div class="search">
+					<label class="sr-only" for="globSearch">Søketekst</label>
+					<span class="search-box-container">
+						<div class="search-box-container-absolute">
+							<textarea class="search-input" type="text" id="globSearch" name="q"
+							
+							placeholder="Søk med opp til fem søkeord eller skriv lengre for å gjøre et frisøk"></textarea>
+							<div class="search-bottom-info" id="search-bottom-info">
+								<div class="freesearch-help-text" id="freesearch-help-text"></div>
+								<div class="word-counter" id="word-counter" title="Dersom du bruker mer enn fem søkeord vil du utføre et frisøk"></div>
+							</div>
+						</div>
+					</span>
+					<input type="submit" class="submit" value="Søk">
+					<div class="close-mobile-search">Avbryt</div>
+				</div>
+			</form>
+		</div>
+		<a class="pro-login" href="/pro&#x2f;NL&#x2f;lov&#x2f;2001-06-15-75" title="Logg inn"><span>Logg inn</span><i class="ss-icon ss-symbolicons-block">&#x1F512;</i></a>
+	</div>
+</header>
+	<nav aria-labelledby="menuHeader">
+		<h1 class="sr-only" id="menuHeader">Hovedmeny</h1>
+		<!-- Menu content -->
+		<div class="leftPanel">
+		<div class="left-menu" aria-hidden="true">
+			<div class="menu-item-container hidden">
+				<ul class="top-level-menu">
+					<li class="resIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl" aria-expanded="false">Rettskilder</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="lovIcon second-level-icon resources">
+								<div class="gmi-container leftIcon">
+									<a class="gliding-menu-item" href="/register/lover">Lover</a>
+								</div>
+							</li>
+							<li class="sntForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/forskrifter">Sentrale forskrifter mv.</a></div>
+							</li>
+							<li class="lokForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/lokaleForskrifter">Lokale forskrifter</a></div>
+							</li>
+							<li class="ltIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/lovtidend">Norsk Lovtidend</a></div>
+							</li>
+							<li class="storVedIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/stortingsvedtak">Stortingsvedtak</a></div>
+							</li>
+							<li class="eosIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/eosAvtalen">EØS-avtalen</a></div>
+							</li>
+							<li class="traIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/traktater">Norges traktater</a></div>
+							</li>
+							<li class="decIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/avgjørelser">Rettsavgjørelser</a></div>
+							</li>
+							<li class="trrIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/trygderetten">Trygderettssaker</a></div>
+							</li>
+							<li class="tarIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/tariffavtaler">Tariffavtaler</a></div>
+							</li>
+							<li class="htuIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/husleietvistutvalget">Husleietvistutvalget</a></div>
+							</li>
+							<li class="sphIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/sph">Statens Personalhåndbok</a></div>
+							</li>
+							<li class="lovIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/loverEngelsk">Translated acts</a></div>
+							</li>
+							<li class="sntForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/forskrifterEngelsk">Translated regulations</a></div>
+							</li>
+							<li class="decIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/avgjørelserEngelsk">Translated decisions</a></div>
+							</li>
+						</ul>
+					</li>
+					<li class="servIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl">Tjenester</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="proIcon second-level-icon">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://pro.lovdata.no">Lovdata Pro</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="https://www.europalov.no">Europalov.no</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/api">API</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/rss">RSS-feed</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/eli">ELI (beta)</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/publikasjoner">E-publikasjoner</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/tjenester/tidsskrift">Tidsskrifter</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="https://hjelp.lovdata.no/article/170-sokeoppdrag-og-utskrifter">Søkeoppdrag</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="http://hjelp.lovdata.no/article/97-kursinformasjon">Kurs</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/eksamen">Eksamen</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/landslov">Landsloven</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/22juli">22. juli-saken</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/advokater">Advokatoversikt</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/lenker">Lenker</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="infIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl">Om Lovdata</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/om_lovdata">Generell informasjon</a></div>
+							</li>
+							<li>
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/brukeravtale">Brukeravtale</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/redaktoransvar">Redaktøransvar</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/kontakt">Kontakt oss</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/milopolicy">Miljøpolicy</a></div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="top-level-menu">
+					<li class="menuItm grlIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item grl" href="https://grunnloven.lovdata.no">Grunnloven</a></div>
+					</li>
+					<li class="menuItm cookIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/info/personvern">Personvern</a></div>
+					</li>
+					<li class="menuItm linkedinIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.linkedin.com/company/lovdata/">Linkedin</a></div>
+					</li>
+					<li class="menuItm twitIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.twitter.com/lovdata">Twitter</a></div>
+					</li>
+					<li class="menuItm faceIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.facebook.com/lovdata">Facebook</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</nav>
+
+<main id="main-content" class="docMain">
+
+
+	<script type="text/javascript">
+		var documentURL = "/dokument/NL/lov/2001-06-15-75";
+	</script>
+
+	<section aria-labelledby="toolHeader">
+		<h1 class="sr-only" id="toolHeader">Verktøylinje</h1>
+		<div class="fixed-header">
+			<div class="dropdown-wrap">
+				<div class="bgcDoc">
+					<p aria-hidden="true">Lov om veterinærer og annet dyrehelsepersonell [dyrehelsepersonelloven]</p>
+				</div>
+			</div>
+			<a class="open-meta-list open-meta-list-dropdown"><i class="ss-icon  ss-symbolicons-block">&#xEE00;</i></a>
+			<ul class="meta-list">
+						<li class="innholdsfortegnelse-parent-li">
+							<a role="button" tabindex="0" class="innholdsfortegnelse-parent " data-placement="bottom" title="Innholdsfortegnelse" aria-expanded="false"><i aria-hidden="true" class="ss-icon ss-symbolicons-block">&#xED50;</i><span class="text">Innholdsfortegnelse</span><i aria-hidden="true" class="ss-icon ss-standard navigatedown">&#xF501;</i><i aria-hidden="true" class="ss-icon ss-standard navigateup">&#xF500;</i></a>
+						</li>
+						<li>
+							<a class="lovens-forskrifter" data-placement="bottom" title="Lovens forskrifter" href="/referanse/hjemmel?dokID=NL/lov/2001-06-15-75">
+								<i aria-hidden="true" class="ss-icon ss-feed">&#63232;</i>
+								<span class="text">Lovens forskrifter</span></a>
+						</li>
+				<li>
+					<a role="button" aria-label="Skriv ut" href="javascript:print()" class="tooltip-parent" data-toggle="tooltip" data-placement="bottom" title="Skriv ut"><i aria-hidden="true" class="ss-icon ss-symbolicons-block">&#x2399;</i></a>
+				</li>
+						<li>
+							<a role="button" tabindex="0" aria-label="Del dokument" class="tooltip-parent share-dokument" data-toggle="tooltip" data-placement="bottom" title="Del dokument" data-id="https://lovdata.no/lov/2001-06-15-75"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i></a>
+						</li>
+			</ul>
+			<ul class="meta-list-dropdown">
+						<li class="mobile-only"><a href="/referanse/hjemmel?dokID=NL/lov/2001-06-15-75"><i aria-hidden="true" class="ss-icon ss-feed">
+									&#63232;</i>Lovens forskrifter</a></li>
+				<li class="mobile-only"><a><i class="ss-icon ss-symbolicons-block">&#x2399;</i>Skriv ut</a></li>
+						<li><a tabindex="0" role="button" class="share-dokument" data-id="https://lovdata.no/lov/2001-06-15-75"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i>Del dokument</a></li>
+			</ul>
+		</div>
+
+				<div class="innholdsfortegnelse-child " aria-hidden="true">
+					<p class="instruction sr-only" tabindex="-1">Trykk Escape for å lukke innholdsfortegnelse</p>
+					<div class="search-in-innholdsfortegnelse">
+						<label for="innhSearch">Søk i innholdsfortegnelse <span class="sr-only">(listen oppdateres idet du skriver)</span></label>
+						<input type="text" class="form-control" placeholder="Skriv søketekst her ..." id="innhSearch">
+					</div>
+					<div class="scroll">
+						<ul class="document-index" id="innhdocview document-index">
+							<li class="document-index-item"><a href="/dokument/NL/lov/2001-06-15-75">Dyrehelsepersonelloven</a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_1#KAPITTEL_1" data-target="KAPITTEL_1">Kapittel 1. Formål, definisjoner og virkeområde (§§ 1 - 3 a) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A71#%C2%A71" data-target="%C2%A71">§ 1. Lovens formål </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A72#%C2%A72" data-target="%C2%A72">§ 2. Definisjoner </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A73#%C2%A73" data-target="%C2%A73">§ 3. Lovens virkeområde </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A73a#%C2%A73a" data-target="%C2%A73a">§ 3 a. Kommunens ansvar </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_2#KAPITTEL_2" data-target="KAPITTEL_2">Kapittel 2. Autorisasjon, lisens og andre godkjenninger (§§ 4 - 11) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A74#%C2%A74" data-target="%C2%A74">§ 4. Autorisasjon </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A75#%C2%A75" data-target="%C2%A75">§ 5. Lisens </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A76#%C2%A76" data-target="%C2%A76">§ 6. Internasjonale avtaler </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A77#%C2%A77" data-target="%C2%A77">§ 7. Grensepraksis </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A78#%C2%A78" data-target="%C2%A78">§ 8. Godkjenning av spesialister </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A79#%C2%A79" data-target="%C2%A79">§ 9. Myndighet til å gi autorisasjon, lisens og andre godkjenninger </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A79a#%C2%A79a" data-target="%C2%A79a">§ 9a. Forholdet til tjenesteloven </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A710#%C2%A710" data-target="%C2%A710">§ 10. Avslag på søknad om autorisasjon, lisens eller andre godkjenninger </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A711#%C2%A711" data-target="%C2%A711">§ 11. Aldersgrense og fraskrivelse av autorisasjon, lisens og spesialistgodkjenning </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_3#KAPITTEL_3" data-target="KAPITTEL_3">Kapittel 3. Dyrehelsepersonells plikter og rettigheter (§§ 12 - 29) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A712#%C2%A712" data-target="%C2%A712">§ 12. Dyrehelsepersonells plikter </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A713#%C2%A713" data-target="%C2%A713">§ 13. Utøvelse av virksomhet m.m. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A714#%C2%A714" data-target="%C2%A714">§ 14. Nødhjelp </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A715#%C2%A715" data-target="%C2%A715">§ 15. Bruk av medhjelper </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A716#%C2%A716" data-target="%C2%A716">§ 16. Bruk av beskyttet tittel </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A717#%C2%A717" data-target="%C2%A717">§ 17. Rekvirering av legemidler til dyr </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A718#%C2%A718" data-target="%C2%A718">§ 18. Om medisinsk behandling av dyr og bruk av bestemte metoder m.m. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A719#%C2%A719" data-target="%C2%A719">§ 19. Tillatelse til eller forbud mot bruk av bestemte metoder etc. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A720#%C2%A720" data-target="%C2%A720">§ 20. Hovedregel om taushetsplikt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A721#%C2%A721" data-target="%C2%A721">§ 21. Begrensninger i taushetsplikten </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A722#%C2%A722" data-target="%C2%A722">§ 22. Opplysninger til dyreeier </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A723#%C2%A723" data-target="%C2%A723">§ 23. Forsvarlig virksomhet </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A724#%C2%A724" data-target="%C2%A724">§ 24. Om ordnede opptegnelser, meldinger, rapporter og innsyn i journal </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A725#%C2%A725" data-target="%C2%A725">§ 25. Sikkerhetsstillelse </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A726#%C2%A726" data-target="%C2%A726">§ 26. (Opphevet) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A727#%C2%A727" data-target="%C2%A727">§ 27. Beordring i krisesituasjoner </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A728#%C2%A728" data-target="%C2%A728">§ 28. Utstedelse av faglige attester og erklæringer </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A729#%C2%A729" data-target="%C2%A729">§ 29. Bortfall av rett til å utøve virksomhet der dyrehelsepersonell opptrer som apoteker eller apotekbestyrer </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_4#KAPITTEL_4" data-target="KAPITTEL_4">Kapittel 4. Det veterinærmedisinske rettsråd (§§ 30 - 33) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A730#%C2%A730" data-target="%C2%A730">§ 30. Rådets oppnevning og sammensetning </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A731#%C2%A731" data-target="%C2%A731">§ 31. Rådets oppgaver </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A732#%C2%A732" data-target="%C2%A732">§ 32. Rådets innsynsrett i journaler m.v. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A733#%C2%A733" data-target="%C2%A733">§ 33. Godtgjørelse </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_5#KAPITTEL_5" data-target="KAPITTEL_5">Kapittel 5. Straff og andre sanksjoner (§§ 34 - 37 a) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A734#%C2%A734" data-target="%C2%A734">§ 34. Advarsel </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A735#%C2%A735" data-target="%C2%A735">§ 35. Tilbakekall og suspensjon av autorisasjon, lisens eller andre godkjenninger </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A736#%C2%A736" data-target="%C2%A736">§ 36. Tap av rekvireringsrett </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A737#%C2%A737" data-target="%C2%A737">§ 37. Straff </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A737a#%C2%A737a" data-target="%C2%A737a">§ 37 a. Avgift og gebyr </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_6#KAPITTEL_6" data-target="KAPITTEL_6">Kapittel 6. Avsluttende bestemmelser (§§ 38 - 40) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A738#%C2%A738" data-target="%C2%A738">§ 38. Ikrafttreden </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A739#%C2%A739" data-target="%C2%A739">§ 39. Overgangsordninger </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2001-06-15-75/%C2%A740#%C2%A740" data-target="%C2%A740">§ 40. Endringer i andre lover </a>
+
+											</ul>
+						</li>
+						</ul>
+
+						<div class="empty">Ditt søk ga dessverre ingen treff.</div>
+					</div>
+
+				</div>
+	</section>
+
+
+	<div class="outer-main-content ">
+		<div class="lt-inner-main-content main-content" > 
+			<div class="header inner-max-width">
+				<p class="hjemmel small gray"></p>
+			</div>
+
+			<div id="map" class="map"></div>
+
+<div id="maincolOneColumn"><div id="lovdataDocument" class=" commentWidget desktop"><div class="lt-ajour-varsel"><a class="reference btn btn-default" href="/LTI/lov/2001-06-15-75">➦ Gå til opprinnelig kunngjort versjon</a></div><div class=" metaWrapper" id="documentMeta"><table style="width:100%" class="metaTitle"><tr><td class="metaTitleEmblem mediumIcons lightgray"></td><td class="metaTitleText"><h1>Lov om veterinærer og annet dyrehelsepersonell [dyrehelsepersonelloven]</h1></td></tr></table><table class=" meta" style="width:100%"><tbody><tr class="odd"><th class=" metafieldLabel">Dato</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_dato">LOV-2001-06-15-75</td></tr><tr class="even"><th class=" metafieldLabel">Departement</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_departement">Landbruks- og matdepartementet</td></tr><tr class="odd"><th class=" metafieldLabel">Sist endret</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_endret"><a data-id="lov/2015-06-19-65" class=" reference" href="/lov/2015-06-19-65">LOV-2015-06-19-65</a> fra 01.10.2015</td></tr><tr class="even"><th class=" metafieldLabel">Ikrafttredelse</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_ikraft">01.01.2002, 15.08.2005</td></tr><tr class="odd"><th class=" metafieldLabel">Endrer</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_endrer"><a data-id="lov/1948-12-10-3" class=" reference" href="/lov/1948-12-10-3">LOV-1948-12-10-3</a></td></tr><tr class="even"><th class=" metafieldLabel">Rettet</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_rettet">24.08.2021 (faglige fotnoter fjernet)</td></tr><tr class="odd"><th class=" metafieldLabel">Korttittel</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_korttittel">Dyrehelsepersonelloven</td></tr></tbody></table></div><div class="metaBottom"></div><hr class="red"/><p data-uid="0" class="morTag_mf small no-text-indent marg">Jf. <em class=" ">tidligere</em> <a data-id="lov/1948-12-10-3" class=" reference" href="/lov/1948-12-10-3">lov 10 des 1948 nr. 3</a>.</p><hr class="red"/><div class="chapter-index"><span class="chapter-index-title">Kapitteloversikt:</span><br/><ul class="chapter-index"><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_1" href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_1#KAPITTEL_1">Kapittel 1. Formål, definisjoner og virkeområde (§§ 1 - 3 a)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_2" href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_2#KAPITTEL_2">Kapittel 2. Autorisasjon, lisens og andre godkjenninger (§§ 4 - 11)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_3" href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_3#KAPITTEL_3">Kapittel 3. Dyrehelsepersonells plikter og rettigheter (§§ 12 - 29)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_4" href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_4#KAPITTEL_4">Kapittel 4. Det veterinærmedisinske rettsråd (§§ 30 - 33)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_5" href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_5#KAPITTEL_5">Kapittel 5. Straff og andre sanksjoner (§§ 34 - 37 a)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_6" href="/dokument/NL/lov/2001-06-15-75/KAPITTEL_6#KAPITTEL_6">Kapittel 6. Avsluttende bestemmelser (§§ 38 - 40)</a></li></ul></div><hr class="red"/><div id="documentBody"><a class="namedAnchor" name="kap1"></a><div data-level="1" data-id="KAPITTEL_1" data-refID="kap1" class="morTag_b kapittel" id="KAPITTEL_1"><h2 class="  ">Kapittel 1. Formål, definisjoner og virkeområde</h2><a class="documentPart_scrollMargin" name="§1"></a><a name="PARAGRAF_1"></a><div data-id="PARAGRAF_1" class="morTag_p paragraf" id="PARAGRAF_1"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 1.</span><span class=" paragrafTittel "><em class=" ">Lovens formål</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Lovens formål er å bidra til at dyrehelsepersonell utøver forsvarlig virksomhet og dermed bidrar til god dyrehelse, forsvarlig dyrevern, trygg mat og ivaretakelse av miljøhensyn.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2007-12-21-132" class=" reference" href="/LTI/lov/2007-12-21-132">lov 21 des 2007 nr. 132</a> (ikr. 1 jan 2008).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§1" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§2"></a><a name="PARAGRAF_2"></a><div data-id="PARAGRAF_2" class="morTag_p paragraf" id="PARAGRAF_2"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 2.</span><span class=" paragrafTittel "><em class=" ">Definisjoner</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Med dyrehelsepersonell forstås i denne loven personer som har autorisasjon eller lisens etter <a data-id="lov/2001-06-15-75/§4" class=" reference" href="/lov/2001-06-15-75/%C2%A74">§§ 4</a> og 5 og personer som har rett til å arbeide midlertidig som dyrehelsepersonell uten norsk autorisasjon.</p><p data-uid="0" class="morTag_a avsnitt">Med akvatiske dyr forstås i denne loven vannlevende dyr, herunder sjøpattedyr, samt kjønnsprodukter, hvile- og forplantningsstadier av vannlevende dyr.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2008-12-19-120" class=" reference" href="/LTI/lov/2008-12-19-120">lov 19 des 2008 nr. 120</a> (ikr. 1 jan 2009 iflg. <a data-id="forskrift/2008-12-19-1483" class=" reference" href="/LTI/forskrift/2008-12-19-1483">res. 19 des 2008 nr. 1483</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§2" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§3"></a><a name="PARAGRAF_3"></a><div data-id="PARAGRAF_3" class="morTag_p paragraf" id="PARAGRAF_3"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 3.</span><span class=" paragrafTittel "><em class=" ">Lovens virkeområde</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Loven gjelder for dyrehelsepersonell i riket.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan gi forskrifter om lovens anvendelse på Svalbard og Jan Mayen, og kan fastsette særlige regler under hensyn til de stedlige forhold.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§3" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§3a"></a><a name="PARAGRAF_3a"></a><div data-id="PARAGRAF_3a" class="morTag_p paragraf" id="PARAGRAF_3a"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 3 a.</span><span class=" paragrafTittel "><em class=" ">Kommunens ansvar</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Kommunene skal sørge for tilfredsstillende tilgang på tjenester fra dyrehelsepersonell.</p><p data-uid="0" class="morTag_a avsnitt">Kommunene har ansvar for å organisere en klinisk veterinærvakt utenom ordinær arbeidstid.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2007-12-21-132" class=" reference" href="/LTI/lov/2007-12-21-132">lov 21 des 2007 nr. 132</a> (ikr. 1 jan 2008).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§3a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kap2"></a><div data-level="1" data-id="KAPITTEL_2" data-refID="kap2" class="morTag_b kapittel" id="KAPITTEL_2"><h2 class="  ">Kapittel 2. Autorisasjon, lisens og andre godkjenninger</h2><a class="documentPart_scrollMargin" name="§4"></a><a name="PARAGRAF_4"></a><div data-id="PARAGRAF_4" class="morTag_p paragraf" id="PARAGRAF_4"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 4.</span><span class=" paragrafTittel "><em class=" ">Autorisasjon</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Rett til autorisasjon som veterinær (dyrlege) og fiskehelsebiolog har den som dokumenterer relevant eksamen ved norsk universitet eller vitenskapelig høgskole.</p><p data-uid="0" class="morTag_a avsnitt">Rett til autorisasjon har også den som har avlagt utenlandsk eksamen som er anerkjent etter avtale om gjensidig godkjenning etter <a data-id="lov/2001-06-15-75/§6" class=" reference" href="/lov/2001-06-15-75/%C2%A76">§ 6</a>.</p><p data-uid="0" class="morTag_a avsnitt">Autorisasjon som veterinær eller fiskehelsebiolog kan også gis den som har utenlandsk eksamen som departementet anerkjenner som faglig jevngod, eller som på annen måte godtgjør å ha nødvendig kyndighet. Departementet skal først innhente uttalelser fra norsk universitet eller vitenskapelig høgskole.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan ved forskrift fastsette at andre enn de personellgruppene som omfattes av foregående ledd, kan gis autorisasjon.</p><p data-uid="0" class="morTag_a avsnitt">Autorisasjon gis etter søknad. Søkeren må være under 75 år og ellers være skikket.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi nærmere forskrifter om praktisk tjeneste, tilleggsutdannelse og krav om skriftlig løfte som vilkår for å få autorisasjon.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§4" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§5"></a><a name="PARAGRAF_5"></a><div data-id="PARAGRAF_5" class="morTag_p paragraf" id="PARAGRAF_5"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 5.</span><span class=" paragrafTittel "><em class=" ">Lisens</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Den som ikke fyller vilkårene for å få autorisasjon, kan i stedet gis lisens etter søknad. Departementet kan fastsette at en lisens skal være begrenset i tid, til bestemt stilling, til utførelse av praktisk tjeneste som omtalt i <a data-id="lov/2001-06-15-75/§4" class=" reference" href="/lov/2001-06-15-75/%C2%A74">§ 4</a> siste ledd, til visse undersøkelses- eller behandlingsmåter eller knyttet til andre vilkår og innskrenkninger.</p><p data-uid="0" class="morTag_a avsnitt">Lisens kan også gis til dyrehelsepersonell med utenlandsk eksamen som er anerkjent etter avtale om gjensidig godkjenning etter <a data-id="lov/2001-06-15-75/§6" class=" reference" href="/lov/2001-06-15-75/%C2%A76">§ 6</a>.</p><p data-uid="0" class="morTag_a avsnitt">Autorisert dyrehelsepersonell som godtgjør at de er skikket til fortsatt å utøve forsvarlig virksomhet etter nådd aldersgrense, kan gis lisens.</p><p data-uid="0" class="morTag_a avsnitt">Departementet gir nærmere forskrifter om betingelsene for å få lisens og de vilkårene som kan knyttes til den.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§5" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§6"></a><a name="PARAGRAF_6"></a><div data-id="PARAGRAF_6" class="morTag_p paragraf" id="PARAGRAF_6"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 6.</span><span class=" paragrafTittel "><em class=" ">Internasjonale avtaler</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Autorisasjon, lisens og andre godkjenninger kan gis etter gjensidig avtale med fremmed stat.<sup class=" fotnoteref"><a href="#fotnote_1" class="supAnchor fotnoteref" id="fotnoteref_1">​1</a></sup> Departementet kan ved forskrift gi nærmere regler om autorisasjon, lisens og godkjenninger av dyrehelsepersonell på grunnlag av utenlandske yrkeskvalifikasjoner samt kontroll, plikter og rettigheter for slikt dyrehelsepersonell.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2008-12-19-120" class=" reference" href="/LTI/lov/2008-12-19-120">lov 19 des 2008 nr. 120</a> (ikr. 1 jan 2009 iflg. <a data-id="forskrift/2008-12-19-1483" class=" reference" href="/LTI/forskrift/2008-12-19-1483">res. 19 des 2008 nr. 1483</a>).</td></tr><tr><td data-id="fotnote_1" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_1"></span><a href="#fotnoteref_1" id="fotnote_1">1</a></td><td class="fotnote" data-id="fotnoteContent_1"><span class="namedAnchor" data-id="fotnoteContent_1"></span>Jf. <a data-id="avtale/avt-1992-05-02-1-v7" class=" reference" href="/avtale/avt-1992-05-02-1-v7">EØS-avtalen vedlegg VII</a> nr. 1 (direktiv <a data-id="eu/32005l0036" class=" reference" href="/eu/32005l0036">2005/36/EF</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§6" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§7"></a><a name="PARAGRAF_7"></a><div data-id="PARAGRAF_7" class="morTag_p paragraf" id="PARAGRAF_7"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 7.</span><span class=" paragrafTittel "><em class=" ">Grensepraksis</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Autoriserte veterinærer som driver praksis i Sverige og Finland i veterinærdistrikter som grenser til Norge, kan i særlige tilfeller yte veterinære tjenester i tilgrensende norsk veterinærdistrikt uten autorisasjon eller lisens fra departementet.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§7" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§8"></a><a name="PARAGRAF_8"></a><div data-id="PARAGRAF_8" class="morTag_p paragraf" id="PARAGRAF_8"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 8.</span><span class=" paragrafTittel "><em class=" ">Godkjenning av spesialister</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrifter om vilkår for godkjenning av spesialister innen avgrensede fagområder.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§8" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§9"></a><a name="PARAGRAF_9"></a><div data-id="PARAGRAF_9" class="morTag_p paragraf" id="PARAGRAF_9"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 9.</span><span class=" paragrafTittel "><em class=" ">Myndighet til å gi autorisasjon, lisens og andre godkjenninger</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Autorisasjon, lisens og godkjenning av spesialister gis av departementet eller den departementet bemyndiger.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§9" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§9a"></a><a name="PARAGRAF_9a"></a><div data-id="PARAGRAF_9a" class="morTag_p paragraf" id="PARAGRAF_9a"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 9a.</span><span class=" paragrafTittel "><em class=" ">Forholdet til tjenesteloven</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Kongen kan gi forskrift om saksbehandlingsregler til utfylling av reglene i <a data-id="lov/2009-06-19-103" class=" reference" href="/lov/2009-06-19-103">tjenesteloven</a>, herunder om saksbehandlingsfrist og rettsvirkninger av fristoverskridelse.</p><p data-uid="0" class="morTag_a avsnitt">Unntak fra <a data-id="lov/2009-06-19-103/§11" class=" reference" href="/lov/2009-06-19-103/%C2%A711">tjenesteloven § 11</a> annet ledd kan bare gjøres når det er begrunnet ut fra tvingende allmenne hensyn, herunder hensynet til privatpersoners beskyttelsesverdige interesser.</p><p data-uid="0" class="morTag_a avsnitt">Saksbehandlingsreglene kan fravike reglene i denne loven og <a data-id="lov/1967-02-10" class=" reference" href="/lov/1967-02-10">forvaltningsloven</a>.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2009-06-19-103" class=" reference" href="/LTI/lov/2009-06-19-103">lov 19 juni 2009 nr. 103</a> (ikr. 28 des 2009 iflg. <a data-id="forskrift/2009-06-19-672" class=" reference" href="/LTI/forskrift/2009-06-19-672">res. 19 juni 2009 nr. 672</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§9a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§10"></a><a name="PARAGRAF_10"></a><div data-id="PARAGRAF_10" class="morTag_p paragraf" id="PARAGRAF_10"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 10.</span><span class=" paragrafTittel "><em class=" ">Avslag på søknad om autorisasjon, lisens eller andre godkjenninger</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dersom det foreligger forhold som gir grunnlag for tilbakekall etter <a data-id="lov/2001-06-15-75/§35" class=" reference" href="/lov/2001-06-15-75/%C2%A735">§ 35</a>, kan departementet eller den departementet bemyndiger avslå søknad om autorisasjon, lisens eller spesialistgodkjenning.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§10" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§11"></a><a name="PARAGRAF_11"></a><div data-id="PARAGRAF_11" class="morTag_p paragraf" id="PARAGRAF_11"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 11.</span><span class=" paragrafTittel "><em class=" ">Aldersgrense og fraskrivelse av autorisasjon, lisens og spesialistgodkjenning</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Autorisasjon, lisens og spesialistgodkjenning i medhold av denne loven opphører når innehaveren fyller 75 år, jf. <a data-id="lov/2001-06-15-75/§5" class=" reference" href="/lov/2001-06-15-75/%C2%A75">§ 5</a> tredje ledd, men retten til å benytte yrkesbetegnelsen beholdes etter nådd aldersgrense.</p><p data-uid="0" class="morTag_a avsnitt">Autorisasjon, lisens og spesialistgodkjenning gitt i medhold av denne loven kan fraskrives ved innlevering av dokumentet til departementet.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§11" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kap3"></a><div data-level="1" data-id="KAPITTEL_3" data-refID="kap3" class="morTag_b kapittel" id="KAPITTEL_3"><h2 class="  ">Kapittel 3. Dyrehelsepersonells plikter og rettigheter</h2><a class="documentPart_scrollMargin" name="§12"></a><a name="PARAGRAF_12"></a><div data-id="PARAGRAF_12" class="morTag_p paragraf" id="PARAGRAF_12"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 12.</span><span class=" paragrafTittel "><em class=" ">Dyrehelsepersonells plikter</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonells plikter innen sitt fagområde er</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">1.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">å arbeide for velferd og sunnhet hos dyr, herunder viltlevende dyrebestander,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">2.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">å medvirke til etisk og miljømessig forsvarlig dyrehold,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">3.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">å verne samfunnet mot fare og skader forårsaket av dyresjukdommer eller av næringsmidler og produkter av animalsk opprinnelse.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§12" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§13"></a><a name="PARAGRAF_13"></a><div data-id="PARAGRAF_13" class="morTag_p paragraf" id="PARAGRAF_13"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 13.</span><span class=" paragrafTittel "><em class=" ">Utøvelse av virksomhet m.m.</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell kan utøve slik virksomhet som utdanningen kvalifiserer til innen de rammene denne og andre relevante lover setter.</p><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell har plikt til å utøve sin virksomhet på en faglig forsvarlig måte.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i medhold av <a data-id="lov/2001-06-15-75/§5" class=" reference" href="/lov/2001-06-15-75/%C2%A75">§ 5</a> knytte vilkår til lisens og herunder bestemme at innehaver skal være underlagt tilsyn av annet dyrehelsepersonell.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2008-12-19-120" class=" reference" href="/LTI/lov/2008-12-19-120">lov 19 des 2008 nr. 120</a> (ikr. 1 jan 2009 iflg. <a data-id="forskrift/2008-12-19-1483" class=" reference" href="/LTI/forskrift/2008-12-19-1483">res. 19 des 2008 nr. 1483</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§13" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§14"></a><a name="PARAGRAF_14"></a><div data-id="PARAGRAF_14" class="morTag_p paragraf" id="PARAGRAF_14"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 14.</span><span class=" paragrafTittel "><em class=" ">Nødhjelp</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell plikter snarest mulig etter anmodning å yte den hjelp vedkommende evner – personlig eller ved stedfortreder – når det etter tilgjengelige opplysninger må antas at øyeblikkelig hjelp er påtrengende nødvendig. Plikten faller bort ved gyldig forfall eller ved at hjelp i tide blir ytt av annet dyrehelsepersonell.</p><p data-uid="0" class="morTag_a avsnitt">For den hjelp dyrehelsepersonell har ytt etter foregående ledd, kan hun eller han kreve en passende godtgjørelse fra staten dersom hun eller han ikke etter krav får betaling av rekvirenten eller den som har betalingsplikten. Dersom rekvirenten eller dyrehelsepersonellet selv har hjelpeplikt etter <a data-id="lov/2009-06-19-97/§4" class=" reference" href="/lov/2009-06-19-97/%C2%A74">dyrevelferdsloven<sup class=" fotnoteref"><a href="#fotnote_2" class="supAnchor fotnoteref" id="fotnoteref_2">​1</a></sup> § 4</a> og dyret er viltlevende eller ikke har en kjent eier eller innehaver, kan dyrehelsepersonell kreve en passende godtgjørelse fra staten for nødvendig hjelp.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrifter om når øyeblikkelig hjelp er påtrengende nødvendig, hva som er nødvendig hjelp, passende godtgjørelse og om andre vilkår for godtgjørelse etter denne bestemmelsen.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2009-06-19-97" class=" reference" href="/LTI/lov/2009-06-19-97">lov 19 juni 2009 nr. 97</a> (ikr. 1 jan 2010 iflg. <a data-id="forskrift/2009-06-19-703" class=" reference" href="/LTI/forskrift/2009-06-19-703">res. 19 juni 2009 nr. 703</a>).</td></tr><tr><td data-id="fotnote_1" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_2"></span><a href="#fotnoteref_2" id="fotnote_2">1</a></td><td class="fotnote" data-id="fotnoteContent_2"><span class="namedAnchor" data-id="fotnoteContent_2"></span>Inkurie: Loven har ikke offisiell korttittel.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§14" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§15"></a><a name="PARAGRAF_15"></a><div data-id="PARAGRAF_15" class="morTag_p paragraf" id="PARAGRAF_15"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 15.</span><span class=" paragrafTittel "><em class=" ">Bruk av medhjelper</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell kan i sin virksomhet la seg bistå av annet personell forutsatt at det gis tilstrekkelig instruksjon og føres tilsyn. Den som overlater utførelse av oppgaver til andre, skal påse at vedkommende har de kvalifikasjonene som kreves for forsvarlig utførelse av oppgavene.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi nærmere forskrifter om dyrehelsepersonells bruk av medhjelper.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§15" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§16"></a><a name="PARAGRAF_16"></a><div data-id="PARAGRAF_16" class="morTag_p paragraf" id="PARAGRAF_16"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 16.</span><span class=" paragrafTittel "><em class=" ">Bruk av beskyttet tittel</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Bare den som har autorisasjon, lisens eller spesialistgodkjenning i medhold av denne loven, har rett til å benytte slik tittel som er fastsatt for vedkommende gruppe av dyrehelsepersonell. Unntak gjøres for veterinærer som har rett til å arbeide midlertidig som dyrehelsepersonell uten norsk autorisasjon.</p><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell som ikke er veterinærer, men som har rett til å arbeide midlertidig som dyrehelsepersonell uten norsk autorisasjon, skal benytte sine utenlandske titler.</p><p data-uid="0" class="morTag_a avsnitt">Andre må ikke benytte titler eller annonsere virksomhet på en slik måte at det gir eller er egnet til å gi inntrykk av at vedkommende har en bestemt autorisasjon, lisens eller spesialistgodkjenning.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2008-12-19-120" class=" reference" href="/LTI/lov/2008-12-19-120">lov 19 des 2008 nr. 120</a> (ikr. 1 jan 2009 iflg. <a data-id="forskrift/2008-12-19-1483" class=" reference" href="/LTI/forskrift/2008-12-19-1483">res. 19 des 2008 nr. 1483</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§16" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§17"></a><a name="PARAGRAF_17"></a><div data-id="PARAGRAF_17" class="morTag_p paragraf" id="PARAGRAF_17"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 17.</span><span class=" paragrafTittel "><em class=" ">Rekvirering av legemidler til dyr</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Bare veterinærer kan rekvirere reseptpliktige legemidler til dyr.</p><p data-uid="0" class="morTag_a avsnitt">Uten hinder av første ledd kan fiskehelsebiologer rekvirere reseptpliktige legemidler til akvatiske dyr, unntatt sjøpattedyr.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan helt eller delvis forby rekvirering av bestemte legemidler til dyr. Den samme retten har det departementet som helselovgivningen hører under.</p><p data-uid="0" class="morTag_a avsnitt">Det departementet som helselovgivningen hører under gir alminnelige bestemmelser om utstedelse av resept og kan fastsette at resept på spesielt nevnte legemidler skal oppbevares på apotek til ettersyn for dyrehelsemyndighetene som ledd i offentlig tilsyn med forsvarlig virksomhet.</p><p data-uid="0" class="morTag_a avsnitt">Apotek som har grunn til å tro at dyrehelsepersonell misbruker bedøvende midler eller rekvirerer legemidler det er forbud mot å rekvirere, skal uten hinder av sin taushetsplikt gi melding om dette til dyrehelsemyndighetene.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi nærmere forskrifter om rekvirering forbeholdt dyrehelsepersonell med spesialkompetanse, og om rekvirering til bruk i eget praksisområde.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Loven trådte ikr. 1 jan 2002, men med unntak for <a data-id="lov/2001-06-15-75/§17" class=" reference" href="/LTI/lov/2001-06-15-75/%C2%A717">§ 17</a> annet ledd, som trådte ikr. 15 aug 2005 iflg. <a data-id="forskrift/2005-07-12-820" class=" reference" href="/LTI/forskrift/2005-07-12-820">vedtak 12 juli 2005 nr. 820</a>.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§17" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§18"></a><a name="PARAGRAF_18"></a><div data-id="PARAGRAF_18" class="morTag_p paragraf" id="PARAGRAF_18"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 18.</span><span class=" paragrafTittel "><em class=" ">Om medisinsk behandling av dyr og bruk av bestemte metoder m.m.</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Bare den som er veterinær kan</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">1.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">behandle dyr som det er grunn til å tro er angrepet av smittsom sjukdom eller som har sjukdom hvis behandling krever veterinærmedisinsk kyndighet,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">2.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">nytte undersøkelses- og behandlingsmetoder som krever spesiell kyndighet i forbindelse med diagnostisering, forebygging og behandling av sjukdom hos dyr. Til slike metoder regnes operative inngrep, injeksjoner og annen perforering av hud eller slimhinne,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">3.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">iverksette fullstendig eller lokal bedøvelse,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">4.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">bruke reseptpliktige legemidler til behandling av dyr,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">5.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">forestå kjøttkontroll.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Fiskehelsebiologene kan behandle smittsomme og andre sjukdommer etter bestemmelsene i første ledd, punktene 1-4, men bare hos akvatiske dyr unntatt sjøpattedyr.</p><p data-uid="0" class="morTag_a avsnitt">Bestemmelsene i denne paragrafen er ikke til hinder for at dyrehelsepersonell kan nytte medhjelper jf. <a data-id="lov/2001-06-15-75/§15" class=" reference" href="/lov/2001-06-15-75/%C2%A715">§ 15</a>. Dyreeier kan etter instruksjon fra dyrehelsepersonell foreta medisinsk behandling av egne dyr med legemidler som kun er beregnet brukt av dyrehelsepersonell. Departementet kan gi forskrifter om bruk av legemidler på dyr.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift fastsette nærmere regler for immobilisering av dyr. Uten hinder av første ledd <a data-id="lov/2001-06-15-75/kap3" class=" reference" href="/lov/2001-06-15-75/kap3">pkt</a>. 3 kan departementet tillate at andre enn veterinær kan utføre dette i spesielle tilfeller.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§18" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§19"></a><a name="PARAGRAF_19"></a><div data-id="PARAGRAF_19" class="morTag_p paragraf" id="PARAGRAF_19"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 19.</span><span class=" paragrafTittel "><em class=" ">Tillatelse til eller forbud mot bruk av bestemte metoder etc.</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet kan ved forskrift fastsette at nærmere bestemte hjelpemidler og undersøkelses- og behandlingsmetoder bare kan nyttes av dyrehelsepersonell.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan ved forskrift fastsette at spesielle hjelpemidler og undersøkelses- og behandlingsmetoder bare kan nyttes av dyrehelsepersonell etter særskilt tillatelse fra departementet. Departementet kan forby bruk av bestemte undersøkelses- og behandlingsmetoder.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2008-12-19-120" class=" reference" href="/LTI/lov/2008-12-19-120">lov 19 des 2008 nr. 120</a> (ikr. 1 jan 2009 iflg. <a data-id="forskrift/2008-12-19-1483" class=" reference" href="/LTI/forskrift/2008-12-19-1483">res. 19 des 2008 nr. 1483</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§19" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§20"></a><a name="PARAGRAF_20"></a><div data-id="PARAGRAF_20" class="morTag_p paragraf" id="PARAGRAF_20"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 20.</span><span class=" paragrafTittel "><em class=" ">Hovedregel om taushetsplikt</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell og deres medhjelpere skal hindre at andre får adgang eller kjennskap til opplysninger som han eller hun har fått i sin virksomhet om</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">1.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">noens personlige forhold eller</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">2.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">driftsmessige forhold som det vil være av konkurransemessig betydning å hemmeligholde av hensyn til den som opplysningene angår.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Vedkommende kan heller ikke utnytte slike opplysninger i egen virksomhet eller i tjeneste eller arbeid for andre.</p><p data-uid="0" class="morTag_a avsnitt">Også enhver annen som omhandles i denne lov, har taushetsplikt om opplysninger nevnt i første ledd, i den grad vedkommende har fått kjennskap til opplysningene gjennom dyrehelsepersonell.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§20" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§21"></a><a name="PARAGRAF_21"></a><div data-id="PARAGRAF_21" class="morTag_p paragraf" id="PARAGRAF_21"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 21.</span><span class=" paragrafTittel "><em class=" ">Begrensninger i taushetsplikten</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Taushetsplikten etter <a data-id="lov/2001-06-15-75/§20" class=" reference" href="/lov/2001-06-15-75/%C2%A720">§ 20</a> er ikke til hinder for</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">1.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">at opplysninger gjøres kjent for den opplysningene direkte gjelder, eller for andre i den grad den som har krav på taushetsplikt, samtykker,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">2.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">at opplysninger gis den som fra før er kjent med opplysningene,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">3.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">at opplysninger gis når ingen berettiget interesse tilsier hemmelighold,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">4.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">at opplysninger gis videre når behovet for beskyttelse må anses ivaretatt ved at individualiserende kjennetegn er utelatt,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">5.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">at opplysninger gis videre når tungtveiende private eller offentlige interesser gjør det rettmessig å gi opplysningene videre, eller</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">6.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">at opplysningene gis videre etter regler fastsatt i lov eller i medhold av lov når det er uttrykkelig fastsatt eller klart forutsatt at taushetsplikt ikke skal gjelde.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§21" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§22"></a><a name="PARAGRAF_22"></a><div data-id="PARAGRAF_22" class="morTag_p paragraf" id="PARAGRAF_22"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 22.</span><span class=" paragrafTittel "><em class=" ">Opplysninger til dyreeier</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell skal uoppfordret gi dyreeieren eller dennes representant, opplysninger om undersøkelsesmetoder, diagnoser og aktuelle behandlingsalternativer og prognose. Videre skal eieren informeres om mulig risiko og bivirkning som undersøkelsen eller behandlingen medfører. Dersom det i tilknytning til undersøkelsen eller behandlingen oppstår skade eller komplikasjoner, skal dyreeieren informeres om dette. Opplysninger skal gis i en forståelig form og ut fra dyreeierens forutsetninger.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§22" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§23"></a><a name="PARAGRAF_23"></a><div data-id="PARAGRAF_23" class="morTag_p paragraf" id="PARAGRAF_23"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 23.</span><span class=" paragrafTittel "><em class=" ">Forsvarlig virksomhet</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell plikter å utøve sin virksomhet forsvarlig og skal herunder</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">1.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">holde sine relevante faglige ferdigheter og kunnskaper ved like,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">2.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">være bevisst egne faglige begrensninger,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">3.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">sikre kvaliteten på sine tjenester og påse at virksomheten og tjenestene planlegges og utføres i samsvar med allment aksepterte faglige og etiske normer og krav fastsatt i medhold av lov eller forskrift,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">4.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">dersom pasientenes tilstand krever spesiell behandling som en ikke behersker selv, henvise dyreeieren til annet dyrehelsepersonell som har nødvendig kyndighet og utstyr og</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">5.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">gjøre seg kjent med de reglene som gjelder og følge de bestemmelsene som er gitt for utøvelse av egen virksomhet.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrifter med nærmere krav til hvordan virksomheter skal drives.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§23" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§24"></a><a name="PARAGRAF_24"></a><div data-id="PARAGRAF_24" class="morTag_p paragraf" id="PARAGRAF_24"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 24.</span><span class=" paragrafTittel "><em class=" ">Om ordnede opptegnelser, meldinger, rapporter og innsyn i journal</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell plikter å melde fra til offentlige veterinærmyndigheter om bostedsadresse, om de driver privat virksomhet og om utgangspunktet for denne virksomheten.</p><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell skal føre ordnede opptegnelser over sin virksomhet. Opptegnelsene skal føres i samsvar med god yrkesskikk og skal inneholde fullstendige opplysninger om pasienter og deres behandling, samt opplysninger som er nødvendige for å oppfylle melde- og rapporteringsplikten etter tredje ledd. Opptegnelsene kan kreves framlagt som bevis i en rettssak eller administrativ sak om vedkommendes virksomhet.</p><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell skal avgi de rapportene og meldingene som offentlige dyrehelsemyndigheter bestemmer.</p><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell skal gi dyrehelsemyndighetene adgang til virksomhetens lokaler og gi alle de opplysningene som anses påkrevet for utøvelsen av tilsyn med dyrehelsepersonells virksomhet. Dyrehelsepersonell skal, uten hinder av taushetsplikten, utlevere de dokumenter, lyd- og bildeopptak og lignende som kreves av tilsynsmyndigheten.</p><p data-uid="0" class="morTag_a avsnitt">En dyreeier har rett til selv eller ved en representant han utpeker å gjøre seg kjent med egne dyrs journal med vedlegg. Etter anmodning har dyrehelsepersonell plikt til å låne ut eller utlevere journal med vedlegg til annen dyreklinikk eller annet dyrehelsepersonell når dette anses nødvendig for videre behandling av pasient.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrifter om bestemmelsene i denne paragrafen.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§24" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§25"></a><a name="PARAGRAF_25"></a><div data-id="PARAGRAF_25" class="morTag_p paragraf" id="PARAGRAF_25"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 25.</span><span class=" paragrafTittel "><em class=" ">Sikkerhetsstillelse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell som vil utøve privat virksomhet, skal stille sikkerhet for det ansvar de kan pådra seg i sin virksomhet. Forsikringen skal også omfatte skade voldt av eventuelle arbeidstakere.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi nærmere forskrifter om hvor stor sikkerhet som bør kreves.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§25" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§26"></a><a name="PARAGRAF_26"></a><div data-id="PARAGRAF_26" class="morTag_p paragraf" id="PARAGRAF_26"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 26.</span><span class=" paragrafTittel "><em class=" ">(Opphevet)</em></span></span></h3><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Opphevet ved <a data-id="lov/2007-12-21-132" class=" reference" href="/LTI/lov/2007-12-21-132">lov 21 des 2007 nr. 132</a> (ikr. 1 jan 2008).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§26" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§27"></a><a name="PARAGRAF_27"></a><div data-id="PARAGRAF_27" class="morTag_p paragraf" id="PARAGRAF_27"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 27.</span><span class=" paragrafTittel "><em class=" ">Beordring i krisesituasjoner</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">I alvorlige krisesituasjoner kan departementet, eller den departementet bemyndiger, pålegge praktiserende dyrehelsepersonell plikt til å utføre offentlige tjenester etter avtalt godtgjørelse. Beordringen skal være for så kort tid som mulig. Plikten faller bort ved gyldig forfall.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§27" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§28"></a><a name="PARAGRAF_28"></a><div data-id="PARAGRAF_28" class="morTag_p paragraf" id="PARAGRAF_28"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 28.</span><span class=" paragrafTittel "><em class=" ">Utstedelse av faglige attester og erklæringer</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">En attestutsteder må være varsom, nøyaktig og objektiv. Dokumentet skal være korrekt og bare inneholde opplysninger som er nødvendige for formålet. Dyrehelsepersonell som er inhabile etter <a data-id="lov/1967-02-10/§6" class=" reference" href="/lov/1967-02-10/%C2%A76">forvaltningsloven § 6</a>, skal ikke utstede attest eller lignende erklæring.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§28" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§29"></a><a name="PARAGRAF_29"></a><div data-id="PARAGRAF_29" class="morTag_p paragraf" id="PARAGRAF_29"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 29.</span><span class=" paragrafTittel "><em class=" ">Bortfall av rett til å utøve virksomhet der dyrehelsepersonell opptrer som apoteker eller apotekbestyrer</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonell med rekvireringsrett til legemidler, har ikke rett til å utøve sin virksomhet i den tid vedkommende er apoteker eller apotekbestyrer.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§29" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kap4"></a><div data-level="1" data-id="KAPITTEL_4" data-refID="kap4" class="morTag_b kapittel" id="KAPITTEL_4"><h2 class="  ">Kapittel 4. Det veterinærmedisinske rettsråd</h2><a class="documentPart_scrollMargin" name="§30"></a><a name="PARAGRAF_30"></a><div data-id="PARAGRAF_30" class="morTag_p paragraf" id="PARAGRAF_30"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 30.</span><span class=" paragrafTittel "><em class=" ">Rådets oppnevning og sammensetning</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Det oppnevnes et veterinærmedisinsk rettsråd med 7 medlemmer, som med personlige varamedlemmer oppnevnes av departementet for en periode på 5 år. Leder og nestleder oppnevnes av departementet. Ett av medlemmene med varamedlem skal være jurist. Av de øvrige seks medlemmene skal fire være dyrehelsepersonell i vitenskapelige stillinger innen relevante fagområder og to har erfaring fra klinisk praksis. De to sistnevnte oppnevnes etter forslag fra yrkesorganisasjonene. Ved oppnevningen skal det tas hensyn til at de forskjellige grenene av veterinærmedisinen blir best mulig representert.</p><p data-uid="0" class="morTag_a avsnitt">Rådet kan innhente uttalelser fra eller tilkalle sakkyndige når den nødvendige kompetansen ikke finnes blant rådets medlemmer.</p><p data-uid="0" class="morTag_a avsnitt">Departementet tilsetter rådets sekretær.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§30" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§31"></a><a name="PARAGRAF_31"></a><div data-id="PARAGRAF_31" class="morTag_p paragraf" id="PARAGRAF_31"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 31.</span><span class=" paragrafTittel "><em class=" ">Rådets oppgaver</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Rådet skal være rådgiver for veterinærmyndighetene i disiplinærsaker, saker om forsvarlig virksomhet og saker av veterinærmedisinsk art. Rådet kan også ta opp saker av eget tiltak.</p><p data-uid="0" class="morTag_a avsnitt">Rådet skal stå til disposisjon for retten, påtalemyndigheten, offentlige forsvarere og oppnevnte sakkyndige i veterinærmedisinske spørsmål og dyrevern i forbindelse med sivile saker og straffesaker.</p><p data-uid="0" class="morTag_a avsnitt">Rådet kan avgi uttalelser og foreta undersøkelser for forsikringsselskaper og andre i saker om forsikring av dyr, dyrehelsepersonells ansvar, handelstvister og andre saker av veterinærmedisinsk eller dyrevernmessig art.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan fastsette nærmere bestemmelser om arbeidsform og ytterligere arbeidsoppgaver.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2003-12-19-129" class=" reference" href="/LTI/lov/2003-12-19-129">lover 19 des 2003 nr. 129</a> (ikr. 1 jan 2004 iflg. <a data-id="forskrift/2003-12-19-1792" class=" reference" href="/LTI/forskrift/2003-12-19-1792">res. 19 des 2003 nr. 1792</a>), <a data-id="lov/2009-06-19-97" class=" reference" href="/LTI/lov/2009-06-19-97">19 juni 2009 nr. 97</a> (ikr. 1 jan 2010 iflg. <a data-id="forskrift/2009-06-19-703" class=" reference" href="/LTI/forskrift/2009-06-19-703">res. 19 juni 2009 nr. 703</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§31" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§32"></a><a name="PARAGRAF_32"></a><div data-id="PARAGRAF_32" class="morTag_p paragraf" id="PARAGRAF_32"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 32.</span><span class=" paragrafTittel "><em class=" ">Rådets innsynsrett i journaler m.v.</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dyrehelsepersonells journal med vedlegg og øvrige dokumenter om saker som behandles av Det veterinærmedisinske rettsråd, skal på forespørsel forelegges rådet.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§32" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§33"></a><a name="PARAGRAF_33"></a><div data-id="PARAGRAF_33" class="morTag_p paragraf" id="PARAGRAF_33"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 33.</span><span class=" paragrafTittel "><em class=" ">Godtgjørelse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Rådets leder, medlemmer og sekretær, samt tilkalte sakkyndige gis godtgjørelse etter satser fastsatt av departementet.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§33" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kap5"></a><div data-level="1" data-id="KAPITTEL_5" data-refID="kap5" class="morTag_b kapittel" id="KAPITTEL_5"><h2 class="  ">Kapittel 5. Straff og andre sanksjoner</h2><a class="documentPart_scrollMargin" name="§34"></a><a name="PARAGRAF_34"></a><div data-id="PARAGRAF_34" class="morTag_p paragraf" id="PARAGRAF_34"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 34.</span><span class=" paragrafTittel "><em class=" ">Advarsel</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet eller den departementet bemyndiger kan gi advarsel til dyrehelsepersonell som forsettlig eller uaktsomt overtrer plikter etter denne loven eller bestemmelser gitt i medhold av den, hvis pliktbruddet er egnet til å medføre fare for sikkerheten i dyrehelsetjenesten eller til å påføre dyreeier store belastninger og dyr unødig lidelse. Tilsvarende gjelder hvis dyrehelsepersonell har utvist atferd som er egnet til å svekke tilliten til deres yrkesgruppe. Advarsel er enkeltvedtak etter <a data-id="lov/1967-02-10" class=" reference" href="/lov/1967-02-10">forvaltningsloven</a>.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2003-12-19-129" class=" reference" href="/LTI/lov/2003-12-19-129">lov 19 des 2003 nr. 129</a> (ikr. 1 jan 2004 iflg. <a data-id="forskrift/2003-12-19-1792" class=" reference" href="/LTI/forskrift/2003-12-19-1792">res. 19 des 2003 nr. 1792</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§34" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§35"></a><a name="PARAGRAF_35"></a><div data-id="PARAGRAF_35" class="morTag_p paragraf" id="PARAGRAF_35"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 35.</span><span class=" paragrafTittel "><em class=" ">Tilbakekall og suspensjon av autorisasjon, lisens eller andre godkjenninger</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Autorisasjon, lisens eller spesialistgodkjenning gitt i medhold av denne loven, kan av departementet kalles tilbake dersom innehaver er uskikket til å utøve sitt yrke på grunn av alvorlig sinnslidelse, psykisk eller fysisk svekkelse, langt fravær fra yrket, misbruk av alkohol, bruk av narkotika eller midler med lignende virkning, grov mangel på faglig innsikt, uforsvarlig virksomhet eller ved grove pliktbrudd etter denne loven, eller forskrift gitt i medhold av den. I forbindelse med vurderingen, kan departementet pålegge vedkommende å la seg undersøke av relevant fagpersonell.</p><p data-uid="0" class="morTag_a avsnitt">Autorisasjon, lisens eller spesialistgodkjenning kan også kalles tilbake dersom innehaveren tross advarsel unnlater å innrette seg etter lov- eller forskriftsbestemte krav.</p><p data-uid="0" class="morTag_a avsnitt">Autorisasjon, lisens eller annen godkjenning gitt på grunnlag av tilsvarende godkjenning i en annen stat kan kalles tilbake dersom godkjenningen taper sin gyldighet i vedkommende stat.</p><p data-uid="0" class="morTag_a avsnitt">Istedenfor fullstendig tilbakekall kan autorisasjon, lisens eller andre godkjenninger begrenses til utøvelse av bestemt virksomhet. Til slikt vedtak kan det knyttes vilkår.</p><p data-uid="0" class="morTag_a avsnitt">Dersom det er skjellig grunn til å anta at det foreligger grunnlag for tilbakekall kan departementet suspendere autorisasjon, lisens og andre godkjenninger, i den utstrekning det finnes nødvendig.</p><p data-uid="0" class="morTag_a avsnitt">Ved tilbakekall, begrensning eller suspensjon av autorisasjon, lisens eller spesialistgodkjenninger skal det gis melding til godkjennende myndighet i annen stat hvor det er kjent at vedkommende utøver virksomhet, dersom dette er nødvendig for å oppfylle en internasjonal overenskomst.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§35" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§36"></a><a name="PARAGRAF_36"></a><div data-id="PARAGRAF_36" class="morTag_p paragraf" id="PARAGRAF_36"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 36.</span><span class=" paragrafTittel "><em class=" ">Tap av rekvireringsrett</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dersom en veterinærs eller fiskehelsebiologs rekvirering og bruk av legemidler til dyr er uforsvarlig eller i strid med lov eller forskrift gitt med hjemmel i lov, kan departementet helt eller delvis frata vedkommende retten til rekvirering og bruk av bestemte legemidler for en bestemt tid eller for alltid.</p><p data-uid="0" class="morTag_a avsnitt">Hvis departementet finner det forsvarlig, kan det etter søknad gi tilbake retten før utløpet av den tid som er fastsatt.</p><p data-uid="0" class="morTag_a avsnitt">En veterinær kan selv gi bindende avkall på retten til å rekvirere enkelte legemidler for en bestemt tid eller for alltid.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§36" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§37"></a><a name="PARAGRAF_37"></a><div data-id="PARAGRAF_37" class="morTag_p paragraf" id="PARAGRAF_37"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 37.</span><span class=" paragrafTittel "><em class=" ">Straff</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Den som forsettlig eller uaktsomt overtrer denne loven eller bestemmelser gitt i medhold av den, straffes med bøter eller fengsel i inntil 3 måneder. Når det gjelder overtredelse av <a data-id="lov/2001-06-15-75/§18" class=" reference" href="/lov/2001-06-15-75/%C2%A718">§ 18</a> eller bestemmelser gitt i medhold av <a data-id="lov/2001-06-15-75/§18" class=" reference" href="/lov/2001-06-15-75/%C2%A718">§ 18</a>, kan straffen under særdeles skjerpende omstendigheter forhøyes til inntil 6 måneders fengsel.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2003-07-04-78" class=" reference" href="/LTI/lov/2003-07-04-78">lover 4 juli 2003 nr. 78</a>, <a data-id="lov/2015-06-19-65" class=" reference" href="/LTI/lov/2015-06-19-65">19 juni 2015 nr. 65</a> (ikr. 1 okt 2015).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§37" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§37a"></a><a name="PARAGRAF_37a"></a><div data-id="PARAGRAF_37a" class="morTag_p paragraf" id="PARAGRAF_37a"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 37 a.</span><span class=" paragrafTittel "><em class=" ">Avgift og gebyr</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Kongen kan i forskrifter pålegge enhver omfattet av denne loven å betale gebyr for å dekke kostnader ved tilsyn, kontroll og særskilte ytelser, som utferdigelse av attester og godkjenninger mv., etter loven her.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan i forskrifter pålegge virksomheter omfattet av <a data-id="lov/2003-12-19-124" class=" reference" href="/lov/2003-12-19-124">lov om matproduksjon og mattrygghet mv. (matloven)</a> å betale en avgift på næringsmidler som skal dekke kostnader ved tilsyn og kontroll etter loven her i den utstrekning aktivitetene retter seg mot dyr som brukes til produksjon av næringsmidler, såfremt kostnadene ikke dekkes ved gebyr i medhold av første ledd.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan i forskrifter pålegge produsenter eller importører å betale en avgift på fôr til dyr som ikke brukes til produksjon av næringsmidler. Avgiften skal dekke kostnader ved tilsyn og kontroll etter loven her i den utstrekning aktivitetene retter seg mot dyr som ikke brukes til produksjon av næringsmidler, såfremt kostnadene ikke dekkes ved gebyr i medhold av første ledd.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan gi nærmere bestemmelse om avgiftenes og gebyrenes beregning, oppkreving og innbetaling.</p><p data-uid="0" class="morTag_a avsnitt">Ved forsinket betaling av avgifter og gebyrer, skal det betales rente i samsvar med <a data-id="lov/1976-12-17-100" class=" reference" href="/lov/1976-12-17-100">lov 17. desember 1976 nr. 100</a> om renter ved forsinket betaling.</p><p data-uid="0" class="morTag_a avsnitt">Avgifter og gebyrer er tvangsgrunnlag for utlegg.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2003-12-19-129" class=" reference" href="/LTI/lov/2003-12-19-129">lov 19 des 2003 nr. 129</a> (ikr. 1 jan 2004 iflg. <a data-id="forskrift/2003-12-19-1792" class=" reference" href="/LTI/forskrift/2003-12-19-1792">res. 19 des 2003 nr. 1792</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§37a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kap6"></a><div data-level="1" data-id="KAPITTEL_6" data-refID="kap6" class="morTag_b kapittel" id="KAPITTEL_6"><h2 class="  ">Kapittel 6. Avsluttende bestemmelser</h2><a class="documentPart_scrollMargin" name="§38"></a><a name="PARAGRAF_38"></a><div data-id="PARAGRAF_38" class="morTag_p paragraf" id="PARAGRAF_38"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 38.</span><span class=" paragrafTittel "><em class=" ">Ikrafttreden</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Denne loven trer i kraft fra den tid Kongen bestemmer.<sup class=" fotnoteref"><a href="#fotnote_3" class="supAnchor fotnoteref" id="fotnoteref_3">​1</a></sup> Samtidig oppheves <a data-id="lov/1948-12-10-3" class=" reference" href="/lov/1948-12-10-3">lov 10. desember 1948 nr. 3</a> om veterinærer m.v.</p><p data-uid="0" class="morTag_a avsnitt">Bestemmelsene i <a data-id="lov/2001-06-15-75/§17" class=" reference" href="/lov/2001-06-15-75/%C2%A717">§ 17</a> annet ledd om fiskehelsebiologers rett til rekvirering av legemidler gjelder ikke før det tidspunkt departementet bestemmer.<sup class=" fotnoteref"><a href="#fotnote_4" class="supAnchor fotnoteref" id="fotnoteref_4">​2</a></sup></p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_1" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_3"></span><a href="#fotnoteref_3" id="fotnote_3">1</a></td><td class="fotnote" data-id="fotnoteContent_3"><span class="namedAnchor" data-id="fotnoteContent_3"></span>Fra 1 jan 2002 iflg. <a data-id="forskrift/2001-06-15-711" class=" reference" href="/forskrift/2001-06-15-711">res. 15 juni 2001 nr. 711</a>, med unntak av § 17 (2), som trådte ikr. 15 aug 2005 iflg. <a data-id="forskrift/2005-07-12-820" class=" reference" href="/forskrift/2005-07-12-820">vedtak 12 juli 2005 nr. 820</a>.</td></tr><tr><td data-id="fotnote_2" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_4"></span><a href="#fotnoteref_4" id="fotnote_4">2</a></td><td class="fotnote" data-id="fotnoteContent_4"><span class="namedAnchor" data-id="fotnoteContent_4"></span>Fra 15 aug 2005 iflg. <a data-id="forskrift/2005-07-12-820" class=" reference" href="/forskrift/2005-07-12-820">vedtak 12 juli 2005 nr. 820</a>.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§38" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§39"></a><a name="PARAGRAF_39"></a><div data-id="PARAGRAF_39" class="morTag_p paragraf" id="PARAGRAF_39"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 39.</span><span class=" paragrafTittel "><em class=" ">Overgangsordninger</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Forskrifter o.l. gitt med hjemmel i <a data-id="lov/1948-12-10-3" class=" reference" href="/lov/1948-12-10-3">lov 10. desember 1948 nr. 3</a> om veterinærer m.v. gjelder i den utstrekning de ikke strider mot loven her eller forskrifter fastsatt med hjemmel i loven her.</p><p data-uid="0" class="morTag_a avsnitt">Den som ved lovens ikrafttredelse har autorisasjon og spesialistgodkjenning som dyrehelsepersonell, beholder sin autorisasjon og spesialistgodkjenning etter denne loven.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan fastsette forskrifter med overgangsbestemmelser.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§39" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§40"></a><a name="PARAGRAF_40"></a><div data-id="PARAGRAF_40" class="morTag_p paragraf" id="PARAGRAF_40"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 40.</span><span class=" paragrafTittel "><em class=" ">Endringer i andre lover</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">I <a data-id="lov/1974-12-20-73" class=" reference" href="/lov/1974-12-20-73">lov 20. desember 1974 nr. 73</a> om dyrevern gjøres følgende endringer: – – –</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2001-06-15-75/§40" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div></div></div></div>
+		</div>
+	</div>
+	<ul class="pager">
+
+		<li class="previous">
+        
+		</li>
+				<li class="complete">
+
+				</li>
+		<li class="next ">
+
+		</li>
+	</ul>
+
+
+	</div> <!-- / Wrapper-->
+
+	<div class="modal fade" id="deleModal" tabindex="-1" role="dialog" aria-labelledby="del" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<p id="del" class="modal-title">Del dokument</p>
+				</div>
+						<div class="modal-body">
+							<input id="urlTextInput" aria-label="Lenken som fører til denne siden" class="form-control dele-url" value="https://lovdata.no/lov/2001-06-15-75" autoselect/>
+							<a class="btn btn-primary btn-block URL" tabindex="0" role="button">Kopier URL</a>
+							<a class="btn btn-primary btn-block twitter" href="" target="_blank" role="button">Del på Twitter</a>
+							<a class="btn btn-primary btn-block facebook" href="" target="_blank" role="button">Del på Facebook</a>
+							<a class="btn btn-primary btn-block linkedin" href="" target="_blank" role="button">Del på LinkedIn</a>
+							<a class="btn btn-primary btn-block email" href="" role="button">Del på e-post</a>
+						</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+</main>
+
+	<script type="text/javascript">
+		$('.btn.btn-primary.btn-block.URL').click(function () {
+			$(".btn.btn-primary.btn-block.URL").select();
+			// Copy text to clipboard
+			document.execCommand('copy');
+		});
+		$(document).ready(function () {
+			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+			if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i) || isSafari) { // iOS + Safari does not like to have this decoded
+			} else if (location.hash != '' && decodeURIComponent(location.hash) != location.hash) {
+				location.hash = decodeURIComponent(location.hash);
+			} else if (window.location.hash == '') {
+			}
+		});
+	</script>
+
+
+
+<aside role="region" aria-labelledby="faq" class="help closed hidden-xs">
+	<h1 class="sr-only" id="faq">Brukerveiledning</h1>
+	<div class="open-help">
+		<button aria-label="Åpne informasjon om brukerveiledning" aria-expanded="false">
+			<span aria-hidden="true" class="toggle-open ss-icon ss-symbolicons-block">&#x2753;</span>
+			<span aria-hidden="true" class="toggle-close ss-icon ss-symbolicons-block">&#x2421;</span>
+		</button>
+		<noscript>
+			<a aria-label="Gå til hjelpeside" class="open-help-noscript" href="/info/faq"></a>
+		</noscript>
+	</div>
+	<div class="help-container hiddenSidePanel" aria-hidden="true">
+		<h2>Trenger du brukerveiledning?</h2>
+		<p><a class="infolink" href="/info/faq">Få svar på ofte stilte spørsmål her (FAQ)</a></p>
+		<p>Lovdata kan dessverre ikke svare på spørsmål angående juridiske problemer. Lovdata kan heller ikke bidra med å tolke regelverket eller finne frem til rettsregler som passer i et bestemt tilfelle. Kontakt den offentlige etaten spørsmålet gjelder, eventuelt advokat eller rettshjelper hvis du har behov for slik bistand.</p>
+
+		<h2>Fant du ikke det du lette etter?</h2>
+		<p>Send en e-post til <a class="infolink" href="mailto:support@lovdata.no">support@lovdata.no</a></p>
+	</div>
+</aside>
+<footer class="footer">
+	<a href="/info/personvern#cookies" class="cookieInfo" aria-hidden="true"><i class="ss-icon ss-symbolicons-line">&#x1F36A;</i><span class="cookie-label">Om informasjonskapsler</span></a>
+	<ul class="footer-nav">
+		<li><a lang="en" href="/info/information_in_english">Information in English</a></li>
+		<li class="ld-hidden-xs"><p tabindex="0" class="popover-parent" data-placement="top" data-toggle="popover" data-trigger="focus hover" title="" data-content="Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.">Juster tekststørrelse<span class="sr-only">Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.</span></p></li>
+		<li class="visible-xs"><a href="/info/faq">Hjelp</a></li>
+		<li><a href="/info/kontakt">Kontakt</a></li>
+		<li><a href="/info/brukeravtale">Brukeravtale</a></li>
+	</ul>
+</footer>
+
+	</body>
+</html>
+

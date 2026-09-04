@@ -1,0 +1,6 @@
+{"timestamp": "2026-08-31T09:22:31+02:00", "event": "RUN_START", "sources": 1, "backup": "/Users/tang/Desktop/smarter-compliance-aquaculture/05_Working area of requirements side/System1 - Source management/Programming/runtime/backups/Requirement_Source_Registry_20260831_092231.xlsx"}
+{"timestamp": "2026-08-31T09:22:31+02:00", "source_id": "PA010", "result": "FAIL", "stage": "CONTENT", "message": "HTML content is too small: 0 bytes."}
+{"timestamp": "2026-08-31T09:22:31+02:00", "event": "RUN_END", "counts": {"INITIAL": 0, "CHANGED": 0, "UNCHANGED": 0, "FAIL": 1}}
+{"timestamp": "2026-08-31T10:43:03+02:00", "event": "RUN_START", "sources": 1, "backup": "/Users/tang/Desktop/smarter-compliance-aquaculture/05_Working area of requirements side/System1 - Source management/Programming/runtime/backups/Requirement_Source_Registry_20260831_104303.xlsx"}
+{"timestamp": "2026-08-31T10:43:04+02:00", "source_id": "PA010", "result": "SUCCESS", "change": "INITIAL", "snapshot_id": "PA010-001", "bytes": 2636731, "sha256": "3ac51613dbdfb998b2d2c68e2df564b8a19c7d398d34d52f0228e6c10c30f8ed", "archived_path": null, "final_url": "http://publications.europa.eu/resource/cellar/9de141be-f714-11e5-abb1-01aa75ed71a1.0006.03/DOC_1"}
+{"timestamp": "2026-08-31T10:43:04+02:00", "event": "RUN_END", "counts": {"INITIAL": 1, "CHANGED": 0, "UNCHANGED": 0, "FAIL": 0}}

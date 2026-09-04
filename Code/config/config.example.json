@@ -1,0 +1,51 @@
+{
+  "workbook": "../../Requirement_Source_Registry.xlsx",
+  "source_root": "../../Data",
+  "backup_root": "../runtime/backups",
+  "log_root": "../runtime/logs",
+  "manual_intake_root": "../../Data/00_Human_Intake",
+  "manual_intake_archive_root": "../runtime/manual_intake_archive",
+  "sheet_name": "Source Register",
+  "human_operation_sheet": "Human Operation Desktop",
+  "discovery_candidate_inbox": "../runtime/inbox/discovery_candidates.json",
+  "header_row": 2,
+  "data_start_row": 3,
+  "timezone": "Europe/Oslo",
+  "timeout_seconds": 30,
+  "max_bytes": 52428800,
+  "minimum_pdf_bytes": 512,
+  "minimum_html_bytes": 100,
+  "minimum_binary_bytes": 100,
+  "user_agent": "SmarterComplianceAquaculture-System1/2.0",
+  "format_preference": ["html", "pdf", "xlsx", "zip"],
+  "language_preference": {
+    "mode": "authoritative_first",
+    "working_language_order": ["English", "Norwegian", "Other"]
+  },
+  "eligible_source_statuses": ["CURRENT"],
+  "folder_prefix_map": {
+    "A_Public_Authority": "PA",
+    "B_Standards_Body": "SB",
+    "C_Certification_Scheme": "CS",
+    "D_Manufacturer_Supplier": "MS",
+    "E_Project_Engineering": "PE",
+    "F_Client_Internal": "CI",
+    "Z_Pending_Classification": "PC"
+  },
+  "lock_stale_hours": 12,
+  "random_qa": {
+    "enabled": true,
+    "schedule": "LAST_DAY_OF_MONTH_WITH_CATCH_UP",
+    "monthly_sample_size": 5,
+    "max_sample_size": 20
+  },
+  "leader": {
+    "review_threshold_days": 60,
+    "module_interval_days": {
+      "discovery_and_intake": 30,
+      "retrieval_and_monitoring": 0,
+      "governance_and_qa": 0
+    }
+  }
+}
+

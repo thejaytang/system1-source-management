@@ -1,0 +1,101 @@
+{
+  "run_id": "20260831T092203367237+0200",
+  "generated_at": "2026-08-31T09:22:03+02:00",
+  "architecture": "1 Leader + 5 specialist agents",
+  "execute_collection": false,
+  "overall_status": "REVIEW",
+  "user_message": "1 item(s) require human review. The oldest has waited 3 days.",
+  "awakened_agents": [
+    "discovery_agent",
+    "update_monitor_agent",
+    "selection_review_agent",
+    "collection_agent",
+    "metadata_agent"
+  ],
+  "sleeping_agents": [],
+  "agent_results": [
+    {
+      "agent": "discovery_agent",
+      "stage": "01_discovery",
+      "purpose": "Coverage and candidate-inventory gate",
+      "source_count": 87,
+      "duplicate_source_ids": [],
+      "duplicate_official_urls": [
+        "https://asc-aqua.org/producers/asc-standards/species-standards/salmon-cod/",
+        "https://globalgap.org/what-we-offer/solutions/grasp/",
+        "https://globalgap.org/what-we-offer/solutions/ifa-aquaculture/",
+        "https://programme-centre.asc-aqua.org/resource-hub/?filter=farm"
+      ],
+      "no_official_url": [],
+      "equivalent_provenance_gaps": [],
+      "status": "PASS"
+    },
+    {
+      "agent": "update_monitor_agent",
+      "stage": "02_update_monitor",
+      "purpose": "Determine which sources can be checked in this run",
+      "eligible_count": 44,
+      "downloadable_count": 44,
+      "missing_retrieval_url": [],
+      "update_model_counts": {
+        "ROLLING": 59,
+        "VERSIONED": 28
+      },
+      "acquisition_channel_counts": {
+        "OFFICIAL_WEBSITE": 87
+      },
+      "status": "PASS"
+    },
+    {
+      "agent": "selection_review_agent",
+      "stage": "03_selection_review",
+      "purpose": "Verify that the initial source-quality assessment is complete",
+      "selection_status_counts": {
+        "INCLUDE": 44,
+        "PENDING": 42,
+        "EXCLUDE": 1
+      },
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "agent": "collection_agent",
+      "stage": "04_collection",
+      "purpose": "Download, validate, name, archive and store original-format snapshots",
+      "executed": false,
+      "status": "DRY_RUN"
+    },
+    {
+      "agent": "metadata_agent",
+      "stage": "05_metadata_completion",
+      "purpose": "Verify workbook-to-file consistency and summarize final state",
+      "stored_count": 69,
+      "download_status_counts": {
+        "SUCCESS": 69,
+        "FAIL": 2,
+        "NOT_RUN": 16
+      },
+      "audit_issues": [],
+      "status": "PASS"
+    }
+  ],
+  "human_review": {
+    "open_count": 1,
+    "overdue_count": 0,
+    "oldest_days": 3,
+    "threshold_days": 60,
+    "items": [
+      {
+        "review_id": "fcc81da2f50fa948",
+        "source_id": "PA010",
+        "source_title": "Regulation (EU) 2016/429 on transmissible animal diseases (Animal Health Law)",
+        "trigger": "DOWNLOAD_FAILURE",
+        "review_since": "2026-08-28",
+        "days_open": 3,
+        "severity": "OPEN",
+        "reason": "HTML content is too small: 0 bytes.",
+        "recommended_action": "Inspect the response and choose an alternative official retrieval method or manual import."
+      }
+    ]
+  }
+}

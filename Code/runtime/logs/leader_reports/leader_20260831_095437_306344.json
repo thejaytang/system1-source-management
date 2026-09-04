@@ -1,0 +1,112 @@
+{
+  "run_id": "20260831T095436811291+0200",
+  "generated_at": "2026-08-31T09:54:36+02:00",
+  "architecture": "1 Leader + 5 specialist agents",
+  "execute_collection": false,
+  "overall_status": "REVIEW",
+  "user_message": "1 item(s) require human review. The oldest has waited 0 days.",
+  "awakened_agents": [
+    "update_monitor_agent",
+    "collection_agent",
+    "metadata_agent"
+  ],
+  "sleeping_agents": [
+    "discovery_agent",
+    "selection_review_agent"
+  ],
+  "agent_results": [
+    {
+      "agent": "discovery_agent",
+      "status": "SLEEPING",
+      "reason": "Not due under the current schedule"
+    },
+    {
+      "agent": "update_monitor_agent",
+      "stage": "02_update_monitor",
+      "purpose": "Determine which sources can be checked in this run",
+      "eligible_count": 44,
+      "downloadable_count": 44,
+      "missing_retrieval_url": [],
+      "update_model_counts": {
+        "ROLLING": 59,
+        "VERSIONED": 28
+      },
+      "acquisition_channel_counts": {
+        "OFFICIAL_WEBSITE": 87
+      },
+      "status": "PASS"
+    },
+    {
+      "agent": "selection_review_agent",
+      "status": "SLEEPING",
+      "reason": "Not due under the current schedule"
+    },
+    {
+      "agent": "collection_agent",
+      "stage": "04_collection",
+      "purpose": "Download, validate, name, archive and store original-format snapshots",
+      "executed": false,
+      "status": "DRY_RUN"
+    },
+    {
+      "agent": "metadata_agent",
+      "stage": "05_metadata_completion",
+      "purpose": "Verify workbook-to-file consistency and summarize final state",
+      "stored_count": 69,
+      "download_status_counts": {
+        "SUCCESS": 69,
+        "FAIL": 2,
+        "NOT_RUN": 16
+      },
+      "audit_issues": [],
+      "status": "PASS"
+    }
+  ],
+  "human_operation_desktop": {
+    "cycle": {
+      "decision_processing": {
+        "processed_count": 0,
+        "waiting_count": 0,
+        "retry_results": {}
+      },
+      "discovery_gate": {
+        "candidate_count": 0,
+        "added_count": 0,
+        "operation_ids": []
+      },
+      "random_qa": {
+        "requested": false,
+        "generated_count": 0,
+        "operation_ids": []
+      },
+      "archive": {
+        "row_visibility_updates": 1
+      }
+    },
+    "review_queue_sync": {
+      "added_count": 1,
+      "operation_ids": [
+        "REV-e789712a4df3b25e"
+      ]
+    }
+  },
+  "human_review": {
+    "open_count": 1,
+    "overdue_count": 0,
+    "oldest_days": 0,
+    "threshold_days": 60,
+    "items": [
+      {
+        "review_id": "e789712a4df3b25e",
+        "source_id": "PA010",
+        "source_title": "Regulation (EU) 2016/429 on transmissible animal diseases (Animal Health Law)",
+        "trigger": "DOWNLOAD_FAILURE",
+        "review_since": "2026-08-31",
+        "days_open": 0,
+        "severity": "OPEN",
+        "reason": "HTML content is too small: 0 bytes.",
+        "recommended_action": "Inspect the response and choose an alternative official retrieval method or manual import."
+      }
+    ]
+  }
+}

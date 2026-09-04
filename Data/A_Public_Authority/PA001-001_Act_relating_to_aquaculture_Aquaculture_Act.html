@@ -1,0 +1,716 @@
+
+<!DOCTYPE html
+>
+<html lang="no" class="no-js">
+
+<head>
+	
+	<!-- Le styles -->
+	<link href="/resources/css/bootstrap.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-block/ss-symbolicons-block.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-line/ss-symbolicons-line.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/feed/ss-feed-icons.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-standard/ss-standard.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-social-regular/ss-social.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/select2/select2.css?26-08-20-1607" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+	<!-- Modaal -->
+	<link rel="stylesheet" href="/resources/css/modaal.min.css">
+
+		<link href="/resources/css/app.css?26-08-20-1607" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<link href="/resources/css/ld-ie.css?26-08-20-1607" rel="stylesheet">
+	<![endif]-->
+		<link href="/resources/css/document/lovdata.document.gratis.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.tables.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.web.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.css?26-08-20-1607" rel="stylesheet">
+
+
+	<!-- Le scripts -->
+	<script src="/resources/js/jquery-3.7.1.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/mathjax/tex-mml-chtml.js?26-08-20-1607"></script>
+		<script>
+			var dev = false;
+		</script>
+		<!-- Plausible -->
+		<script defer data-domain="lovdata.no" src="https://plausible.io/js/plausible.js"></script>
+		<!-- End Plausible -->
+
+	<script src="/resources/js/modernizr.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/bootstrap.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/jquery.throttle.js?26-08-20-1607"></script>
+	<script src="/resources/js/jquery.form.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/json2.js?26-08-20-1607"></script>
+	<script src="/resources/js/jstorage.js?26-08-20-1607"></script>
+	<script src="/resources/select2/select2.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/app.js?26-08-20-1607"></script>
+		<script src="/resources/js/app-lovdata.js?26-08-20-1607"></script>
+	<script src="/resources/js/highlighter.js?26-08-20-1607"></script>
+	<!-- Modaal -->
+	<script src="/resources/js/modaal.min.js"></script>
+
+	<link rel="icon" href="/resources/img/logo/new/lovdata-logosymbol-stortingsrod.svg" type="image/svg+xml" sizes="16x16 32x32 48x48 64x64">
+	<link rel="apple-touch-icon-precomposed" href="/resources/img/logo/new/lovdata-logosymbol-stortingsrod.svg" type="image/svg+xml" sizes="152x152">
+
+	<meta charset="utf-8">
+	<title>Lov om akvakultur (akvakulturloven) - Lovdata</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="google-site-verification" content="ENJVlOsNC5zBiaC_PChgiRbBrUBjN6P-Owo6nwS9--Q"/>
+	<meta name="application-name" content="Lovdata"/>
+	<meta property="fb:admins" content="711945576, 714678011"/>
+		<meta name="robots" content="noodp">
+		<meta name="description" content="Akvakulturloven">
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:description" content="Akvakulturloven">
+		<meta name="twitter:site" content="@lovdata"/>
+		<meta name="twitter:title" content="Lov om akvakultur (akvakulturloven)"/>
+</head>
+
+	<body class="template-document">
+
+	<div aria-hidden="true" class="print-logo">
+		<img src="/resources/img/logo/new/lovdata-logo-primaer.svg" alt="Lovdata-logo"/>
+	</div>
+
+	<div id="skiplinks">
+		<a href="#main-content">Til hovedinnhold</a>
+	</div>
+
+<header>
+	<div class="ld-navbar" id="ld-navbar">
+
+		<a class="logo" href="/" aria-label="Til forsiden"></a>
+
+				<button class="open-search" aria-label="Åpne søk">
+			<i class="ss-icon ss-symbolicons-block" aria-hidden="true">&#x1F50D;</i>
+		</button>
+
+		<div class="middleContainer">
+			<a tabindex="0" role="button" aria-label="Åpne/lukk meny" class="menu_toggler" aria-expanded="false">
+				<span></span>
+			</a>
+
+			<form class="mainSearch" role="search" id="sok" action="/sok" METHOD="get">
+
+
+				<script>
+					document.addEventListener("DOMContentLoaded", function () {
+						const searchInput = document.getElementById("globSearch");
+						const form = document.querySelector("form");
+
+						form.addEventListener("submit", function () {
+							searchInput.classList.add("loading");
+						});
+
+						searchInput.addEventListener('keydown', event => { //Turn textarea into input.
+							if (event.code === 'Enter') {
+								event.preventDefault();
+								form.submit();
+								searchInput.classList.add("loading");
+							}
+						});
+					});
+
+					var searchInDocumentPlaceholder = '';
+					var searchInDocument = '';
+
+					// JavaScript function to monitor input and apply changes
+					document.addEventListener("DOMContentLoaded", function () {
+						const searchInput = document.getElementById("globSearch");
+						const form = document.getElementById("sok");
+						const wordCounter = document.getElementById("word-counter");
+						const freeSearchHelpText = document.getElementById("freesearch-help-text");
+						const bottomInfo = document.getElementById("search-bottom-info");
+
+						searchInput.placeholder = 'Søk med opp til fem søkeord eller skriv lengre for å gjøre et frisøk'
+
+						// Handle changes to the form class and action
+						searchInput.addEventListener("input", function () {
+							var startsWithQuote = (searchInput.value.startsWith("\"") || searchInput.value.startsWith("\'") || searchInput.value.startsWith("«"));
+							var blankSpaceCount = (searchInput.value.match(/ ./g) || []).length;
+							if (blankSpaceCount !== 0) {
+								blankSpaceCount += 1;
+							}
+
+							if (blankSpaceCount > 5 && !startsWithQuote) {
+								wordCounter.style.visibility = "visible"
+								searchInput.classList.add("expanded");
+
+								// Change the form action to "/frisok"
+								form.setAttribute("action", "/frisok");
+								form.setAttribute("method", "POST");
+								wordCounter.innerHTML = searchInput.value.length + "/500";
+								freeSearchHelpText.innerHTML = 'Nå gjør du et frisøk. Du kan stille et spørsmål, forklare en situasjon eller beskrive hva du leter etter.'
+								searchInput.classList.add("frisok-icon")
+							} else {
+								if (blankSpaceCount === 0) {
+									bottomInfo.style.display = "none"
+								} else {
+									bottomInfo.style.display = "flex"
+									wordCounter.innerHTML = blankSpaceCount + "/5";
+									freeSearchHelpText.innerHTML = 'Bruk mer enn fem søkeord for å gjøre et frisøk.'
+								}
+
+								searchInput.classList.remove("expanded");
+								searchInput.classList.remove("frisok-icon")
+
+								form.setAttribute("action", "/sok"); // Set the form action back to "/sok"
+								form.setAttribute("method", "GET");
+							}
+						});
+
+						const updateHeightOfSearchBox = () => {
+							var expandedSearchField = 0
+							searchInput.style.height = 'auto';
+							const newHeightOfInput = expandedSearchField + searchInput.scrollHeight;
+							searchInput.style.height = newHeightOfInput + 'px';
+						};
+						searchInput.addEventListener('input', updateHeightOfSearchBox);
+					});
+				</script>
+
+				<div class="search">
+					<label class="sr-only" for="globSearch">Søketekst</label>
+					<span class="search-box-container">
+						<div class="search-box-container-absolute">
+							<textarea class="search-input" type="text" id="globSearch" name="q"
+							
+							placeholder="Søk med opp til fem søkeord eller skriv lengre for å gjøre et frisøk"></textarea>
+							<div class="search-bottom-info" id="search-bottom-info">
+								<div class="freesearch-help-text" id="freesearch-help-text"></div>
+								<div class="word-counter" id="word-counter" title="Dersom du bruker mer enn fem søkeord vil du utføre et frisøk"></div>
+							</div>
+						</div>
+					</span>
+					<input type="submit" class="submit" value="Søk">
+					<div class="close-mobile-search">Avbryt</div>
+				</div>
+			</form>
+		</div>
+		<a class="pro-login" href="/pro&#x2f;NL&#x2f;lov&#x2f;2005-06-17-79" title="Logg inn"><span>Logg inn</span><i class="ss-icon ss-symbolicons-block">&#x1F512;</i></a>
+	</div>
+</header>
+	<nav aria-labelledby="menuHeader">
+		<h1 class="sr-only" id="menuHeader">Hovedmeny</h1>
+		<!-- Menu content -->
+		<div class="leftPanel">
+		<div class="left-menu" aria-hidden="true">
+			<div class="menu-item-container hidden">
+				<ul class="top-level-menu">
+					<li class="resIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl" aria-expanded="false">Rettskilder</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="lovIcon second-level-icon resources">
+								<div class="gmi-container leftIcon">
+									<a class="gliding-menu-item" href="/register/lover">Lover</a>
+								</div>
+							</li>
+							<li class="sntForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/forskrifter">Sentrale forskrifter mv.</a></div>
+							</li>
+							<li class="lokForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/lokaleForskrifter">Lokale forskrifter</a></div>
+							</li>
+							<li class="ltIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/lovtidend">Norsk Lovtidend</a></div>
+							</li>
+							<li class="storVedIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/stortingsvedtak">Stortingsvedtak</a></div>
+							</li>
+							<li class="eosIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/eosAvtalen">EØS-avtalen</a></div>
+							</li>
+							<li class="traIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/traktater">Norges traktater</a></div>
+							</li>
+							<li class="decIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/avgjørelser">Rettsavgjørelser</a></div>
+							</li>
+							<li class="trrIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/trygderetten">Trygderettssaker</a></div>
+							</li>
+							<li class="tarIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/tariffavtaler">Tariffavtaler</a></div>
+							</li>
+							<li class="htuIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/husleietvistutvalget">Husleietvistutvalget</a></div>
+							</li>
+							<li class="sphIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/sph">Statens Personalhåndbok</a></div>
+							</li>
+							<li class="lovIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/loverEngelsk">Translated acts</a></div>
+							</li>
+							<li class="sntForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/forskrifterEngelsk">Translated regulations</a></div>
+							</li>
+							<li class="decIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/avgjørelserEngelsk">Translated decisions</a></div>
+							</li>
+						</ul>
+					</li>
+					<li class="servIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl">Tjenester</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="proIcon second-level-icon">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://pro.lovdata.no">Lovdata Pro</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="https://www.europalov.no">Europalov.no</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/api">API</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/rss">RSS-feed</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/eli">ELI (beta)</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/publikasjoner">E-publikasjoner</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/tjenester/tidsskrift">Tidsskrifter</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="https://hjelp.lovdata.no/article/170-sokeoppdrag-og-utskrifter">Søkeoppdrag</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="http://hjelp.lovdata.no/article/97-kursinformasjon">Kurs</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/eksamen">Eksamen</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/landslov">Landsloven</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/22juli">22. juli-saken</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/advokater">Advokatoversikt</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/lenker">Lenker</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="infIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl">Om Lovdata</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/om_lovdata">Generell informasjon</a></div>
+							</li>
+							<li>
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/brukeravtale">Brukeravtale</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/redaktoransvar">Redaktøransvar</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/kontakt">Kontakt oss</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/milopolicy">Miljøpolicy</a></div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="top-level-menu">
+					<li class="menuItm grlIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item grl" href="https://grunnloven.lovdata.no">Grunnloven</a></div>
+					</li>
+					<li class="menuItm cookIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/info/personvern">Personvern</a></div>
+					</li>
+					<li class="menuItm linkedinIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.linkedin.com/company/lovdata/">Linkedin</a></div>
+					</li>
+					<li class="menuItm twitIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.twitter.com/lovdata">Twitter</a></div>
+					</li>
+					<li class="menuItm faceIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.facebook.com/lovdata">Facebook</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</nav>
+
+<main id="main-content" class="docMain">
+
+
+	<script type="text/javascript">
+		var documentURL = "/dokument/NL/lov/2005-06-17-79";
+	</script>
+
+	<section aria-labelledby="toolHeader">
+		<h1 class="sr-only" id="toolHeader">Verktøylinje</h1>
+		<div class="fixed-header">
+			<div class="dropdown-wrap">
+				<div class="bgcDoc">
+					<p aria-hidden="true">Lov om akvakultur (akvakulturloven)</p>
+				</div>
+			</div>
+			<a class="open-meta-list open-meta-list-dropdown"><i class="ss-icon  ss-symbolicons-block">&#xEE00;</i></a>
+			<ul class="meta-list">
+						<li class="innholdsfortegnelse-parent-li">
+							<a role="button" tabindex="0" class="innholdsfortegnelse-parent " data-placement="bottom" title="Innholdsfortegnelse" aria-expanded="false"><i aria-hidden="true" class="ss-icon ss-symbolicons-block">&#xED50;</i><span class="text">Innholdsfortegnelse</span><i aria-hidden="true" class="ss-icon ss-standard navigatedown">&#xF501;</i><i aria-hidden="true" class="ss-icon ss-standard navigateup">&#xF500;</i></a>
+						</li>
+						<li>
+							<a class="lovens-forskrifter" data-placement="bottom" title="Lovens forskrifter" href="/referanse/hjemmel?dokID=NL/lov/2005-06-17-79">
+								<i aria-hidden="true" class="ss-icon ss-feed">&#63232;</i>
+								<span class="text">Lovens forskrifter</span></a>
+						</li>
+				<li>
+					<a role="button" aria-label="Skriv ut" href="javascript:print()" class="tooltip-parent" data-toggle="tooltip" data-placement="bottom" title="Skriv ut"><i aria-hidden="true" class="ss-icon ss-symbolicons-block">&#x2399;</i></a>
+				</li>
+						<li>
+							<a role="button" tabindex="0" aria-label="Del dokument" class="tooltip-parent share-dokument" data-toggle="tooltip" data-placement="bottom" title="Del dokument" data-id="https://lovdata.no/lov/2005-06-17-79"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i></a>
+						</li>
+			</ul>
+			<ul class="meta-list-dropdown">
+						<li class="mobile-only"><a href="/referanse/hjemmel?dokID=NL/lov/2005-06-17-79"><i aria-hidden="true" class="ss-icon ss-feed">
+									&#63232;</i>Lovens forskrifter</a></li>
+				<li class="mobile-only"><a><i class="ss-icon ss-symbolicons-block">&#x2399;</i>Skriv ut</a></li>
+						<li><a tabindex="0" role="button" class="share-dokument" data-id="https://lovdata.no/lov/2005-06-17-79"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i>Del dokument</a></li>
+			</ul>
+		</div>
+
+				<div class="innholdsfortegnelse-child " aria-hidden="true">
+					<p class="instruction sr-only" tabindex="-1">Trykk Escape for å lukke innholdsfortegnelse</p>
+					<div class="search-in-innholdsfortegnelse">
+						<label for="innhSearch">Søk i innholdsfortegnelse <span class="sr-only">(listen oppdateres idet du skriver)</span></label>
+						<input type="text" class="form-control" placeholder="Skriv søketekst her ..." id="innhSearch">
+					</div>
+					<div class="scroll">
+						<ul class="document-index" id="innhdocview document-index">
+							<li class="document-index-item"><a href="/dokument/NL/lov/2005-06-17-79">Akvakulturloven</a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_1#KAPITTEL_1" data-target="KAPITTEL_1">Kapittel I. Formål og virkeområde (§§ 1 - 3) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A71#%C2%A71" data-target="%C2%A71">§ 1. Formål </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A72#%C2%A72" data-target="%C2%A72">§ 2. Saklig virkeområde </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A73#%C2%A73" data-target="%C2%A73">§ 3. Geografisk virkeområde </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_2#KAPITTEL_2" data-target="KAPITTEL_2">Kapittel II. Akvakulturtillatelse (§§ 4 - 9) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A74#%C2%A74" data-target="%C2%A74">§ 4. Krav om akvakulturtillatelse </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A75#%C2%A75" data-target="%C2%A75">§ 5. Akvakulturtillatelsens innhold </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A76#%C2%A76" data-target="%C2%A76">§ 6. Generelle vilkår for tildeling av akvakulturtillatelse </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A77#%C2%A77" data-target="%C2%A77">§ 7. Særlig om akvakulturtillatelse til laks, ørret og regnbueørret </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A78#%C2%A78" data-target="%C2%A78">§ 8. Samordning i saker om etablering av akvakultur </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A79#%C2%A79" data-target="%C2%A79">§ 9. Tilpasning av produksjon av hensyn til miljøet, og endring og tilbaketrekking av akvakulturtillatelse </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_3#KAPITTEL_3" data-target="KAPITTEL_3">Kapittel III. Miljøhensyn (§§ 10 - 14) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A710#%C2%A710" data-target="%C2%A710">§ 10. Miljønorm </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A711#%C2%A711" data-target="%C2%A711">§ 11. Miljøovervåking </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A712#%C2%A712" data-target="%C2%A712">§ 12. Krav til vare- og tjenesteprodusenter, innretninger, utstyr mv. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A713#%C2%A713" data-target="%C2%A713">§ 13. Oppryddings- og gjenfangstplikt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A713a#%C2%A713a" data-target="%C2%A713a">§ 13 a. Fellesansvar for fjerning av rømte organismer </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A714#%C2%A714" data-target="%C2%A714">§ 14. Beskyttelse av bestemte områder </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_4#KAPITTEL_4" data-target="KAPITTEL_4">Kapittel IV. Arealutnyttelse (§§ 15 - 17) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A715#%C2%A715" data-target="%C2%A715">§ 15. Forholdet til arealplaner og vernetiltak </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A716#%C2%A716" data-target="%C2%A716">§ 16. Interesseavveining ved arealbruk til akvakultur </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A717#%C2%A717" data-target="%C2%A717">§ 17. Utnytting og bruk av lokaliteter mv. </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_5#KAPITTEL_5" data-target="KAPITTEL_5">Kapittel V. Registrering, overføring og pantsettelse av akvakulturtillatelse (§§ 18 - 20) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A718#%C2%A718" data-target="%C2%A718">§ 18. Registrering av akvakulturtillatelse </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A719#%C2%A719" data-target="%C2%A719">§ 19. Overføring av akvakulturtillatelse </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A720#%C2%A720" data-target="%C2%A720">§ 20. Pantsettelse av akvakulturtillatelse </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_6#KAPITTEL_6" data-target="KAPITTEL_6">Kapittel VI. Generelle krav og forpliktelser (§§ 21 - 26) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A721#%C2%A721" data-target="%C2%A721">§ 21. Tilsyn </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A722#%C2%A722" data-target="%C2%A722">§ 22. Faglig kompetanse </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A722a#%C2%A722a" data-target="%C2%A722a">§ 22 a. Lønnsvilkår på skip </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A723#%C2%A723" data-target="%C2%A723">§ 23. Systematiske kontrolltiltak </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A724#%C2%A724" data-target="%C2%A724">§ 24. Opplysnings- og undersøkelsesplikt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A725#%C2%A725" data-target="%C2%A725">§ 25. Bistandsplikt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A725a#%C2%A725a" data-target="%C2%A725a">§ 25 a. Utveksling av opplysninger mellom myndigheter </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A726#%C2%A726" data-target="%C2%A726">§ 26. Gebyr og avgift </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_7#KAPITTEL_7" data-target="KAPITTEL_7">Kapittel VII. Reaksjoner og sanksjoner ved overtredelse (§§ 27 - 31 a) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A727#%C2%A727" data-target="%C2%A727">§ 27. Pålegg om tiltak </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A728#%C2%A728" data-target="%C2%A728">§ 28. Tvangsmulkt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A729#%C2%A729" data-target="%C2%A729">§ 29. Iverksetting av tiltak for den ansvarliges regning </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A729a#%C2%A729a" data-target="%C2%A729a">§ 29 a. Administrativ inndragning av utbytte </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A730#%C2%A730" data-target="%C2%A730">§ 30. Overtredelsesgebyr </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A731#%C2%A731" data-target="%C2%A731">§ 31. Straff </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A731a#%C2%A731a" data-target="%C2%A731a">§ 31 a. Samordning av tilsyn og reaksjoner i saker om akvakultur </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_8#KAPITTEL_8" data-target="KAPITTEL_8">Kapittel VIII. Avsluttende bestemmelser (§§ 32 - 36) </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A732#%C2%A732" data-target="%C2%A732">§ 32. Ikrafttredelse </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A733#%C2%A733" data-target="%C2%A733">§ 33. Overgangsbestemmelser </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A733a#%C2%A733a" data-target="%C2%A733a">§ 33 a. Søksmålsfrist </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A734#%C2%A734" data-target="%C2%A734">§ 34. (Opphevet) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A735#%C2%A735" data-target="%C2%A735">§ 35. Oppheving av andre lover </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/2005-06-17-79/%C2%A736#%C2%A736" data-target="%C2%A736">§ 36. Endringer i andre lover </a>
+
+											</ul>
+						</li>
+						</ul>
+
+						<div class="empty">Ditt søk ga dessverre ingen treff.</div>
+					</div>
+
+				</div>
+	</section>
+
+
+	<div class="outer-main-content ">
+		<div class="lt-inner-main-content main-content" > 
+			<div class="header inner-max-width">
+				<p class="hjemmel small gray"></p>
+			</div>
+
+			<div id="map" class="map"></div>
+
+<div id="maincolOneColumn"><div id="lovdataDocument" class=" commentWidget desktop"><div class="lt-ajour-varsel"><a class="reference btn btn-default" href="/LTI/lov/2005-06-17-79">➦ Gå til opprinnelig kunngjort versjon</a></div><div class=" metaWrapper" id="documentMeta"><table style="width:100%" class="metaTitle"><tr><td class="metaTitleEmblem mediumIcons lightgray"></td><td class="metaTitleText"><h1>Lov om akvakultur (akvakulturloven)</h1></td></tr></table><table class=" meta" style="width:100%"><tbody><tr class="odd"><th class=" metafieldLabel">Dato</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_dato">LOV-2005-06-17-79</td></tr><tr class="even"><th class=" metafieldLabel">Departement</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_departement">Nærings- og fiskeridepartementet</td></tr><tr class="odd"><th class=" metafieldLabel">Sist endret</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_endret"><a data-id="lov/2025-06-20-109" class=" reference" href="/lov/2025-06-20-109">LOV-2025-06-20-109</a> fra 01.01.2026</td></tr><tr class="even"><th class=" metafieldLabel">Ikrafttredelse</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_ikraft">01.01.2006</td></tr><tr class="odd"><th class=" metafieldLabel">Endrer</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_endrer"><a data-id="lov/1985-06-14-68" class=" reference" href="/lov/1985-06-14-68">LOV-1985-06-14-68</a>, <a data-id="lov/2000-12-21-118" class=" reference" href="/lov/2000-12-21-118">LOV-2000-12-21-118</a></td></tr><tr class="even"><th class=" metafieldLabel">Kunngjort</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_kunngjort">17.06.2005</td></tr><tr class="odd"><th class=" metafieldLabel">Rettet</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_rettet">24.08.2021 (faglige fotnoter fjernet, UU-tilpasset)</td></tr><tr class="even"><th class=" metafieldLabel">Korttittel</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_korttittel">Akvakulturloven</td></tr></tbody></table></div><div class="metaBottom"></div><hr class="red"/><div class="dokument-intro snl-summary"><h2>Kort om loven</h2><div>
+ <p class="snl-lastchanged">Sist endret 22.03.2024</p>
+ <p>Akvakulturloven er en norsk lov som regulerer produksjonen av vannlevende dyr og planter, også kalt akvakultur. Loven gir vilkår for å få tillatelse til å bedrive akvakultur og fastslår at dette skal drives på en miljømessig forsvarlig måte. Nærings- og fiskeridepartementet kan ifølge loven gi nærmere regler for å sikre at miljøet blir ivaretatt. Lovens formål er å fremme akvakulturnæringens lønnsomhet samtidig som man sikrer en bærekraftig utvikling.</p>
+ <p>Bakgrunnen for loven var at akvakulturnæringen på slutten av 1900-tallet endret seg. Mens akvakultur tidligere hovedsaklig handlet om fiskeoppdrett, som var regulert i den daværende fiskeoppdrettsloven, gjorde utviklingen av andre ulike produksjonstyper at man nå trengte en lovgivning som regulerte alle former for akvakultur. I tillegg ønsket man å i større grad ta hensyn til miljøet. Det var derfor behov for en ny, mer omfattende og miljøorientert lov som kunne erstatte fiskeoppdrettsloven, og resultatet ble akvakulturloven.</p>
+ <p class="snl-readmore"><a href="https://snl.no/akvakulturloven" target="_blank" rel="noopener" class="snl-anchor">Les mer i Store norske leksikon</a>.</p>
+</div></div><hr class="red"/><div class="chapter-index"><span class="chapter-index-title">Kapitteloversikt:</span><br/><ul class="chapter-index"><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_1" href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_1#KAPITTEL_1">Kapittel I. Formål og virkeområde (§§ 1 - 3)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_2" href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_2#KAPITTEL_2">Kapittel II. Akvakulturtillatelse (§§ 4 - 9)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_3" href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_3#KAPITTEL_3">Kapittel III. Miljøhensyn (§§ 10 - 14)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_4" href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_4#KAPITTEL_4">Kapittel IV. Arealutnyttelse (§§ 15 - 17)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_5" href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_5#KAPITTEL_5">Kapittel V. Registrering, overføring og pantsettelse av akvakulturtillatelse (§§ 18 - 20)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_6" href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_6#KAPITTEL_6">Kapittel VI. Generelle krav og forpliktelser (§§ 21 - 26)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_7" href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_7#KAPITTEL_7">Kapittel VII. Reaksjoner og sanksjoner ved overtredelse (§§ 27 - 31 a)</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_8" href="/dokument/NL/lov/2005-06-17-79/KAPITTEL_8#KAPITTEL_8">Kapittel VIII. Avsluttende bestemmelser (§§ 32 - 36)</a></li></ul></div><hr class="red"/><div id="documentBody"><a class="namedAnchor" name="kapI"></a><a class="namedAnchor" name="kapi"></a><div data-level="1" data-id="KAPITTEL_1" data-refID="kapI" class="morTag_b kapittel" id="KAPITTEL_1"><h2 class="  ">Kapittel I. Formål og virkeområde</h2><a class="documentPart_scrollMargin" name="§1"></a><a name="PARAGRAF_1"></a><div data-id="PARAGRAF_1" class="morTag_p paragraf" id="PARAGRAF_1"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 1.</span><span class=" paragrafTittel "><em class=" ">Formål</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Loven skal fremme akvakulturnæringens lønnsomhet og konkurransekraft innenfor rammene av en bærekraftig utvikling, og bidra til verdiskaping på kysten.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§1" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§2"></a><a name="PARAGRAF_2"></a><div data-id="PARAGRAF_2" class="morTag_p paragraf" id="PARAGRAF_2"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 2.</span><span class=" paragrafTittel "><em class=" ">Saklig virkeområde</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Loven gjelder produksjon av akvatiske organismer (akvakultur). Med akvatiske organismer forstås vannlevende dyr og planter. Som produksjon regnes ethvert tiltak for å påvirke levende akvatiske organismers vekt, størrelse, antall, egenskaper eller kvalitet. I tvilstilfeller kan departementet i enkeltvedtak eller forskrift bestemme hva som anses som akvakultur.</p><p data-uid="0" class="morTag_a avsnitt">Loven gjelder også anlegg ment for akvakultur, herunder anlegg uten akvatiske organismer.</p><p data-uid="0" class="morTag_a avsnitt"><a data-id="lov/2005-06-17-79/§12" class=" reference" href="/lov/2005-06-17-79/%C2%A712">Lovens § 12</a> og kapittel VI til VIII gjelder også for vare- og tjenesteproduksjon til akvakulturnæringen.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift bestemme at aktiviteter som nevnt i første til tredje ledd ikke skal omfattes av hele eller deler av loven.</p><p data-uid="0" class="morTag_a avsnitt">Produksjon av anadrome laksefisk og innlandsfisk til kultiveringsformål reguleres av <a data-id="lov/1992-05-15-47" class=" reference" href="/lov/1992-05-15-47">lov 15. mai 1992 nr. 47</a> om laksefisk og innlandsfisk m.v.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§2" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§3"></a><a name="PARAGRAF_3"></a><div data-id="PARAGRAF_3" class="morTag_p paragraf" id="PARAGRAF_3"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 3.</span><span class=" paragrafTittel "><em class=" ">Geografisk virkeområde</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Denne loven gjelder:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">på landterritoriet og i territorialfarvannet,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">i jurisdiksjonsområder etablert i medhold av <a data-id="lov/1976-12-17-91" class=" reference" href="/lov/1976-12-17-91">lov 17. desember 1976 nr. 91</a> om Norges økonomiske sone, og</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">på kontinentalsokkelen.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Loven gjelder ikke på Svalbard og Jan Mayen. Kongen kan gi forskrift om at loven helt eller delvis skal gjelde på Svalbard og Jan Mayen og kan fastsette nærmere bestemmelser av hensyn til de stedlige forhold, herunder bestemmelser som fraviker bestemmelser i denne lov.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§3" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kapII"></a><a class="namedAnchor" name="kapii"></a><div data-level="1" data-id="KAPITTEL_2" data-refID="kapII" class="morTag_b kapittel" id="KAPITTEL_2"><h2 class="  ">Kapittel II. Akvakulturtillatelse</h2><a class="documentPart_scrollMargin" name="§4"></a><a name="PARAGRAF_4"></a><div data-id="PARAGRAF_4" class="morTag_p paragraf" id="PARAGRAF_4"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 4.</span><span class=" paragrafTittel "><em class=" ">Krav om akvakulturtillatelse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi tillatelse til å drive akvakultur (akvakulturtillatelse) etter <a data-id="lov/2005-06-17-79/§6" class=" reference" href="/lov/2005-06-17-79/%C2%A76">§§ 6</a> og 7. Slik tillatelse kan også erverves ved overføring etter <a data-id="lov/2005-06-17-79/§19" class=" reference" href="/lov/2005-06-17-79/%C2%A719">§ 19</a>.</p><p data-uid="0" class="morTag_a avsnitt">Ingen kan drive akvakultur uten å være registrert som innehaver av akvakulturtillatelse i akvakulturregisteret, jf. <a data-id="lov/2005-06-17-79/§18" class=" reference" href="/lov/2005-06-17-79/%C2%A718">§ 18</a> første ledd.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§4" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§5"></a><a name="PARAGRAF_5"></a><div data-id="PARAGRAF_5" class="morTag_p paragraf" id="PARAGRAF_5"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 5.</span><span class=" paragrafTittel "><em class=" ">Akvakulturtillatelsens innhold</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Akvakulturtillatelsen gir rett til produksjon av bestemte arter på avgrensede geografiske områder (lokaliteter), med de til enhver tid fastsatte begrensninger av tillatelsens omfang.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i enkeltvedtak eller forskrift gi nærmere bestemmelser om innholdet i akvakulturtillatelser, herunder omfang, avgrensing i tid mv.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§5" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§6"></a><a name="PARAGRAF_6"></a><div data-id="PARAGRAF_6" class="morTag_p paragraf" id="PARAGRAF_6"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 6.</span><span class=" paragrafTittel "><em class=" ">Generelle vilkår for tildeling av akvakulturtillatelse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet kan etter søknad gi tillatelse til akvakultur dersom:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">det er miljømessig forsvarlig,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">kravene i <a data-id="lov/2005-06-17-79/§15" class=" reference" href="/lov/2005-06-17-79/%C2%A715">§ 15</a> om forholdet til arealplaner og vernetiltak er oppfylt,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">avveiningen av arealinteresser etter <a data-id="lov/2005-06-17-79/§16" class=" reference" href="/lov/2005-06-17-79/%C2%A716">§ 16</a> er foretatt, og</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">det er gitt tillatelser som kreves etter:</td></tr></table><table data-level="2" class="morTag_nn leftMargin_2 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="2" class="morTag_nn leftMargin_2 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent10">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft"><a data-id="lov/2003-12-19-124" class=" reference" href="/lov/2003-12-19-124">lov 19. desember 2003 nr. 124</a> om matproduksjon og mattrygghet m.v.,</td></tr></table><table data-level="2" class="morTag_nn leftMargin_2 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="2" class="morTag_nn leftMargin_2 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent10">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft"><a data-id="lov/1981-03-13-6" class=" reference" href="/lov/1981-03-13-6">lov 13. mars 1981 nr. 6</a> om vern mot forurensning og om avfall,</td></tr></table><table data-level="2" class="morTag_nn leftMargin_2 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="2" class="morTag_nn leftMargin_2 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent10">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">havne- og farvannsloven, og</td></tr></table><table data-level="2" class="morTag_nn leftMargin_2 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="2" class="morTag_nn leftMargin_2 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent10">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft"><a data-id="lov/2000-11-24-82" class=" reference" href="/lov/2000-11-24-82">lov 24. november 2000 nr. 82</a> om vassdrag og grunnvann.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om tildeling av akvakulturtillatelse, herunder krav til søknad og kriterier for innvilgelse av søknad og gi nærmere bestemmelser om hvilke søknader som skal behandles av fylkeskommunene.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om hel eller delvis stans i tildeling for bestemte arter i bestemte tidsperioder eller geografiske områder, herunder om at søknader skal behandles i tildelingsrunder på bestemte tidspunkt.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2009-06-19-61" class=" reference" href="/LTI/lov/2009-06-19-61">lover 19 juni 2009 nr. 61</a> (ikr. 1 juli 2009 iflg. <a data-id="forskrift/2009-06-19-695" class=" reference" href="/LTI/forskrift/2009-06-19-695">res. 19 juni 2009 nr. 695</a>), <a data-id="lov/2009-01-09-4" class=" reference" href="/LTI/lov/2009-01-09-4">9 jan 2009 nr. 4</a> (ikr. 1 jan 2010), <a data-id="lov/2009-04-17-19" class=" reference" href="/LTI/lov/2009-04-17-19">17 apr 2009 nr. 19</a> (ikr. 1 jan 2010 iflg. <a data-id="forskrift/2009-12-04-1456" class=" reference" href="/LTI/forskrift/2009-12-04-1456">res. 4 des 2009 nr. 1456</a>), <a data-id="lov/2019-06-21-70" class=" reference" href="/LTI/lov/2019-06-21-70">21 juni 2019 nr. 70</a> (ikr. 1 jan 2020 iflg. <a data-id="forskrift/2019-06-21-872" class=" reference" href="/LTI/forskrift/2019-06-21-872">res. 21 juni 2019 nr. 872</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§6" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§7"></a><a name="PARAGRAF_7"></a><div data-id="PARAGRAF_7" class="morTag_p paragraf" id="PARAGRAF_7"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 7.</span><span class=" paragrafTittel "><em class=" ">Særlig om akvakulturtillatelse til laks, ørret og regnbueørret</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">For tildeling av tillatelse til produksjon av laks, ørret og regnbueørret kan departementet gi forskrift om:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">antall tillatelser som skal tildeles,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">geografisk fordeling av tillatelser,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">prioriteringskriterier,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">utvelgelse av kvalifiserte søkere i henhold til prioriteringskriteriene i bokstav c, herunder trekning mv., og</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">e.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">vederlag for tildeling av tillatelser.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om vederlag for utvidelse av gjeldende tillatelse.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift bestemme hvor stor andel av produksjonskapasiteten et foretak kan kontrollere, herunder hvilke vilkår som skal gjelde for kontroll med en gitt andel mv.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan i forskrift gi bestemmelser om tilpasning av produksjonen av laks, ørret og regnbueørret.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2009-12-18-136" class=" reference" href="/LTI/lov/2009-12-18-136">lover 18 des 2009 nr. 136</a> (ikr. 1 jan 2010), <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§7" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§8"></a><a name="PARAGRAF_8"></a><div data-id="PARAGRAF_8" class="morTag_p paragraf" id="PARAGRAF_8"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 8.</span><span class=" paragrafTittel "><em class=" ">Samordning i saker om etablering av akvakultur</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Myndighetene etter denne lov, lovene nevnt i <a data-id="lov/2005-06-17-79/§6" class=" reference" href="/lov/2005-06-17-79/%C2%A76">§ 6</a> første ledd bokstav d og kommunen, herunder som plan- og bygningsmyndighet, plikter å foreta en effektiv og samordnet søknadsbehandling.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om samordning av søknadsbehandlingen, herunder fastsette tidsfrister for behandling av søknader.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§8" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§9"></a><a name="PARAGRAF_9"></a><div data-id="PARAGRAF_9" class="morTag_p paragraf" id="PARAGRAF_9"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 9.</span><span class=" paragrafTittel "><em class=" ">Tilpasning av produksjon av hensyn til miljøet, og endring og tilbaketrekking av akvakulturtillatelse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet kan endre eller trekke tilbake akvakulturtillatelsen:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">dersom dette er nødvendig ut fra hensynet til miljøet,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">dersom vesentlige forutsetninger som ligger til grunn for tillatelsen er endret,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">ved grov eller gjentatt overtredelse av bestemmelser gitt i eller i medhold av denne loven,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">dersom tillatelsen ikke benyttes eller bare benyttes i begrenset grad, eller</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">e.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">dersom en eller flere nødvendige tillatelser gitt i medhold av lovene nevnt i <a data-id="lov/2005-06-17-79/§6" class=" reference" href="/lov/2005-06-17-79/%C2%A76">§ 6</a> første ledd bokstav d er bortfalt.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Endring og tilbaketrekking av tillatelse etter første ledd kan gjøres tidsbegrenset. Tidsbegrenset endring og tilbaketrekking kan gjøres betinget av at bestemte forhold utbedres eller endres.</p><p data-uid="0" class="morTag_a avsnitt">Dersom det er nødvendig ut fra hensynet til miljøet, kan departementet i forskrift endre tillatelsers omfang og redusere muligheten til å utnytte tillatelser innenfor ett eller flere nærmere angitte områder.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om endring og tilbaketrekking av akvakulturtillatelser.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2019-06-21-64" class=" reference" href="/LTI/lov/2019-06-21-64">lov 21 juni 2019 nr. 64</a> (ikr. 1 juli 2019 iflg. <a data-id="forskrift/2019-06-21-859" class=" reference" href="/LTI/forskrift/2019-06-21-859">res. 21 juni 2019 nr. 859</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§9" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kapIII"></a><a class="namedAnchor" name="kapiii"></a><div data-level="1" data-id="KAPITTEL_3" data-refID="kapIII" class="morTag_b kapittel" id="KAPITTEL_3"><h2 class="  ">Kapittel III. Miljøhensyn</h2><a class="documentPart_scrollMargin" name="§10"></a><a name="PARAGRAF_10"></a><div data-id="PARAGRAF_10" class="morTag_p paragraf" id="PARAGRAF_10"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 10.</span><span class=" paragrafTittel "><em class=" ">Miljønorm</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Akvakultur skal etableres, drives og avvikles på en miljømessig forsvarlig måte.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i enkeltvedtak eller forskrift gi nærmere bestemmelser for å sikre miljømessig forsvarlig akvakultur, herunder stille krav til forebyggende tiltak, krav om merking av akvatiske organismer, bruk av akvatiske organismer som ikke kan formere seg og bruk av fremmede organismer.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§10" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§11"></a><a name="PARAGRAF_11"></a><div data-id="PARAGRAF_11" class="morTag_p paragraf" id="PARAGRAF_11"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 11.</span><span class=" paragrafTittel "><em class=" ">Miljøovervåking</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet kan i enkeltvedtak eller forskrift kreve at den som har eller søker om akvakulturtillatelse skal foreta eller bekoste nødvendige miljøundersøkelser for å dokumentere miljøtilstanden innenfor lokalitetens influensområde ved etablering, drift og avvikling av akvakultur.</p><p data-uid="0" class="morTag_a avsnitt">Miljøundersøkelser etter denne bestemmelsen kan blant annet omfatte undersøkelser for å klarlegge om og hvordan akvakulturvirksomheten forårsaker, har forårsaket eller kan forårsake påvirkning på miljøet.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrift om gebyr og avgift for gjennomføring av miljøundersøkelser i regi av det offentlige. Skyldig gebyr og avgift er tvangsgrunnlag for utlegg.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§11" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§12"></a><a name="PARAGRAF_12"></a><div data-id="PARAGRAF_12" class="morTag_p paragraf" id="PARAGRAF_12"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 12.</span><span class=" paragrafTittel "><em class=" ">Krav til vare- og tjenesteprodusenter, innretninger, utstyr mv.</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Vare- og tjenesteprodusenter til akvakulturnæringen skal utføre sine oppdrag og tjenester på en miljømessig forsvarlig måte. Departementet kan i forskrift gi nærmere bestemmelser for å sikre forsvarlig gjennomføring av aktiviteter utført av vare- og tjenesteprodusenter.</p><p data-uid="0" class="morTag_a avsnitt">Innretninger og utstyr som nyttes til aktiviteter som omfattes av denne lov skal være forsvarlig utformet, ha forsvarlige egenskaper og brukes med nødvendig aktsomhet.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrift om krav til tilvirkning, bruk og egenskaper ved innretninger og utstyr som nevnt i annet ledd, herunder fastsette godkjennings- og sertifiseringsordninger.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§12" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§13"></a><a name="PARAGRAF_13"></a><div data-id="PARAGRAF_13" class="morTag_p paragraf" id="PARAGRAF_13"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 13.</span><span class=" paragrafTittel "><em class=" ">Oppryddings- og gjenfangstplikt</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Den som driver akvakultur skal ved helt eller delvis opphør av produksjonen foreta opprydding på lokaliteten og tilstøtende områder, herunder fjerning av organismer, innretninger og utstyr mv.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i enkeltvedtak eller forskrift gi bestemmelser om at den som driver akvakultur har plikt til gjenfangst av den utsatte art.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrift om plikt til å stille sikkerhet for oppryddings- og gjenfangstplikten etter første og annet ledd.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrift om avgiftsordning for å sikre gjennomføring av oppryddings- og gjenfangstplikten. Fastsatt avgift er tvangsgrunnlag for utlegg.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§13" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§13a"></a><a name="PARAGRAF_13a"></a><div data-id="PARAGRAF_13a" class="morTag_p paragraf" id="PARAGRAF_13a"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 13 a.</span><span class=" paragrafTittel "><em class=" ">Fellesansvar for fjerning av rømte organismer</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Innehaver av akvakulturtillatelse plikter å delta i en sammenslutning opprettet av departementet og å betale avgift til sammenslutningen.</p><p data-uid="0" class="morTag_a avsnitt">Sammenslutningen skal, med de begrensninger som er fastsatt i forskrift, dekke utgifter det offentlige eller private har med fjerning av organismer som har rømt eller på annen uønsket måte har spredt seg fra en lokalitet for akvakultur. Sammenslutningen skal også dekke utgifter til fjerning av organismer som innehaver av tillatelse er pliktig til å dekke etter <a data-id="lov/2005-06-17-79/§13" class=" reference" href="/lov/2005-06-17-79/%C2%A713">§ 13</a>, dersom den ansvarlige er ukjent. Dersom den rømte akvatiske organismen kan spores tilbake til en innehaver av akvakulturtillatelse, kan sammenslutningen kreve regress hos den ansvarlige.</p><p data-uid="0" class="morTag_a avsnitt">Innehavere av akvakulturtillatelse svarer én for alle og alle for én på objektivt grunnlag for sammenslutningens utgifter.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om sammenslutningens ikrafttreden, organisering og virksomhet, herunder om unntak fra plikten til medlemskap, årlig avgift for deltakelse i sammenslutningen og tilleggsinnbetalinger, begrensninger i ansvaret etter annet og tredje ledd og utbetaling.</p><p data-uid="0" class="morTag_a avsnitt">Manglende innbetaling av avgift for deltakelse i sammenslutningen er tvangsgrunnlag for utlegg.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2014 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§13a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§14"></a><a name="PARAGRAF_14"></a><div data-id="PARAGRAF_14" class="morTag_p paragraf" id="PARAGRAF_14"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 14.</span><span class=" paragrafTittel "><em class=" ">Beskyttelse av bestemte områder</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet kan fastsette forbud mot, pålegge flytting av eller sette andre vilkår for akvakultur dersom dette er nødvendig for å bevare områder med særlig verdi for akvatiske organismer.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§14" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kapIV"></a><a class="namedAnchor" name="kapiv"></a><div data-level="1" data-id="KAPITTEL_4" data-refID="kapIV" class="morTag_b kapittel" id="KAPITTEL_4"><h2 class="  ">Kapittel IV. Arealutnyttelse</h2><a class="documentPart_scrollMargin" name="§15"></a><a name="PARAGRAF_15"></a><div data-id="PARAGRAF_15" class="morTag_p paragraf" id="PARAGRAF_15"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 15.</span><span class=" paragrafTittel "><em class=" ">Forholdet til arealplaner og vernetiltak</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Tillatelse til akvakultur kan ikke gis i strid med:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">vedtatte arealplaner etter <a data-id="lov/2008-06-27-71" class=" reference" href="/lov/2008-06-27-71">plan- og bygningsloven</a>,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">vedtatte vernetiltak etter <a data-id="lov/2009-06-19-100/kapV" class=" reference" href="/lov/2009-06-19-100/kapV">kapittel V i lov 19. juni 2009 nr. 100 om forvaltning av naturens mangfold</a>,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">vedtatte vernetiltak etter <a data-id="lov/1978-06-09-50" class=" reference" href="/lov/1978-06-09-50">lov 9. juni 1978 nr. 50 om kulturminner</a>, eller</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">vedtatte vernetiltak etter <a data-id="lov/2025-06-10-33" class=" reference" href="/lov/2025-06-10-33">lov 10. juni 2025 nr. 33 om vern av marin natur utenfor territorialfarvannet</a>.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Tillatelse til akvakultur kan likevel gis dersom det foreligger samtykke fra vedkommende plan- eller vernemyndighet.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2009-06-19-100" class=" reference" href="/LTI/lov/2009-06-19-100">lover 19 juni 2009 nr. 100</a> (ikr. 1 juli 2009 iflg. <a data-id="forskrift/2009-06-19-704" class=" reference" href="/LTI/forskrift/2009-06-19-704">res. 19 juni 2009 nr. 704</a>), <a data-id="lov/2008-06-27-71" class=" reference" href="/LTI/lov/2008-06-27-71">27 juni 2008 nr. 71</a> (ikr. 1 juli 2010 iflg. <a data-id="forskrift/2010-06-18-896" class=" reference" href="/LTI/forskrift/2010-06-18-896">res. 18 juni 2010 nr. 896</a>, endring endret ved <a data-id="lov/2009-05-08-27" class=" reference" href="/LTI/lov/2009-05-08-27">lov 8 mai 2009 nr. 27</a>), <a data-id="lov/2025-06-10-33" class=" reference" href="/LTI/lov/2025-06-10-33">10 juni 2025 nr. 33</a> (i kraft 1 jan 2026 iflg. <a data-id="forskrift/2025-06-10-966" class=" reference" href="/LTI/forskrift/2025-06-10-966">res. 10 juni 2025 nr. 966</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§15" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§16"></a><a name="PARAGRAF_16"></a><div data-id="PARAGRAF_16" class="morTag_p paragraf" id="PARAGRAF_16"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 16.</span><span class=" paragrafTittel "><em class=" ">Interesseavveining ved arealbruk til akvakultur</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet skal foreta en avveining av arealinteresser ved plassering av lokaliteter til akvakultur. Det skal særlig legge vekt på:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">søkers behov for areal til planlagt akvakulturproduksjon,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">alternativ bruk av området til annen akvakultur,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">annen bruk av området, og</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">verneinteresser som ikke omfattes av <a data-id="lov/2005-06-17-79/§15" class=" reference" href="/lov/2005-06-17-79/%C2%A715">§ 15</a> bokstav b og c.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om bruk og plassering av lokaliteter til akvakultur.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om pålegg om flytting av akvakulturanlegg innenfor et nærmere definert geografisk område dersom overordnede samfunns- og næringsmessige hensyn, herunder hensynet til fiskehelse og miljø tilsier dette. Departementet kan også i forskrift gi nærmere bestemmelser om prosedyrer for initiering og gjennomføring av prosesser med sikte på flytting, herunder prinsipper for dekning av kostnader.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2009-06-19-61" class=" reference" href="/LTI/lov/2009-06-19-61">lov 19 juni 2009 nr. 61</a> (ikr. 1 juli 2009 iflg. <a data-id="forskrift/2009-06-19-695" class=" reference" href="/LTI/forskrift/2009-06-19-695">res. 19 juni 2009 nr. 695</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§16" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§17"></a><a name="PARAGRAF_17"></a><div data-id="PARAGRAF_17" class="morTag_p paragraf" id="PARAGRAF_17"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 17.</span><span class=" paragrafTittel "><em class=" ">Utnytting og bruk av lokaliteter mv.</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Den som har akvakulturtillatelse har enerett til uttak og gjenfangst av den utsatte arten på lokaliteten.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i enkeltvedtak eller forskrift regulere uttak og gjenfangst av den enkelte art på lokaliteten uavhengig av bestemmelsene i <a data-id="lov/2008-06-06-37" class=" reference" href="/lov/2008-06-06-37">lov om forvaltning av viltlevande marine ressursar</a>.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift avgrense eller forby ferdsel og annen bruk av lokaliteter samt tilstøtende områder, herunder fiske etter andre arter enn den utsatte art, dersom dette er nødvendig av hensyn til akvakulturproduksjonen.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2008-06-06-37" class=" reference" href="/LTI/lov/2008-06-06-37">lov 6 juni 2008 nr. 37</a> (ikr. 1 jan 2009 iflg. <a data-id="forskrift/2008-12-12-1355" class=" reference" href="/LTI/forskrift/2008-12-12-1355">res. 12 des 2008 nr. 1355</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§17" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kapV"></a><a class="namedAnchor" name="kapv"></a><div data-level="1" data-id="KAPITTEL_5" data-refID="kapV" class="morTag_b kapittel" id="KAPITTEL_5"><h2 class="  ">Kapittel V. Registrering, overføring og pantsettelse av akvakulturtillatelse</h2><a class="documentPart_scrollMargin" name="§18"></a><a name="PARAGRAF_18"></a><div data-id="PARAGRAF_18" class="morTag_p paragraf" id="PARAGRAF_18"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 18.</span><span class=" paragrafTittel "><em class=" ">Registrering av akvakulturtillatelse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Det skal føres et register over akvakulturtillatelser (akvakulturregisteret). I registeret gis den enkelte tillatelse et eget blad.</p><p data-uid="0" class="morTag_a avsnitt">Det skal føres dagbok over de rettsstiftelser som skal registreres.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrift om registreringsordningen, herunder om registreringsmyndighet, erstatningsordning, føring av dagbok mv. Departementet kan i forskrift gi nærmere bestemmelser om fylkeskommunenes oppgaver knyttet til registreringsordningen.</p><p data-uid="0" class="morTag_a avsnitt">Reglene i lov 7. juni 1935 nr. 2 om tinglysing <a data-id="lov/1935-06-07-2/kap2" class=" reference" href="/lov/1935-06-07-2/kap2">kapittel 2</a> og <a data-id="lov/1935-06-07-2/kap3" class=" reference" href="/lov/1935-06-07-2/kap3">3</a> og <a data-id="lov/1935-06-07-2/§35" class=" reference" href="/lov/1935-06-07-2/%C2%A735">§ 35</a> gjelder tilsvarende så langt de passer og ikke annet følger av bestemmelser gitt i eller i medhold av denne lov.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2009-01-09-4" class=" reference" href="/LTI/lov/2009-01-09-4">lov 9 jan 2009 nr. 4</a> (ikr. 1 jan 2010).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§18" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§19"></a><a name="PARAGRAF_19"></a><div data-id="PARAGRAF_19" class="morTag_p paragraf" id="PARAGRAF_19"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 19.</span><span class=" paragrafTittel "><em class=" ">Overføring av akvakulturtillatelse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Akvakulturtillatelse kan overføres.</p><p data-uid="0" class="morTag_a avsnitt">Overføring av akvakulturtillatelse har ikke betydning for myndighetenes bruk av virkemidler etter denne lov.</p><p data-uid="0" class="morTag_a avsnitt">Utleie av akvakulturtillatelser er ikke tillatt. Departementet kan i særlige tilfeller gjøre unntak fra forbudet mot utleie.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om overføring av akvakulturtillatelser.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§19" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§20"></a><a name="PARAGRAF_20"></a><div data-id="PARAGRAF_20" class="morTag_p paragraf" id="PARAGRAF_20"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 20.</span><span class=" paragrafTittel "><em class=" ">Pantsettelse av akvakulturtillatelse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Akvakulturtillatelse kan pantsettes.</p><p data-uid="0" class="morTag_a avsnitt">Panteretten får rettsvern ved tinglysing på tillatelsens blad i akvakulturregisteret.</p><p data-uid="0" class="morTag_a avsnitt">Pantsettelse av akvakulturtillatelse har ikke betydning for myndighetenes bruk av virkemidler etter denne lov.</p><p data-uid="0" class="morTag_a avsnitt">Staten har panterett foran alle andre heftelser i tillatelsen for krav på tvangsmulkt etter <a data-id="lov/2005-06-17-79/§28" class=" reference" href="/lov/2005-06-17-79/%C2%A728">§ 28</a>, krav om dekning av utgifter til iverksetting etter <a data-id="lov/2005-06-17-79/§29" class=" reference" href="/lov/2005-06-17-79/%C2%A729">§ 29</a>, inndragning etter <a data-id="lov/2005-06-17-79/§29a" class=" reference" href="/lov/2005-06-17-79/%C2%A729a">§ 29 a</a> og overtredelsesgebyr etter <a data-id="lov/2005-06-17-79/§30" class=" reference" href="/lov/2005-06-17-79/%C2%A730">§ 30</a>.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om pantsettelse av akvakulturtillatelser, herunder om beløpsmessig begrensning av statens panterett etter fjerde ledd.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§20" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kapVI"></a><a class="namedAnchor" name="kapvi"></a><div data-level="1" data-id="KAPITTEL_6" data-refID="kapVI" class="morTag_b kapittel" id="KAPITTEL_6"><h2 class="  ">Kapittel VI. Generelle krav og forpliktelser</h2><a class="documentPart_scrollMargin" name="§21"></a><a name="PARAGRAF_21"></a><div data-id="PARAGRAF_21" class="morTag_p paragraf" id="PARAGRAF_21"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 21.</span><span class=" paragrafTittel "><em class=" ">Tilsyn</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet bestemmer hvem som er tilsynsmyndighet etter denne lov. Tilsynsmyndigheten skal føre tilsyn med at bestemmelsene i og i medhold av denne lov blir overholdt.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§21" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§22"></a><a name="PARAGRAF_22"></a><div data-id="PARAGRAF_22" class="morTag_p paragraf" id="PARAGRAF_22"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 22.</span><span class=" paragrafTittel "><em class=" ">Faglig kompetanse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Enhver som deltar i aktiviteter som omfattes av denne lov skal ha nødvendig faglig kompetanse for slik aktivitet.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om krav til faglig kompetanse for aktiviteter som omfattes av denne lov.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§22" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§22a"></a><a name="PARAGRAF_22a"></a><div data-id="PARAGRAF_22a" class="morTag_p paragraf" id="PARAGRAF_22a"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 22 a.</span><span class=" paragrafTittel "><em class=" ">Lønnsvilkår på skip</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Innehavere av akvakulturtillatelser skal sørge for at ansatte på skip som leverer tjenester til akvakulturproduksjon, ikke har dårligere lønnsvilkår enn det som følger av gjeldende landsomfattende tariffavtaler. Kongen kan gi forskrift om hvordan forpliktelsene til innehavere av akvakulturtillatelser kan oppfylles.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved lov <a data-id="lov/2025-06-20-109" class=" reference" href="/LTI/lov/2025-06-20-109">20 juni 2025 nr. 109</a> (i kraft 1 jan 2026).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§22a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§23"></a><a name="PARAGRAF_23"></a><div data-id="PARAGRAF_23" class="morTag_p paragraf" id="PARAGRAF_23"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 23.</span><span class=" paragrafTittel "><em class=" ">Systematiske kontrolltiltak</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">For å sikre at krav i eller i medhold av loven overholdes kan departementet i forskrift bestemme at den som driver aktiviteter som omfattes av denne lov har plikt til å etablere og gjennomføre systematiske kontrolltiltak.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§23" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§24"></a><a name="PARAGRAF_24"></a><div data-id="PARAGRAF_24" class="morTag_p paragraf" id="PARAGRAF_24"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 24.</span><span class=" paragrafTittel "><em class=" ">Opplysnings- og undersøkelsesplikt</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Etter pålegg fra tildelings- og tilsynsmyndigheten plikter enhver som søker om eller driver aktiviteter som omfattes av denne lov, å gi opplysninger, dokumenter, prøvemateriale eller annet materiale som er nødvendig for at tildelings- og tilsynsmyndigheten skal kunne utføre sine oppgaver etter loven.</p><p data-uid="0" class="morTag_a avsnitt">Etter pålegg fra tildelings- og tilsynsmyndigheten plikter enhver som søker om eller driver aktiviteter som omfattes av denne lov å gjennomføre undersøkelser som er nødvendige for at tildelings- og tilsynsmyndigheten skal kunne utføre sine oppgaver etter loven.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om opplysnings- og undersøkelsesplikten i første og annet ledd, herunder om at pliktene skal utføres jevnlig.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi bestemmelser om at den som driver aktiviteter som omfattes av denne lov, skal ha og bruke utstyr og programvare med bestemt funksjon for rapportering etter denne bestemmelsen.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2009-01-09-4" class=" reference" href="/LTI/lov/2009-01-09-4">lover 9 jan 2009 nr. 4</a> (ikr. 1 jan 2010), <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§24" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§25"></a><a name="PARAGRAF_25"></a><div data-id="PARAGRAF_25" class="morTag_p paragraf" id="PARAGRAF_25"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 25.</span><span class=" paragrafTittel "><em class=" ">Bistandsplikt</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Enhver som driver aktiviteter som omfattes av denne lov plikter å gi tilsynsmyndighetene adgang til områder, innretning og utstyr i tilknytning til aktiviteten, for at tilsynsmyndigheten skal kunne utføre sine oppgaver etter loven.</p><p data-uid="0" class="morTag_a avsnitt">Enhver som driver aktiviteter som omfattes av denne lov skal stille nødvendige lokaler, utstyr, materiell, organismer og arbeidshjelp til disposisjon for utøvelse av tilsynet og ellers yte bistand for gjennomføring av tilsynsarbeidet.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§25" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§25a"></a><a name="PARAGRAF_25a"></a><div data-id="PARAGRAF_25a" class="morTag_p paragraf" id="PARAGRAF_25a"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 25 a.</span><span class=" paragrafTittel "><em class=" ">Utveksling av opplysninger mellom myndigheter</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Tildelings- og tilsynsmyndigheter etter denne loven kan uten hinder av taushetsplikt gi opplysninger til kontroll-, politi- eller påtalemyndigheter dersom avgivelsen har sammenheng med deres oppgaver etter loven.</p><p data-uid="0" class="morTag_a avsnitt">Taushetsplikt for andre kontroll-, politi- eller påtalemyndigheter hindrer ikke at disse gir tilsynsmyndigheter etter denne loven opplysninger som har naturlig sammenheng med deres oppgaver etter denne loven.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan i forskrift gi nærmere bestemmelser om utveksling av opplysninger etter denne bestemmelsen.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§25a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§26"></a><a name="PARAGRAF_26"></a><div data-id="PARAGRAF_26" class="morTag_p paragraf" id="PARAGRAF_26"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 26.</span><span class=" paragrafTittel "><em class=" ">Gebyr og avgift</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrift om gebyr og avgift, for behandling av søknader og for utførelse av tilsynsarbeid i henhold til bestemmelser i eller i medhold av denne lov.</p><p data-uid="0" class="morTag_a avsnitt">Skyldig gebyr og avgift er tvangsgrunnlag for utlegg.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2007-06-29-77" class=" reference" href="/LTI/lov/2007-06-29-77">lover 29 juni 2007 nr. 77</a> (ikr. 1 juli 2007 iflg. <a data-id="forskrift/2007-06-29-756" class=" reference" href="/LTI/forskrift/2007-06-29-756">res. 29 juni 2007 nr. 756</a>), <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§26" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kapVII"></a><a class="namedAnchor" name="kapvii"></a><div data-level="1" data-id="KAPITTEL_7" data-refID="kapVII" class="morTag_b kapittel" id="KAPITTEL_7"><h2 class="  ">Kapittel VII. Reaksjoner og sanksjoner ved overtredelse</h2><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Overskriften endret ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="documentPart_scrollMargin" name="§27"></a><a name="PARAGRAF_27"></a><div data-id="PARAGRAF_27" class="morTag_p paragraf" id="PARAGRAF_27"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 27.</span><span class=" paragrafTittel "><em class=" ">Pålegg om tiltak</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Ved overtredelse av bestemmelser gitt i eller i medhold av loven kan tilsynsmyndigheten gi pålegg om tiltak for å bringe de ulovlige forhold til opphør. Det kan fastsettes frist for gjennomføring av slike tiltak.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§27" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§28"></a><a name="PARAGRAF_28"></a><div data-id="PARAGRAF_28" class="morTag_p paragraf" id="PARAGRAF_28"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 28.</span><span class=" paragrafTittel "><em class=" ">Tvangsmulkt</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">For å sikre at bestemmelser gitt i eller i medhold av denne lov blir gjennomført, kan tilsynsmyndigheten fatte vedtak om løpende tvangsmulkt overfor den ansvarlige. Det kan også vedtas tvangsmulkt som forfaller for hver overtredelse. Tvangsmulkt kan vedtas samtidig med pålegg etter <a data-id="lov/2005-06-17-79/§27" class=" reference" href="/lov/2005-06-17-79/%C2%A727">§ 27</a> eller senere.</p><p data-uid="0" class="morTag_a avsnitt">Tvangsmulkten begynner å løpe dersom den ansvarlige oversitter den frist for retting av forholdet som tilsynsmyndigheten har fastsatt i vedtaket om tvangsmulkt, og løper så lenge det ulovlige forholdet varer. Tvangsmulkt kan ikke fastsettes, og den løper heller ikke, så langt det på grunn av forhold som ikke skyldes den ansvarlige, er umulig å oppfylle eller å etterleve det pålegget som tvangsmulkten er knyttet til.</p><p data-uid="0" class="morTag_a avsnitt">Der flere er ansvarlige etter vedtak om tvangsmulkt, hefter de ansvarlige solidarisk for betaling av tvangsmulkten. Dersom den ansvarlige for påløpt tvangsmulkt er et selskap som inngår i et konsern, hefter selskapets morselskap og morselskapet i det konsern selskapet er en del av, subsidiært for beløpet. Tvangsmulkt er tvangsgrunnlag for utlegg. Departementet kan i særlige tilfeller frafalle påløpt tvangsmulkt.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om tvangsmulkt, herunder tvangsmulktens størrelse og varighet, fastsettelse av tvangsmulkt og frafall av påløpt tvangsmulkt.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§28" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§29"></a><a name="PARAGRAF_29"></a><div data-id="PARAGRAF_29" class="morTag_p paragraf" id="PARAGRAF_29"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 29.</span><span class=" paragrafTittel "><em class=" ">Iverksetting av tiltak for den ansvarliges regning</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Dersom fristen for å etterkomme pålegg etter <a data-id="lov/2005-06-17-79/§27" class=" reference" href="/lov/2005-06-17-79/%C2%A727">§ 27</a> er utløpt, kan tilsynsmyndigheten sørge for iverksetting av tiltakene.</p><p data-uid="0" class="morTag_a avsnitt">Selv om det ikke er gitt pålegg etter <a data-id="lov/2005-06-17-79/§27" class=" reference" href="/lov/2005-06-17-79/%C2%A727">§ 27</a> kan tilsynsmyndigheten, dersom det er nødvendig å iverksette tiltaket straks eller det foreligger andre særlige grunner, sørge for iverksetting av tiltak for å bringe ulovlige forhold til opphør.</p><p data-uid="0" class="morTag_a avsnitt">Utgifter til iverksetting etter første og annet ledd kan kreves dekket av den ansvarlige. Der flere er ansvarlige, hefter de ansvarlige solidarisk for utgiftene. Krav om utgifter til iverksetting er tvangsgrunnlag for utlegg.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om iverksetting av tiltak, herunder om innkreving av utgiftene til iverksetting.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§29" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§29a"></a><a name="PARAGRAF_29a"></a><div data-id="PARAGRAF_29a" class="morTag_p paragraf" id="PARAGRAF_29a"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 29 a.</span><span class=" paragrafTittel "><em class=" ">Administrativ inndragning av utbytte</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Tilsynsmyndigheten kan helt eller delvis inndra utbytte som er oppnådd gjennom overtredelse av bestemmelser gitt i eller i medhold av loven. Inndragning foretas overfor den som utbyttet har tilfalt. Inndragning kan bare skje så langt dette ikke vil være klart urimelig.</p><p data-uid="0" class="morTag_a avsnitt">Dersom den som utbyttet har tilfalt er et selskap som inngår i et konsern, hefter selskapets morselskap og morselskapet i det konsern selskapet er en del av, subsidiært for beløpet.</p><p data-uid="0" class="morTag_a avsnitt">Endelig vedtak om inndragning av utbytte er tvangsgrunnlag for utlegg. Inndratt utbytte tilfaller statskassen.</p><p data-uid="0" class="morTag_a avsnitt">Retten kan prøve alle sider av saken. Retten kan avsi dom for realitet i saken, dersom den finner det hensiktsmessig og forsvarlig.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om inndragning, herunder om standardisert eller skjønnsmessig utmåling av utbytte og fradrag for utgifter.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 jan 2014 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§29a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§30"></a><a name="PARAGRAF_30"></a><div data-id="PARAGRAF_30" class="morTag_p paragraf" id="PARAGRAF_30"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 30.</span><span class=" paragrafTittel "><em class=" ">Overtredelsesgebyr</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Et foretak kan ilegges overtredelsesgebyr dersom foretaket eller noen som har handlet på foretakets vegne overtrer bestemmelser gitt i eller i medhold av loven. Dette gjelder selv om ansvaret for overtredelsen ikke kan rettes mot noen enkeltperson.</p><p data-uid="0" class="morTag_a avsnitt">Ved avgjørelsen av om foretaket skal ilegges overtredelsesgebyr og ved utmålingen av gebyret kan det særlig legges vekt på:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtredelsesgebyrets preventive virkning,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtredelsens grovhet,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">om foretaket ved internkontroll, retningslinjer, instruksjon, opplæring eller andre tiltak kunne ha forebygget overtredelsen,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">om overtredelsen er begått for å fremme foretakets interesser,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">e.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">om foretaket har hatt eller kunne oppnådd noen fordel ved overtredelsen,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">f.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">foretakets økonomiske evne,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">g.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">om det foreligger gjentakelse,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">h.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">hvilke tiltak som er iverksatt for å forebygge eller avbøte virkningene av overtredelsen og</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">i.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">om overtredelsen innebærer fare for eller har ført til alvorlig eller uopprettelig miljøskade.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Dersom den ansvarlige for overtredelsesgebyret er et foretak som inngår i et konsern, hefter foretakets morselskap og morselskapet i det konsern selskapet er en del av, subsidiært for beløpet.</p><p data-uid="0" class="morTag_a avsnitt">Overtredelsesgebyret forfaller til betaling 2 måneder fra vedtak er fattet. Endelig vedtak om overtredelsesgebyr er tvangsgrunnlag for utlegg. Dersom foretaket går til søksmål mot staten for å prøve vedtaket, suspenderes tvangskraften.</p><p data-uid="0" class="morTag_a avsnitt">Retten kan prøve alle sider av saken. Retten kan avsi dom for realitet i saken, dersom den finner det hensiktsmessig og forsvarlig.</p><p data-uid="0" class="morTag_a avsnitt">Adgangen til å ilegge overtredelsesgebyr foreldes 2 år etter at overtredelsen er opphørt. Fristen avbrytes ved at tilsynsmyndigheten gir forhåndsvarsel eller fatter vedtak om overtredelsesgebyr.</p><p data-uid="0" class="morTag_a avsnitt">Departementet skal i forskrift fastsette et øvre tak for overtredelsesgebyr ilagt etter denne bestemmelsen. Departementet kan i forskrift fastsette nærmere regler om utmålingen av overtredelsesgebyr.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 jan 2014 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§30" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§31"></a><a name="PARAGRAF_31"></a><div data-id="PARAGRAF_31" class="morTag_p paragraf" id="PARAGRAF_31"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 31.</span><span class=" paragrafTittel "><em class=" ">Straff</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Den som forsettlig eller grovt uaktsomt vesentlig overtrer bestemmelsene gitt i eller i medhold av <a data-id="lov/2005-06-17-79/§4" class=" reference" href="/lov/2005-06-17-79/%C2%A74">§§ 4</a>, 5, 10, 12, 13, 14, 17, 19, 22, 23, 24 og 25, straffes med bøter eller fengsel inntil 1 år eller begge deler, dersom forholdet ikke rammes av strengere straffebestemmelse.</p><p data-uid="0" class="morTag_a avsnitt">Grov overtredelse av første ledd straffes med bot eller fengsel inntil 2 år eller begge deler, om ikke strengere straffebestemmelse får anvendelse. Ved avgjørelsen av om overtredelsen er grov, skal det særlig legges vekt på om den økonomiske eller potensielle økonomiske verdien av overtredelsen er stor, om overtredelsen har skjedd systematisk og over tid, om overtredelsen har skjedd som ledd i organisert virksomhet, om overtredelsen har medført eller voldt fare for en betydelig miljøskade og om miljøskade som følge av overtredelsen er uopprettelig.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gitt i medhold av denne loven fastsette at overtredelse av forskriften ikke er straffbar.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lover 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>), <a data-id="lov/2015-06-19-65" class=" reference" href="/LTI/lov/2015-06-19-65">19 juni 2015 nr. 65</a> (ikr. 1 okt 2015).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§31" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§31a"></a><a name="PARAGRAF_31a"></a><div data-id="PARAGRAF_31a" class="morTag_p paragraf" id="PARAGRAF_31a"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 31 a.</span><span class=" paragrafTittel "><em class=" ">Samordning av tilsyn og reaksjoner i saker om akvakultur</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Myndighetene etter denne lov og etter lovene som er nevnt i <a data-id="lov/2005-06-17-79/§6" class=" reference" href="/lov/2005-06-17-79/%C2%A76">§ 6</a> første ledd bokstav d skal så langt det er hensiktsmessig, samordne tilsyn og ileggelse av reaksjoner eller sanksjoner ved lovbrudd innen akvakulturnæringen.</p><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift gi nærmere bestemmelser om samordningen, herunder bestemmelser om varsling ved mulig reaksjons- eller sanksjonsileggelse.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§31a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div><a class="namedAnchor" name="kapVIII"></a><a class="namedAnchor" name="kapviii"></a><div data-level="1" data-id="KAPITTEL_8" data-refID="kapVIII" class="morTag_b kapittel" id="KAPITTEL_8"><h2 class="  ">Kapittel VIII. Avsluttende bestemmelser</h2><a class="documentPart_scrollMargin" name="§32"></a><a name="PARAGRAF_32"></a><div data-id="PARAGRAF_32" class="morTag_p paragraf" id="PARAGRAF_32"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 32.</span><span class=" paragrafTittel "><em class=" ">Ikrafttredelse</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Loven trer i kraft 1. januar 2006.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§32" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§33"></a><a name="PARAGRAF_33"></a><div data-id="PARAGRAF_33" class="morTag_p paragraf" id="PARAGRAF_33"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 33.</span><span class=" paragrafTittel "><em class=" ">Overgangsbestemmelser</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Enkeltvedtak og forskrifter gitt i medhold av <a data-id="lov/1985-06-14-68" class=" reference" href="/lov/1985-06-14-68">lov 14. juni 1985 nr. 68</a> om oppdrett av fisk, skalldyr m.v. og <a data-id="lov/2000-12-21-118" class=" reference" href="/lov/2000-12-21-118">lov 21. desember 2000 nr. 118</a> om havbeite videreføres.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§33" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§33a"></a><a name="PARAGRAF_33a"></a><div data-id="PARAGRAF_33a" class="morTag_p paragraf" id="PARAGRAF_33a"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 33 a.</span><span class=" paragrafTittel "><em class=" ">Søksmålsfrist</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Departementet kan i forskrift bestemme at parten må reise søksmål om gyldigheten av forvaltningsvedtak med hjemmel i denne lov eller krav om erstatning som følge av vedtaket, innen seks måneder fra det tidspunkt da melding om endelig vedtak kom fram til vedkommende part. Det kan gis oppfriskning for oversittelse av fristen etter reglene i <a data-id="lov/2005-06-17-90/§16-12" class=" reference" href="/lov/2005-06-17-90/%C2%A716-12">tvisteloven §§ 16-12</a> til <a data-id="lov/2005-06-17-90/§16-14" class=" reference" href="/lov/2005-06-17-90/%C2%A716-14">16-14</a>.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§33a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§34"></a><a name="PARAGRAF_34"></a><div data-id="PARAGRAF_34" class="morTag_p paragraf" id="PARAGRAF_34"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 34.</span><span class=" paragrafTittel "><em class=" ">(Opphevet)</em></span></span></h3><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Opphevet ved <a data-id="lov/2013-06-21-74" class=" reference" href="/LTI/lov/2013-06-21-74">lov 21 juni 2013 nr. 74</a> (ikr. 1 juli 2013 iflg. <a data-id="forskrift/2013-06-21-745" class=" reference" href="/LTI/forskrift/2013-06-21-745">res. 21 juni 2013 nr. 745</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§34" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§35"></a><a name="PARAGRAF_35"></a><div data-id="PARAGRAF_35" class="morTag_p paragraf" id="PARAGRAF_35"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 35.</span><span class=" paragrafTittel "><em class=" ">Oppheving av andre lover</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Fra den tid loven her trer i kraft, oppheves <a data-id="lov/1985-06-14-68" class=" reference" href="/lov/1985-06-14-68">lov 14. juni 1985 nr. 68</a> om oppdrett av fisk, skalldyr m.v. og <a data-id="lov/2000-12-21-118" class=" reference" href="/lov/2000-12-21-118">lov 21. desember 2000 nr. 118</a> om havbeite.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§35" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§36"></a><a name="PARAGRAF_36"></a><div data-id="PARAGRAF_36" class="morTag_p paragraf" id="PARAGRAF_36"><h3 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 36.</span><span class=" paragrafTittel "><em class=" ">Endringer i andre lover</em></span></span></h3><p data-uid="0" class="morTag_a avsnitt">Fra den tid loven her trer i kraft, gjøres følgende endringer i andre lover: – – –</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/2005-06-17-79/§36" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div></div></div></div>
+		</div>
+	</div>
+	<ul class="pager">
+
+		<li class="previous">
+        
+		</li>
+				<li class="complete">
+
+				</li>
+		<li class="next ">
+
+		</li>
+	</ul>
+
+
+	</div> <!-- / Wrapper-->
+
+	<div class="modal fade" id="deleModal" tabindex="-1" role="dialog" aria-labelledby="del" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<p id="del" class="modal-title">Del dokument</p>
+				</div>
+						<div class="modal-body">
+							<input id="urlTextInput" aria-label="Lenken som fører til denne siden" class="form-control dele-url" value="https://lovdata.no/lov/2005-06-17-79" autoselect/>
+							<a class="btn btn-primary btn-block URL" tabindex="0" role="button">Kopier URL</a>
+							<a class="btn btn-primary btn-block twitter" href="" target="_blank" role="button">Del på Twitter</a>
+							<a class="btn btn-primary btn-block facebook" href="" target="_blank" role="button">Del på Facebook</a>
+							<a class="btn btn-primary btn-block linkedin" href="" target="_blank" role="button">Del på LinkedIn</a>
+							<a class="btn btn-primary btn-block email" href="" role="button">Del på e-post</a>
+						</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+</main>
+
+	<script type="text/javascript">
+		$('.btn.btn-primary.btn-block.URL').click(function () {
+			$(".btn.btn-primary.btn-block.URL").select();
+			// Copy text to clipboard
+			document.execCommand('copy');
+		});
+		$(document).ready(function () {
+			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+			if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i) || isSafari) { // iOS + Safari does not like to have this decoded
+			} else if (location.hash != '' && decodeURIComponent(location.hash) != location.hash) {
+				location.hash = decodeURIComponent(location.hash);
+			} else if (window.location.hash == '') {
+			}
+		});
+	</script>
+
+
+
+<aside role="region" aria-labelledby="faq" class="help closed hidden-xs">
+	<h1 class="sr-only" id="faq">Brukerveiledning</h1>
+	<div class="open-help">
+		<button aria-label="Åpne informasjon om brukerveiledning" aria-expanded="false">
+			<span aria-hidden="true" class="toggle-open ss-icon ss-symbolicons-block">&#x2753;</span>
+			<span aria-hidden="true" class="toggle-close ss-icon ss-symbolicons-block">&#x2421;</span>
+		</button>
+		<noscript>
+			<a aria-label="Gå til hjelpeside" class="open-help-noscript" href="/info/faq"></a>
+		</noscript>
+	</div>
+	<div class="help-container hiddenSidePanel" aria-hidden="true">
+		<h2>Trenger du brukerveiledning?</h2>
+		<p><a class="infolink" href="/info/faq">Få svar på ofte stilte spørsmål her (FAQ)</a></p>
+		<p>Lovdata kan dessverre ikke svare på spørsmål angående juridiske problemer. Lovdata kan heller ikke bidra med å tolke regelverket eller finne frem til rettsregler som passer i et bestemt tilfelle. Kontakt den offentlige etaten spørsmålet gjelder, eventuelt advokat eller rettshjelper hvis du har behov for slik bistand.</p>
+
+		<h2>Fant du ikke det du lette etter?</h2>
+		<p>Send en e-post til <a class="infolink" href="mailto:support@lovdata.no">support@lovdata.no</a></p>
+	</div>
+</aside>
+<footer class="footer">
+	<a href="/info/personvern#cookies" class="cookieInfo" aria-hidden="true"><i class="ss-icon ss-symbolicons-line">&#x1F36A;</i><span class="cookie-label">Om informasjonskapsler</span></a>
+	<ul class="footer-nav">
+		<li><a lang="en" href="/info/information_in_english">Information in English</a></li>
+		<li class="ld-hidden-xs"><p tabindex="0" class="popover-parent" data-placement="top" data-toggle="popover" data-trigger="focus hover" title="" data-content="Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.">Juster tekststørrelse<span class="sr-only">Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.</span></p></li>
+		<li class="visible-xs"><a href="/info/faq">Hjelp</a></li>
+		<li><a href="/info/kontakt">Kontakt</a></li>
+		<li><a href="/info/brukeravtale">Brukeravtale</a></li>
+	</ul>
+</footer>
+
+	</body>
+</html>
+

@@ -1,0 +1,741 @@
+
+<!DOCTYPE html
+>
+<html lang="no" class="no-js">
+
+<head>
+	
+	<!-- Le styles -->
+	<link href="/resources/css/bootstrap.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-block/ss-symbolicons-block.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-line/ss-symbolicons-line.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/feed/ss-feed-icons.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-standard/ss-standard.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-social-regular/ss-social.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/select2/select2.css?26-08-20-1607" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+	<!-- Modaal -->
+	<link rel="stylesheet" href="/resources/css/modaal.min.css">
+
+		<link href="/resources/css/app.css?26-08-20-1607" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<link href="/resources/css/ld-ie.css?26-08-20-1607" rel="stylesheet">
+	<![endif]-->
+		<link href="/resources/css/document/lovdata.document.gratis.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.tables.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.web.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.css?26-08-20-1607" rel="stylesheet">
+
+
+	<!-- Le scripts -->
+	<script src="/resources/js/jquery-3.7.1.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/mathjax/tex-mml-chtml.js?26-08-20-1607"></script>
+		<script>
+			var dev = false;
+		</script>
+		<!-- Plausible -->
+		<script defer data-domain="lovdata.no" src="https://plausible.io/js/plausible.js"></script>
+		<!-- End Plausible -->
+
+	<script src="/resources/js/modernizr.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/bootstrap.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/jquery.throttle.js?26-08-20-1607"></script>
+	<script src="/resources/js/jquery.form.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/json2.js?26-08-20-1607"></script>
+	<script src="/resources/js/jstorage.js?26-08-20-1607"></script>
+	<script src="/resources/select2/select2.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/app.js?26-08-20-1607"></script>
+		<script src="/resources/js/app-lovdata.js?26-08-20-1607"></script>
+	<script src="/resources/js/highlighter.js?26-08-20-1607"></script>
+	<!-- Modaal -->
+	<script src="/resources/js/modaal.min.js"></script>
+
+	<link rel="icon" href="/resources/img/logo/new/lovdata-logosymbol-stortingsrod.svg" type="image/svg+xml" sizes="16x16 32x32 48x48 64x64">
+	<link rel="apple-touch-icon-precomposed" href="/resources/img/logo/new/lovdata-logosymbol-stortingsrod.svg" type="image/svg+xml" sizes="152x152">
+
+	<meta charset="utf-8">
+	<title>Forskrift om farvannsskilt og navigasjonsinnretninger - Lovdata</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="google-site-verification" content="ENJVlOsNC5zBiaC_PChgiRbBrUBjN6P-Owo6nwS9--Q"/>
+	<meta name="application-name" content="Lovdata"/>
+	<meta property="fb:admins" content="711945576, 714678011"/>
+		<meta name="robots" content="noodp">
+		<meta name="description" content="Forskrift om farvannsskilt m.m.">
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:description" content="Forskrift om farvannsskilt m.m.">
+		<meta name="twitter:site" content="@lovdata"/>
+		<meta name="twitter:title" content="Forskrift om farvannsskilt og navigasjonsinnretninger"/>
+</head>
+
+	<body class="template-document">
+
+	<div aria-hidden="true" class="print-logo">
+		<img src="/resources/img/logo/new/lovdata-logo-primaer.svg" alt="Lovdata-logo"/>
+	</div>
+
+	<div id="skiplinks">
+		<a href="#main-content">Til hovedinnhold</a>
+	</div>
+
+<header>
+	<div class="ld-navbar" id="ld-navbar">
+
+		<a class="logo" href="/" aria-label="Til forsiden"></a>
+
+				<button class="open-search" aria-label="Åpne søk">
+			<i class="ss-icon ss-symbolicons-block" aria-hidden="true">&#x1F50D;</i>
+		</button>
+
+		<div class="middleContainer">
+			<a tabindex="0" role="button" aria-label="Åpne/lukk meny" class="menu_toggler" aria-expanded="false">
+				<span></span>
+			</a>
+
+			<form class="mainSearch" role="search" id="sok" action="/sok" METHOD="get">
+
+
+				<script>
+					document.addEventListener("DOMContentLoaded", function () {
+						const searchInput = document.getElementById("globSearch");
+						const form = document.querySelector("form");
+
+						form.addEventListener("submit", function () {
+							searchInput.classList.add("loading");
+						});
+
+						searchInput.addEventListener('keydown', event => { //Turn textarea into input.
+							if (event.code === 'Enter') {
+								event.preventDefault();
+								form.submit();
+								searchInput.classList.add("loading");
+							}
+						});
+					});
+
+					var searchInDocumentPlaceholder = '';
+					var searchInDocument = '';
+
+					// JavaScript function to monitor input and apply changes
+					document.addEventListener("DOMContentLoaded", function () {
+						const searchInput = document.getElementById("globSearch");
+						const form = document.getElementById("sok");
+						const wordCounter = document.getElementById("word-counter");
+						const freeSearchHelpText = document.getElementById("freesearch-help-text");
+						const bottomInfo = document.getElementById("search-bottom-info");
+
+						searchInput.placeholder = 'Søk med opp til fem søkeord eller skriv lengre for å gjøre et frisøk'
+
+						// Handle changes to the form class and action
+						searchInput.addEventListener("input", function () {
+							var startsWithQuote = (searchInput.value.startsWith("\"") || searchInput.value.startsWith("\'") || searchInput.value.startsWith("«"));
+							var blankSpaceCount = (searchInput.value.match(/ ./g) || []).length;
+							if (blankSpaceCount !== 0) {
+								blankSpaceCount += 1;
+							}
+
+							if (blankSpaceCount > 5 && !startsWithQuote) {
+								wordCounter.style.visibility = "visible"
+								searchInput.classList.add("expanded");
+
+								// Change the form action to "/frisok"
+								form.setAttribute("action", "/frisok");
+								form.setAttribute("method", "POST");
+								wordCounter.innerHTML = searchInput.value.length + "/500";
+								freeSearchHelpText.innerHTML = 'Nå gjør du et frisøk. Du kan stille et spørsmål, forklare en situasjon eller beskrive hva du leter etter.'
+								searchInput.classList.add("frisok-icon")
+							} else {
+								if (blankSpaceCount === 0) {
+									bottomInfo.style.display = "none"
+								} else {
+									bottomInfo.style.display = "flex"
+									wordCounter.innerHTML = blankSpaceCount + "/5";
+									freeSearchHelpText.innerHTML = 'Bruk mer enn fem søkeord for å gjøre et frisøk.'
+								}
+
+								searchInput.classList.remove("expanded");
+								searchInput.classList.remove("frisok-icon")
+
+								form.setAttribute("action", "/sok"); // Set the form action back to "/sok"
+								form.setAttribute("method", "GET");
+							}
+						});
+
+						const updateHeightOfSearchBox = () => {
+							var expandedSearchField = 0
+							searchInput.style.height = 'auto';
+							const newHeightOfInput = expandedSearchField + searchInput.scrollHeight;
+							searchInput.style.height = newHeightOfInput + 'px';
+						};
+						searchInput.addEventListener('input', updateHeightOfSearchBox);
+					});
+				</script>
+
+				<div class="search">
+					<label class="sr-only" for="globSearch">Søketekst</label>
+					<span class="search-box-container">
+						<div class="search-box-container-absolute">
+							<textarea class="search-input" type="text" id="globSearch" name="q"
+							
+							placeholder="Søk med opp til fem søkeord eller skriv lengre for å gjøre et frisøk"></textarea>
+							<div class="search-bottom-info" id="search-bottom-info">
+								<div class="freesearch-help-text" id="freesearch-help-text"></div>
+								<div class="word-counter" id="word-counter" title="Dersom du bruker mer enn fem søkeord vil du utføre et frisøk"></div>
+							</div>
+						</div>
+					</span>
+					<input type="submit" class="submit" value="Søk">
+					<div class="close-mobile-search">Avbryt</div>
+				</div>
+			</form>
+		</div>
+		<a class="pro-login" href="/pro&#x2f;SF&#x2f;forskrift&#x2f;2012-12-19-1329" title="Logg inn"><span>Logg inn</span><i class="ss-icon ss-symbolicons-block">&#x1F512;</i></a>
+	</div>
+</header>
+	<nav aria-labelledby="menuHeader">
+		<h1 class="sr-only" id="menuHeader">Hovedmeny</h1>
+		<!-- Menu content -->
+		<div class="leftPanel">
+		<div class="left-menu" aria-hidden="true">
+			<div class="menu-item-container hidden">
+				<ul class="top-level-menu">
+					<li class="resIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl" aria-expanded="false">Rettskilder</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="lovIcon second-level-icon resources">
+								<div class="gmi-container leftIcon">
+									<a class="gliding-menu-item" href="/register/lover">Lover</a>
+								</div>
+							</li>
+							<li class="sntForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/forskrifter">Sentrale forskrifter mv.</a></div>
+							</li>
+							<li class="lokForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/lokaleForskrifter">Lokale forskrifter</a></div>
+							</li>
+							<li class="ltIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/lovtidend">Norsk Lovtidend</a></div>
+							</li>
+							<li class="storVedIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/stortingsvedtak">Stortingsvedtak</a></div>
+							</li>
+							<li class="eosIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/eosAvtalen">EØS-avtalen</a></div>
+							</li>
+							<li class="traIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/traktater">Norges traktater</a></div>
+							</li>
+							<li class="decIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/avgjørelser">Rettsavgjørelser</a></div>
+							</li>
+							<li class="trrIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/trygderetten">Trygderettssaker</a></div>
+							</li>
+							<li class="tarIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/tariffavtaler">Tariffavtaler</a></div>
+							</li>
+							<li class="htuIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/husleietvistutvalget">Husleietvistutvalget</a></div>
+							</li>
+							<li class="sphIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/sph">Statens Personalhåndbok</a></div>
+							</li>
+							<li class="lovIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/loverEngelsk">Translated acts</a></div>
+							</li>
+							<li class="sntForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/forskrifterEngelsk">Translated regulations</a></div>
+							</li>
+							<li class="decIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/avgjørelserEngelsk">Translated decisions</a></div>
+							</li>
+						</ul>
+					</li>
+					<li class="servIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl">Tjenester</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="proIcon second-level-icon">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://pro.lovdata.no">Lovdata Pro</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="https://www.europalov.no">Europalov.no</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/api">API</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/rss">RSS-feed</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/eli">ELI (beta)</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/publikasjoner">E-publikasjoner</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/tjenester/tidsskrift">Tidsskrifter</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="https://hjelp.lovdata.no/article/170-sokeoppdrag-og-utskrifter">Søkeoppdrag</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="http://hjelp.lovdata.no/article/97-kursinformasjon">Kurs</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/eksamen">Eksamen</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/landslov">Landsloven</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/22juli">22. juli-saken</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/advokater">Advokatoversikt</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/lenker">Lenker</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="infIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl">Om Lovdata</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/om_lovdata">Generell informasjon</a></div>
+							</li>
+							<li>
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/brukeravtale">Brukeravtale</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/redaktoransvar">Redaktøransvar</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/kontakt">Kontakt oss</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/milopolicy">Miljøpolicy</a></div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="top-level-menu">
+					<li class="menuItm grlIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item grl" href="https://grunnloven.lovdata.no">Grunnloven</a></div>
+					</li>
+					<li class="menuItm cookIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/info/personvern">Personvern</a></div>
+					</li>
+					<li class="menuItm linkedinIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.linkedin.com/company/lovdata/">Linkedin</a></div>
+					</li>
+					<li class="menuItm twitIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.twitter.com/lovdata">Twitter</a></div>
+					</li>
+					<li class="menuItm faceIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.facebook.com/lovdata">Facebook</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</nav>
+
+<main id="main-content" class="docMain">
+
+
+	<script type="text/javascript">
+		var documentURL = "/dokument/SF/forskrift/2012-12-19-1329";
+	</script>
+
+	<section aria-labelledby="toolHeader">
+		<h1 class="sr-only" id="toolHeader">Verktøylinje</h1>
+		<div class="fixed-header">
+			<div class="dropdown-wrap">
+				<div class="bgcDoc">
+					<p aria-hidden="true">Forskrift om farvannsskilt og navigasjonsinnretninger</p>
+				</div>
+			</div>
+			<a class="open-meta-list open-meta-list-dropdown"><i class="ss-icon  ss-symbolicons-block">&#xEE00;</i></a>
+			<ul class="meta-list">
+						<li class="innholdsfortegnelse-parent-li">
+							<a role="button" tabindex="0" class="innholdsfortegnelse-parent " data-placement="bottom" title="Innholdsfortegnelse" aria-expanded="false"><i aria-hidden="true" class="ss-icon ss-symbolicons-block">&#xED50;</i><span class="text">Innholdsfortegnelse</span><i aria-hidden="true" class="ss-icon ss-standard navigatedown">&#xF501;</i><i aria-hidden="true" class="ss-icon ss-standard navigateup">&#xF500;</i></a>
+						</li>
+				<li>
+					<a role="button" aria-label="Skriv ut" href="javascript:print()" class="tooltip-parent" data-toggle="tooltip" data-placement="bottom" title="Skriv ut"><i aria-hidden="true" class="ss-icon ss-symbolicons-block">&#x2399;</i></a>
+				</li>
+						<li>
+							<a role="button" tabindex="0" aria-label="Del dokument" class="tooltip-parent share-dokument" data-toggle="tooltip" data-placement="bottom" title="Del dokument" data-id="https://lovdata.no/forskrift/2012-12-19-1329"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i></a>
+						</li>
+			</ul>
+			<ul class="meta-list-dropdown">
+				<li class="mobile-only"><a><i class="ss-icon ss-symbolicons-block">&#x2399;</i>Skriv ut</a></li>
+						<li><a tabindex="0" role="button" class="share-dokument" data-id="https://lovdata.no/forskrift/2012-12-19-1329"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i>Del dokument</a></li>
+			</ul>
+		</div>
+
+				<div class="innholdsfortegnelse-child " aria-hidden="true">
+					<p class="instruction sr-only" tabindex="-1">Trykk Escape for å lukke innholdsfortegnelse</p>
+					<div class="search-in-innholdsfortegnelse">
+						<label for="innhSearch">Søk i innholdsfortegnelse <span class="sr-only">(listen oppdateres idet du skriver)</span></label>
+						<input type="text" class="form-control" placeholder="Skriv søketekst her ..." id="innhSearch">
+					</div>
+					<div class="scroll">
+						<ul class="document-index" id="innhdocview document-index">
+							<li class="document-index-item"><a href="/dokument/SF/forskrift/2012-12-19-1329">Forskrift om farvannsskilt m.m.</a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A71#%C2%A71" data-target="%C2%A71">§ 1. (saklig virkeområde) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A72#%C2%A72" data-target="%C2%A72">§ 2. (definisjoner) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A73#%C2%A73" data-target="%C2%A73">§ 3. (register over farvannsskilt og navigasjonsinnretninger) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A74#%C2%A74" data-target="%C2%A74">§ 4. (søknad om etablering, fjerning, flytting eller endring av farvannsskilt eller navigasjonsinnretninger) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A75#%C2%A75" data-target="%C2%A75">§ 5. (utforming og tekniske spesifikasjoner for farvannsskilt og navigasjonsinnretninger) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A76#%C2%A76" data-target="%C2%A76">§ 6. (vedlikeholdsplikt) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A77#%C2%A77" data-target="%C2%A77">§ 7. (plikt til å utbedre eller melde om feil) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A78#%C2%A78" data-target="%C2%A78">§ 8. (tilsyn) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A79#%C2%A79" data-target="%C2%A79">§ 9. (unntak) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A710#%C2%A710" data-target="%C2%A710">§ 10. (ikrafttredelse, overgangsbestemmelse) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1#KAPITTEL_1" data-target="KAPITTEL_1">Vedlegg 1 – Farvannsskilt </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-1#KAPITTEL_1-1" data-target="KAPITTEL_1-1">1. Innledning </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-2#KAPITTEL_1-2" data-target="KAPITTEL_1-2">2. Varsel-, forbuds- og opplysningsskilt </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-2-1#KAPITTEL_1-2-1" data-target="KAPITTEL_1-2-1">2.1 Størrelse og utføring </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-2-2#KAPITTEL_1-2-2" data-target="KAPITTEL_1-2-2">2.2 Form </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-2-3#KAPITTEL_1-2-3" data-target="KAPITTEL_1-2-3">2.3 Underskilt </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-3#KAPITTEL_1-3" data-target="KAPITTEL_1-3">3. Markeringsskilt </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-3-1#KAPITTEL_1-3-1" data-target="KAPITTEL_1-3-1">3.1 Trekant form </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-3-2#KAPITTEL_1-3-2" data-target="KAPITTEL_1-3-2">3.2 Sirkel form </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-4#KAPITTEL_1-4" data-target="KAPITTEL_1-4">4. Utførelse av farvannsskilt </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-4-1#KAPITTEL_1-4-1" data-target="KAPITTEL_1-4-1">4.1 Overflatemateriale og farger </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-4-2#KAPITTEL_1-4-2" data-target="KAPITTEL_1-4-2">4.2 Belysning av farvannsskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-4-3#KAPITTEL_1-4-3" data-target="KAPITTEL_1-4-3">4.3 Skrifttype </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-4-4#KAPITTEL_1-4-4" data-target="KAPITTEL_1-4-4">4.4 Styrke </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-4-5#KAPITTEL_1-4-5" data-target="KAPITTEL_1-4-5">4.5 Annet </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5#KAPITTEL_1-5" data-target="KAPITTEL_1-5">5. Type farvannsskilt </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-1#KAPITTEL_1-5-1" data-target="KAPITTEL_1-5-1">5.1 Varselskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-2#KAPITTEL_1-5-2" data-target="KAPITTEL_1-5-2">5.2 Forbudsskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-3#KAPITTEL_1-5-3" data-target="KAPITTEL_1-5-3">5.3 Opplysningsskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-4#KAPITTEL_1-5-4" data-target="KAPITTEL_1-5-4">5.4 Underskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-5#KAPITTEL_1-5-5" data-target="KAPITTEL_1-5-5">5.5 Skiltkombinasjoner </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-6#KAPITTEL_1-5-6" data-target="KAPITTEL_1-5-6">5.6 Tilleggsinformasjon </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-7#KAPITTEL_1-5-7" data-target="KAPITTEL_1-5-7">5.7 Markeringsskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-8#KAPITTEL_1-5-8" data-target="KAPITTEL_1-5-8">5.8 Farvannsskiltene </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-9#KAPITTEL_1-5-9" data-target="KAPITTEL_1-5-9">5.9 Varselskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-10#KAPITTEL_1-5-10" data-target="KAPITTEL_1-5-10">5.10 Forbudsskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-11#KAPITTEL_1-5-11" data-target="KAPITTEL_1-5-11">5.11 Opplysningsskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-12#KAPITTEL_1-5-12" data-target="KAPITTEL_1-5-12">5.12 Underskilt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1-5-13#KAPITTEL_1-5-13" data-target="KAPITTEL_1-5-13">5.13 Markeringsskilt </a>
+								</ul>
+							</li>
+						</ul>
+						</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2#KAPITTEL_2" data-target="KAPITTEL_2">Vedlegg 2 – Merking av akvakulturanlegg </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-1#KAPITTEL_2-1" data-target="KAPITTEL_2-1">1. Innledning </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-2#KAPITTEL_2-2" data-target="KAPITTEL_2-2">2. Generelt </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-2-1#KAPITTEL_2-2-1" data-target="KAPITTEL_2-2-1">2.1 Søknad og tillatelse </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-2-2#KAPITTEL_2-2-2" data-target="KAPITTEL_2-2-2">2.2 Forskrifter og standarder </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-2-3#KAPITTEL_2-2-3" data-target="KAPITTEL_2-2-3">2.3 Opphør av drift på lokalitet </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3#KAPITTEL_2-3" data-target="KAPITTEL_2-3">3. Merking </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-1#KAPITTEL_2-3-1" data-target="KAPITTEL_2-3-1">3.1 Merking av ytterpunkt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-2#KAPITTEL_2-3-2" data-target="KAPITTEL_2-3-2">3.2 Bøyer til forankring eller fortøyning mv. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-3#KAPITTEL_2-3-3" data-target="KAPITTEL_2-3-3">3.3 IALA-spesialmerke </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-3-1#KAPITTEL_2-3-3-1" data-target="KAPITTEL_2-3-3-1">3.3.1 Overflatefarge </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-3-2#KAPITTEL_2-3-3-2" data-target="KAPITTEL_2-3-3-2">3.3.2 Dagslysfluoriserende gul refleks </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-3-3#KAPITTEL_2-3-3-3" data-target="KAPITTEL_2-3-3-3">3.3.3 Lyssignal </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-3-4#KAPITTEL_2-3-3-4" data-target="KAPITTEL_2-3-3-4">3.3.4 Radarreflektor </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-4#KAPITTEL_2-3-4" data-target="KAPITTEL_2-3-4">3.4 Annen merking </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-4-1#KAPITTEL_2-3-4-1" data-target="KAPITTEL_2-3-4-1">3.4.1 Indirekte lys (flomlys) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-4-2#KAPITTEL_2-3-4-2" data-target="KAPITTEL_2-3-4-2">3.4.2 Radarsvarer (racon) </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-4-3#KAPITTEL_2-3-4-3" data-target="KAPITTEL_2-3-4-3">3.4.3 AIS (Automatic Identification System) navigasjonsinnretning </a>
+								</ul>
+							</li>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-5#KAPITTEL_2-3-5" data-target="KAPITTEL_2-3-5">3.5 Anvisning til utførelse av IALA spesialmerke mv. </a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-5-1#KAPITTEL_2-3-5-1" data-target="KAPITTEL_2-3-5-1">3.5.1 Montering av utstyr </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2-3-5-2#KAPITTEL_2-3-5-2" data-target="KAPITTEL_2-3-5-2">3.5.2 Bære- og støttekonstruksjoner </a>
+
+											</ul>
+											</ul>
+											</ul>
+						</li>
+						</ul>
+
+						<div class="empty">Ditt søk ga dessverre ingen treff.</div>
+					</div>
+
+				</div>
+	</section>
+
+
+	<div class="outer-main-content ">
+		<div class="lt-inner-main-content main-content" > 
+			<div class="header inner-max-width">
+				<p class="hjemmel small gray"></p>
+			</div>
+
+			<div id="map" class="map"></div>
+
+<div id="maincolOneColumn"><div id="lovdataDocument" class=" commentWidget desktop"><div class="lt-ajour-varsel"><a class="reference btn btn-default" href="/LTI/forskrift/2012-12-19-1329">➦ Gå til opprinnelig kunngjort versjon</a></div><div class=" metaWrapper" id="documentMeta"><table style="width:100%" class="metaTitle"><tr><td class="metaTitleEmblem mediumIcons lightgray"></td><td class="metaTitleText"><h1>Forskrift om farvannsskilt og navigasjonsinnretninger</h1></td></tr></table><table class=" meta" style="width:100%"><tbody><tr class="odd"><th class=" metafieldLabel">Dato</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_dato">FOR-2012-12-19-1329</td></tr><tr class="even"><th class=" metafieldLabel">Departement</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_departement">Nærings- og fiskeridepartementet</td></tr><tr class="odd"><th class=" metafieldLabel">Publisert</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_publisert">I 2012 hefte 15</td></tr><tr class="even"><th class=" metafieldLabel">Ikrafttredelse</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_ikraft">01.01.2013</td></tr><tr class="odd"><th class=" metafieldLabel">Sist endret</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_endret"><a data-id="forskrift/2014-12-19-1813" class=" reference" href="/forskrift/2014-12-19-1813">FOR-2014-12-19-1813</a> fra 01.01.2015</td></tr><tr class="even"><th class=" metafieldLabel">Endrer</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_endrer"><a data-id="forskrift/1993-01-15-82" class=" reference" href="/forskrift/1993-01-15-82">FOR-1993-01-15-82</a></td></tr><tr class="odd"><th class=" metafieldLabel">Gjelder for</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_gjelder">Norge</td></tr><tr class="even"><th class=" metafieldLabel">Hjemmel</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_hjemmel"><a data-id="lov/2009-04-17-19/§20" class=" reference" href="/lov/2009-04-17-19/%C2%A720">LOV-2009-04-17-19-§20</a>, <a data-id="lov/2009-04-17-19/§21" class=" reference" href="/lov/2009-04-17-19/%C2%A721">LOV-2009-04-17-19-§21</a>, <a data-id="lov/2009-04-17-19/§52" class=" reference" href="/lov/2009-04-17-19/%C2%A752">LOV-2009-04-17-19-§52</a>, <a data-id="lov/2019-06-21-70/§53" class=" reference" href="/lov/2019-06-21-70/%C2%A753">LOV-2019-06-21-70-§53</a></td></tr><tr class="odd"><th class=" metafieldLabel">Kunngjort</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_kunngjort">21.12.2012   kl. 15.10</td></tr><tr class="even"><th class=" metafieldLabel">Rettet</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_rettet">22.03.2021 (endring tilbakeført)</td></tr><tr class="odd"><th class=" metafieldLabel">Korttittel</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_korttittel">Forskrift om farvannsskilt m.m.</td></tr></tbody></table></div><div class="metaBottom"></div><hr class="red"/><p data-uid="0" class="morTag_mf small no-text-indent marg"><strong class=" ">Hjemmel:</strong> Fastsatt av Fiskeri- og kystdepartementet 19. desember 2012 med hjemmel i <a data-id="lov/2009-04-17-19/§20" class=" reference" href="/lov/2009-04-17-19/%C2%A720">lov 17. april 2009 nr. 19 om havner og farvann (havne- og farvannsloven) § 20</a> og <a data-id="lov/2009-04-17-19/§52" class=" reference" href="/lov/2009-04-17-19/%C2%A752">§ 52</a>.<br/><strong class=" ">Endret</strong> ved <a data-id="forskrift/2014-12-19-1813" class=" reference" href="/forskrift/2014-12-19-1813">forskrift 19 des 2014 nr. 1813</a>.<br/><strong class=" ">Rettelser:</strong> 25.02.2013 (forbudsskilt ankring, nummerering av vedlegg), 22.03.2021 (endring tilbakeført).</p><hr class="red"/><div class="chapter-index"><span class="chapter-index-title">Kapitteloversikt:</span><br/><ul class="chapter-index"><li class="chapter-index-item"><a class="level_0 reference" data-target="%C2%A71" href="/dokument/SF/forskrift/2012-12-19-1329/%C2%A71#%C2%A71">Hoveddel</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_1" href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_1#KAPITTEL_1">Vedlegg 1 – Farvannsskilt</a></li><li class="chapter-index-item"><a class="level_0 reference" data-target="KAPITTEL_2" href="/dokument/SF/forskrift/2012-12-19-1329/KAPITTEL_2#KAPITTEL_2">Vedlegg 2 – Merking av akvakulturanlegg</a></li></ul></div><hr class="red"/><div id="documentBody"><a class="documentPart_scrollMargin" name="§1"></a><a name="PARAGRAF_1"></a><div data-id="PARAGRAF_1" class="morTag_p paragraf" id="PARAGRAF_1"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 1.</span><span class=" paragrafTittel "><em class=" ">(saklig virkeområde)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Forskriften gjelder tekniske krav til og bruk, utforming og lokalisering av farvannsskilt og navigasjonsinnretninger som skal regulere ferdselen eller gi navigasjonsveiledning.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§1" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§2"></a><a name="PARAGRAF_2"></a><div data-id="PARAGRAF_2" class="morTag_p paragraf" id="PARAGRAF_2"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 2.</span><span class=" paragrafTittel "><em class=" ">(definisjoner)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">I denne forskriften betyr:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft"><em class=" ">farvannsskilt</em>: tavler med symboler eller tekst om opplysninger eller bestemmelser om regulering av ferdselen</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft"><em class=" ">navigasjonsinnretninger</em>: innretning eller anlegg til veiledning for navigasjon, herunder fyrlys, sjømerker (varder, båker, staker, mv.), lykter, radarsvarere og AIS navigasjonsinnretning</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft"><em class=" ">IALA</em>: International Association of Marine Aids to Navigation and Lighthouse Authorities</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft"><em class=" ">IALA-spesialmerke</em>: gult merke i henhold til IALA Maritime Buoyage System and other Aids to Navigation.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§2" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§3"></a><a name="PARAGRAF_3"></a><div data-id="PARAGRAF_3" class="morTag_p paragraf" id="PARAGRAF_3"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 3.</span><span class=" paragrafTittel "><em class=" ">(register over farvannsskilt og navigasjonsinnretninger)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Kystverket skal føre register over alle farvannsskilt og navigasjonsinnretninger.</p><p data-uid="0" class="morTag_a avsnitt">Den som etablerer, flytter, fjerner eller endrer et farvannsskilt eller en navigasjonsinnretning, skal gi melding til Kystverket umiddelbart etter at arbeidet er utført.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§3" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§4"></a><a name="PARAGRAF_4"></a><div data-id="PARAGRAF_4" class="morTag_p paragraf" id="PARAGRAF_4"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 4.</span><span class=" paragrafTittel "><em class=" ">(søknad om etablering, fjerning, flytting eller endring av farvannsskilt eller navigasjonsinnretninger)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Søknad om etablering, fjerning, flytting eller endring av farvannsskilt og navigasjonsinnretninger skal sendes til Kystverket.</p><p data-uid="0" class="morTag_a avsnitt">Søknaden skal inneholde:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">hvilket farvannsskilt eller navigasjonsinnretning søknaden gjelder</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">stedsangivelse av farvannsskiltet eller navigasjonsinnretningen ved hjelp av kartutsnitt og geografiske koordinater (WGS 84 datum)</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">en vurdering av hvilken betydning etablering, nedlegging eller flytting av vedkommende farvannsskilt eller navigasjonsinnretning vil ha for sjøverts ferdsel og andre opplysninger som er nødvendige for behandling av søknaden</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">hvem som er eier og ev. andre som måtte ha ansvar for vedkommende farvannsskilt eller navigasjonsinnretning.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§4" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§5"></a><a name="PARAGRAF_5"></a><div data-id="PARAGRAF_5" class="morTag_p paragraf" id="PARAGRAF_5"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 5.</span><span class=" paragrafTittel "><em class=" ">(utforming og tekniske spesifikasjoner for farvannsskilt og navigasjonsinnretninger)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">For tekniske krav til og utforming av farvannsskilt gjelder bestemmelsene i vedlegg 1.</p><p data-uid="0" class="morTag_a avsnitt">For merking av akvakulturanlegg i sjø gjelder bestemmelsene i vedlegg 2.</p><p data-uid="0" class="morTag_a avsnitt">Nærmere retningslinjer for tekniske krav til og bruk, utforming og lokalisering av navigasjonsinnretninger fastsettes av Kystverkets hovedkontor.</p><p data-uid="0" class="morTag_a avsnitt">Ved etablering av farvannsskilt og navigasjonsinnretning skal det tas hensyn til estetikk og miljø</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="forskrift/2014-12-19-1813" class=" reference" href="/LTI/forskrift/2014-12-19-1813">forskrift 19 des 2014 nr. 1813</a> (i kraft 1 jan 2015).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§5" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§6"></a><a name="PARAGRAF_6"></a><div data-id="PARAGRAF_6" class="morTag_p paragraf" id="PARAGRAF_6"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 6.</span><span class=" paragrafTittel "><em class=" ">(vedlikeholdsplikt)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Den som eier eller er ansvarlig for farvannsskilt eller navigasjonsinnretninger, plikter å vedlikeholde disse slik at de til enhver tid er i forsvarlig stand.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§6" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§7"></a><a name="PARAGRAF_7"></a><div data-id="PARAGRAF_7" class="morTag_p paragraf" id="PARAGRAF_7"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 7.</span><span class=" paragrafTittel "><em class=" ">(plikt til å utbedre eller melde om feil)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Dersom et farvannsskilt eller en navigasjonsinnretning bringes ut av posisjon eller på annen måte ikke fungerer etter sin hensikt, plikter eieren eller den ansvarlige uten ugrunnet opphold å utbedre forholdet.</p><p data-uid="0" class="morTag_a avsnitt">Dersom forhold som nevnt i første ledd ikke lar seg utbedre, skal dette straks meldes til Kystverket ved nasjonal koordinator for navigasjonsvarsler (NAVCO).</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§7" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§8"></a><a name="PARAGRAF_8"></a><div data-id="PARAGRAF_8" class="morTag_p paragraf" id="PARAGRAF_8"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 8.</span><span class=" paragrafTittel "><em class=" ">(tilsyn)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Kystverket fører tilsyn med at bestemmelsene i forskriften blir overholdt.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="forskrift/2014-12-19-1813" class=" reference" href="/LTI/forskrift/2014-12-19-1813">forskrift 19 des 2014 nr. 1813</a> (i kraft 1 jan 2015, tidligere § 9).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§8" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§9"></a><a name="PARAGRAF_9"></a><div data-id="PARAGRAF_9" class="morTag_p paragraf" id="PARAGRAF_9"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 9.</span><span class=" paragrafTittel "><em class=" ">(unntak)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Kystverket kan i særlige tilfeller gjøre unntak fra denne forskriften.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="forskrift/2014-12-19-1813" class=" reference" href="/LTI/forskrift/2014-12-19-1813">forskrift 19 des 2014 nr. 1813</a> (i kraft 1 jan 2015, tidligere § 10).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§9" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§10"></a><a name="PARAGRAF_10"></a><div data-id="PARAGRAF_10" class="morTag_p paragraf" id="PARAGRAF_10"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 10.</span><span class=" paragrafTittel "><em class=" ">(ikrafttredelse, overgangsbestemmelse)</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Forskriften trer i kraft 1. januar 2013.</p><p data-uid="0" class="morTag_a avsnitt">Fra samme tidspunkt oppheves <a data-id="forskrift/1993-01-15-82" class=" reference" href="/forskrift/1993-01-15-82">forskrift 15. januar 1993 nr. 82 om lokalisering, utforming og tekniske krav til fyrlys, sjømerker og farvannsskilt som skal regulere ferdselen</a>.</p><p data-uid="0" class="morTag_a avsnitt">Eksisterende godkjente farvannsskilt som ikke tilfredsstiller kravene etter denne forskriften, kan benyttes til og med 31. desember 2022. For akvakulturanlegg skal eksisterende og godkjente tillatelser til merking være i overensstemmelse med denne forskriften før 1. januar 2014. Kystverket kan gi pålegg om at utskiftning skal finne sted tidligere.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="forskrift/2014-12-19-1813" class=" reference" href="/LTI/forskrift/2014-12-19-1813">forskrift 19 des 2014 nr. 1813</a> (i kraft 1 jan 2015, tidligere § 11).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/forskrift/2012-12-19-1329/§10" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="namedAnchor" name="vedlegg1"></a><div data-level="1" data-id="KAPITTEL_1" data-refID="vedlegg1" class="morTag_b kapittel" id="KAPITTEL_1"><h2 class="  ">Vedlegg 1 – Farvannsskilt</h2><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Vedlegg 1 endret ved <a data-id="forskrift/2014-12-19-1813" class=" reference" href="/LTI/forskrift/2014-12-19-1813">forskrift 19 des 2014 nr. 1813</a> (i kraft 1 jan 2015).</td></tr></table><a class="namedAnchor" name="kap1"></a><div data-level="2" data-id="KAPITTEL_1-1" data-refID="kap1" class="morTag_o kapittel" id="KAPITTEL_1-1"><h3 class="  ">1. Innledning</h3><p data-uid="0" class="morTag_a avsnitt">Farvannsskilt skal utformes med standardiserte skiltelementer (symboler, tekst og border) og skal ha form og størrelse som følger av vedlegget. Andre skiltelementer, form eller størrelser skal ikke brukes uten tillatelse fra Kystverket.</p></div><a class="namedAnchor" name="kap2"></a><div data-level="2" data-id="KAPITTEL_1-2" data-refID="kap2" class="morTag_o kapittel" id="KAPITTEL_1-2"><h3 class="  ">2. Varsel-, forbuds- og opplysningsskilt</h3><a class="namedAnchor" name="kap2.1"></a><div data-level="3" data-id="KAPITTEL_1-2-1" data-refID="kap2.1" class="morTag_k kapittel" id="KAPITTEL_1-2-1"><h4 class="  ">2.1 Størrelse og utføring</h4><p data-uid="0" class="morTag_a avsnitt">Varsel, forbuds og opplysningsskilt skal normalt utføres i fire ulike størrelser, liten størrelse 0 (LS 0), liten størrelse 1 (LS 1), middels størrelse (MS) og stor størrelse (SS).</p><p data-uid="0" class="morTag_a avsnitt">Valg av skiltstørrelse skal gjøres ut fra vurderinger av farvannets beskaffenhet, bruk av farvannet mv., og slik at de er synlige på en avstand hvor sjøfarende kan tilpasse sin ferdsel etter forholdene i rett tid.</p><p data-uid="0" class="morTag_m no-text-indent marg"><em class=" ">Tabell 1. Skiltstørrelse og leseavstand (veiledende)</em></p><div class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  morTableWidthPercent75"><colgroup><col class="morTableWidthPercent20" span="1"/><col class="morTableWidthPercent40" span="1"/></colgroup><thead><tr><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Størrelse</em></th><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Leseavstand</em></th></tr></thead><tbody><tr><td class="  morTableVerticalAlignTop morTableAlignCenter">LS 0</td><td class="  morTableVerticalAlignTop morTableAlignCenter">Kanaler og trange farvann</td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignCenter">LS 1</td><td class="  morTableVerticalAlignTop morTableAlignCenter">Opp til 200 meter</td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignCenter">MS</td><td class="  morTableVerticalAlignTop morTableAlignCenter">Fra 200 til 500 meter</td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignCenter">SS</td><td class="  morTableVerticalAlignTop morTableAlignCenter">Over 500 meter</td></tr></tbody></table></div><p data-uid="0" class="morTag_a avsnitt">Grafisk utforming av skilt, herunder også tall og bokstaver, skal være i samsvar med det som fremgår under pkt. 5.8 (jf. datafiler for produksjon av skilt som utgis av Kystverket).</p></div><a class="namedAnchor" name="kap2.2"></a><div data-level="3" data-id="KAPITTEL_1-2-2" data-refID="kap2.2" class="morTag_k kapittel" id="KAPITTEL_1-2-2"><h4 class="  ">2.2 Form</h4><p data-uid="0" class="morTag_a avsnitt">Varsel, forbuds- og opplysningsskilt skal ha kvadratisk form.</p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><em class=" ">Figur 1. Skilt med kvadratisk form</em></p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><a href="/static/SF/sf-20121219-1329-v1-01-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-01-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-01-02.jpg"/></a></p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><em class=" ">Tabell 2. Mål for skilt med kvadratisk form</em></p><div class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  morTableWidthPercent95"><colgroup><col class="morTableWidthPercent19" span="4"/></colgroup><thead><tr><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Størrelse</em></th><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Sidelengde A (mm)</em></th><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Bordbredde b (mm)</em></th><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Hjørneradius r (mm)</em></th></tr></thead><tbody><tr><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">LS 0</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight">600</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight">60</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight">b x 3/10</td></tr><tr><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">LS 1</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight">1000</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight">100</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight"></td></tr><tr><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">MS</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight">1500</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight">150</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight"></td></tr><tr><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">SS</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight">2000</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight">200</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignRight"></td></tr></tbody></table></div><p data-uid="0" class="morTag_a avsnitt">Forbudsskiltet «Fartsgrense opphører» og opplysningsskilt skal utføres uten bord.</p></div><a class="namedAnchor" name="kap2.3"></a><div data-level="3" data-id="KAPITTEL_1-2-3" data-refID="kap2.3" class="morTag_k kapittel" id="KAPITTEL_1-2-3"><h4 class="  ">2.3 Underskilt</h4><p data-uid="0" class="morTag_a avsnitt">Underskilt til varsel-, forbuds- og opplysningsskilt gir utfyllende opplysninger til det skiltet det tilhører.</p><p data-uid="0" class="morTag_a avsnitt">Underskilt skal ha samme bredde som det skiltet det tilhører.</p><p data-uid="0" class="morTag_a avsnitt">Mellom hovedskilt og underskilt skal det være et felt på halve bordbredden av hovedskiltet med retrorefleks med lik bunnfarge som skiltene.</p><p data-uid="0" class="morTag_a avsnitt">Høyden på et underskilt med en linje tekst skal være 3/10 av bredden på skiltet det tilhører. Tekst skal utgjøre 1/4 og bord 3/20 av høyden på underskiltet.</p><p data-uid="0" class="morTag_a avsnitt">For underskilt med flere linjer tekst gjelder at teksthøyde og bord skal utformes som for skilt med en linje. Høyden på slike underskilt vil følge av antall tekstlinjer og avstanden mellom disse. Avstanden mellom to tekstlinjer skal være 7/10 av teksthøyden.</p><p data-uid="0" class="morTag_a avsnitt">Underskilt til opplysningsskilt skal utføres uten bord.</p></div></div><a class="namedAnchor" name="kap3"></a><div data-level="2" data-id="KAPITTEL_1-3" data-refID="kap3" class="morTag_o kapittel" id="KAPITTEL_1-3"><h3 class="  ">3. Markeringsskilt</h3><a class="namedAnchor" name="kap3.1"></a><div data-level="3" data-id="KAPITTEL_1-3-1" data-refID="kap3.1" class="morTag_k kapittel" id="KAPITTEL_1-3-1"><h4 class="  ">3.1 Trekant form</h4><p data-uid="0" class="morTag_a avsnitt">Markeringsskilt med trekant form skal ha to like lange sider og høyde like lang som grunnlinjen.</p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><em class=" ">Figur 2. Skilt med trekantet form</em></p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><a href="/static/SF/sf-20121219-1329-v1-02-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-02-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-02-02.jpg"/></a></p><p data-uid="0" class="morTag_m no-text-indent marg"><em class=" ">Tabell 3. Mål for skilt med trekant form</em></p><div class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  morTableWidthPercent95"><colgroup><col class="morTableWidthPercent25" span="2"/><col class="morTableWidthPercent26" span="1"/></colgroup><thead><tr><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Størrelse</em></th><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Grunnlinje / høyde A (mm)</em></th><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Hjørneradius r (mm)</em></th></tr></thead><tbody><tr><td class="  morTableVerticalAlignBottom morTableAlignCenter">LS 0</td><td class="  morTableVerticalAlignBottom morTableAlignRight">600</td><td class="  morTableVerticalAlignBottom morTableAlignRight">A x 3/100</td></tr><tr><td class="  morTableVerticalAlignBottom morTableAlignCenter">LS 1</td><td class="  morTableVerticalAlignBottom morTableAlignRight">1000</td><td class="  morTableVerticalAlignBottom morTableAlignRight"></td></tr><tr><td class="  morTableVerticalAlignBottom morTableAlignCenter">MS</td><td class="  morTableVerticalAlignBottom morTableAlignRight">1500</td><td class="  morTableVerticalAlignBottom morTableAlignRight"></td></tr><tr><td class="  morTableVerticalAlignBottom morTableAlignCenter">SS</td><td class="  morTableVerticalAlignBottom morTableAlignRight">2000</td><td class="  morTableVerticalAlignBottom morTableAlignRight"></td></tr></tbody></table></div></div><a class="namedAnchor" name="kap3.2"></a><div data-level="3" data-id="KAPITTEL_1-3-2" data-refID="kap3.2" class="morTag_k kapittel" id="KAPITTEL_1-3-2"><h4 class="  ">3.2 Sirkel form</h4><p data-uid="0" class="morTag_a avsnitt">Markeringsskilt med sirkel form skal ha mål som i tabellen under.</p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><em class=" ">Figur 3. Skilt med sirkel form</em></p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><a href="/static/SF/sf-20121219-1329-v1-03-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-03-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-03-02.jpg"/></a></p><p data-uid="0" class="morTag_m no-text-indent marg"><em class=" ">Tabell 4. Mål for skilt med sirkel form</em></p><div class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  morTableWidthPercent50"><colgroup><col class="morTableWidthPercent20" span="2"/></colgroup><thead><tr><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Størrelse</em></th><th class="  morTableVerticalAlignTop morTableAlignCenter"><em class=" ">Diameter D (mm)</em></th></tr></thead><tbody><tr><td class="  morTableVerticalAlignBottom morTableAlignCenter">LS 0</td><td class="  morTableVerticalAlignBottom morTableAlignRight">600</td></tr><tr><td class="  morTableVerticalAlignBottom morTableAlignCenter">LS 1</td><td class="  morTableVerticalAlignBottom morTableAlignRight">1000</td></tr><tr><td class="  morTableVerticalAlignBottom morTableAlignCenter">MS</td><td class="  morTableVerticalAlignBottom morTableAlignRight">1500</td></tr><tr><td class="  morTableVerticalAlignBottom morTableAlignCenter">SS</td><td class="  morTableVerticalAlignBottom morTableAlignRight">2000</td></tr></tbody></table></div></div></div><a class="namedAnchor" name="kap4"></a><div data-level="2" data-id="KAPITTEL_1-4" data-refID="kap4" class="morTag_o kapittel" id="KAPITTEL_1-4"><h3 class="  ">4. Utførelse av farvannsskilt</h3><a class="namedAnchor" name="kap4.1"></a><div data-level="3" data-id="KAPITTEL_1-4-1" data-refID="kap4.1" class="morTag_k kapittel" id="KAPITTEL_1-4-1"><h4 class="  ">4.1 Overflatemateriale og farger</h4><p data-uid="0" class="morTag_a avsnitt">Farvannsskilt skal utføres med overflate av retroreflekterende skiltfolie. Skiltfolier er for praktiske formål inndelt i tre klasser, hvor klasse 3 har best reflekterende egenskaper.</p><p data-uid="0" class="morTag_a avsnitt">Valg av skiltfolie vil avhenge av skilttype, krav til lesbarhet under forskjellige lysforhold, plassering i farvann eller terreng osv.</p><p data-uid="0" class="morTag_a avsnitt">Kystverket kan sette vilkår om bruk av en bestemt klasse skiltfolie.</p><p data-uid="0" class="morTag_a avsnitt">Retrorefleksjonskoeffisient, luminansfaktorer og fargekoordinater for skiltfolier skal møte krav som fremgår av Håndbok R310 Trafikksikkerhetsutstyr Tekniske krav – Del 1 Trafikkskilt (Vegdirektoratet).</p><p data-uid="0" class="morTag_a avsnitt">Varselskilt og forbudsskilt skal ha hvit bunn, rød kant og svart tekst. Istedenfor hvit bunn kan det nyttes fluorescerende gul bunn når et skilt brukes i forbindelse med arbeid i sjø.</p><p data-uid="0" class="morTag_a avsnitt">Opplysningsskilt skal ha blå bunn med hvit tekst.</p><p data-uid="0" class="morTag_a avsnitt">Underskilt skal ha samme fargesammensetning som hovedskiltet.</p><p data-uid="0" class="morTag_a avsnitt">Markeringsskilt skal være enten grønne, røde eller med røde og hvite vertikale striper.</p></div><a class="namedAnchor" name="kap4.2"></a><div data-level="3" data-id="KAPITTEL_1-4-2" data-refID="kap4.2" class="morTag_k kapittel" id="KAPITTEL_1-4-2"><h4 class="  ">4.2 Belysning av farvannsskilt</h4><p data-uid="0" class="morTag_a avsnitt">Farvannsskilt kan belyses, slik at de blir synlige i mørke uten bruk av lyskaster.</p><p data-uid="0" class="morTag_a avsnitt">Kystverket kan sette krav om belysning av skilt.</p><p data-uid="0" class="morTag_a avsnitt">Et skilt som når det er belyst vil kunne oppfattes å gi navigasjonsveiledning som kan misforstås i mørke, skal ikke være belyst.</p><p data-uid="0" class="morTag_a avsnitt">Luminansnivå på indirekte belyst farvannsskilt skal være 10 cd/m​<sup class=" sup">2</sup>.</p><p data-uid="0" class="morTag_a avsnitt">Luminansnivå på farvannsskilt vist med direkte belysning skal være 5–10 cd/m​<sup class=" sup">2</sup>.</p></div><a class="namedAnchor" name="kap4.3"></a><div data-level="3" data-id="KAPITTEL_1-4-3" data-refID="kap4.3" class="morTag_k kapittel" id="KAPITTEL_1-4-3"><h4 class="  ">4.3 Skrifttype</h4><p data-uid="0" class="morTag_a avsnitt">Trafikkalfabetet skal brukes som skrifttype på farvannsskilt.</p><p data-uid="0" class="morTag_a avsnitt">Trafikkalfabetet er en egen skrifttype for tekst på trafikkskilt (jf. Håndbok N300 Trafikkskilt Del 1 Fellesbestemmelser – Vedlegg 2 Trafikkalfabetet (Vegdirektoratet)).</p></div><a class="namedAnchor" name="kap4.4"></a><div data-level="3" data-id="KAPITTEL_1-4-4" data-refID="kap4.4" class="morTag_k kapittel" id="KAPITTEL_1-4-4"><h4 class="  ">4.4 Styrke</h4><p data-uid="0" class="morTag_a avsnitt">Bære- og støttekonstruksjon til skilt skal tilfredsstille krav til oppsettingsutstyr etter Håndbok R310 Trafikksikkerhetsutstyr Tekniske krav – Del 5 Oppsettingsutstyr (Vegdirektoratet), så langt disse er anvendelige.</p></div><a class="namedAnchor" name="kap4.5"></a><div data-level="3" data-id="KAPITTEL_1-4-5" data-refID="kap4.5" class="morTag_k kapittel" id="KAPITTEL_1-4-5"><h4 class="  ">4.5 Annet</h4><p data-uid="0" class="morTag_a avsnitt">Dersom det blir funnet formålstjenelig kan Kystverket gi tillatelse til å bruke skilttyper som ikke er beskrevet foran, som blant annet billedpunktskilt.</p></div></div><a class="namedAnchor" name="kap5"></a><div data-level="2" data-id="KAPITTEL_1-5" data-refID="kap5" class="morTag_o kapittel" id="KAPITTEL_1-5"><h3 class="  ">5. Type farvannsskilt</h3><a class="namedAnchor" name="kap5.1"></a><div data-level="3" data-id="KAPITTEL_1-5-1" data-refID="kap5.1" class="morTag_k kapittel" id="KAPITTEL_1-5-1"><h4 class="  ">5.1 Varselskilt</h4><p data-uid="0" class="morTag_a avsnitt">Varselskilt skal anvendes for å varsle om forhold som kan medføre fare for sjøtrafikken.</p></div><a class="namedAnchor" name="kap5.2"></a><div data-level="3" data-id="KAPITTEL_1-5-2" data-refID="kap5.2" class="morTag_k kapittel" id="KAPITTEL_1-5-2"><h4 class="  ">5.2 Forbudsskilt</h4><p data-uid="0" class="morTag_a avsnitt">Forbudsskilt angir at det gjelder et forbud mot for eksempel aktiviteter som dykking, handlinger som å ankre eller mot å ha fart over en fartsgrense som angitt.</p><p data-uid="0" class="morTag_a avsnitt">Et forbud gjelder fra det sted hvor skiltet er satt opp, så fremt ikke annet fremgår av underskilt.</p></div><a class="namedAnchor" name="kap5.3"></a><div data-level="3" data-id="KAPITTEL_1-5-3" data-refID="kap5.3" class="morTag_k kapittel" id="KAPITTEL_1-5-3"><h4 class="  ">5.3 Opplysningsskilt</h4><p data-uid="0" class="morTag_a avsnitt">Opplysningsskilt angir hvor en aktivitet kan utføres, herunder som følge av unntak fra et forbud, eller andre forhold den som ferdes i farvannet bør være kjent med.</p></div><a class="namedAnchor" name="kap5.4"></a><div data-level="3" data-id="KAPITTEL_1-5-4" data-refID="kap5.4" class="morTag_k kapittel" id="KAPITTEL_1-5-4"><h4 class="  ">5.4 Underskilt</h4><p data-uid="0" class="morTag_a avsnitt">Underskilt gir nærmere klargjøring, utviding eller begrensning av hovedskiltets betydning eller gyldighetsområde, og er kun gyldige når de brukes sammen med et hovedskilt.</p><p data-uid="0" class="morTag_a avsnitt">Et underskilt skal være vendt samme vei som det skiltet det tilhører, og plasseres under hovedskiltet.</p></div><a class="namedAnchor" name="kap5.5"></a><div data-level="3" data-id="KAPITTEL_1-5-5" data-refID="kap5.5" class="morTag_k kapittel" id="KAPITTEL_1-5-5"><h4 class="  ">5.5 Skiltkombinasjoner</h4><p data-uid="0" class="morTag_a avsnitt">I noen tilfeller kan det være praktisk, ønskelig eller nødvendig å samle flere skilt på samme skiltoppsett. Informasjonsmengden bør imidlertid ikke bli for stor, og ulike skiltkombinasjoner bør heller ikke være slik at misforståelser kan oppstå.</p><p data-uid="0" class="morTag_a avsnitt">Skiltkombinasjoner kan maksimalt omfatte:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">to hovedskilt på samme skiltoppsett, og</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">ett underskilt per hovedskilt i kombinasjonen.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">To hovedskilt kan settes sammen enten vertikalt eller horisontalt.</p><p data-uid="0" class="morTag_a avsnitt">Mellom to hovedskilt skal det være et felt på halve bordbredden av et hovedskilt.</p></div><a class="namedAnchor" name="kap5.6"></a><div data-level="3" data-id="KAPITTEL_1-5-6" data-refID="kap5.6" class="morTag_k kapittel" id="KAPITTEL_1-5-6"><h4 class="  ">5.6 Tilleggsinformasjon</h4><p data-uid="0" class="morTag_a avsnitt">Dersom varsel om fare, påbud eller opplysning gjelder en viss strekning, på en viss tid av døgnet, for en viss type farkost, eller med unntak for en viss type farkost, skal dette angis på underskilt.</p><p data-uid="0" class="morTag_a avsnitt">Dersom varsel om fare, forbud, påbud eller opplysning kun gjelder for en del av året skal dette angis på underskilt, dersom skiltet ikke tas bort eller dekkes over den tiden det ikke gjelder.</p></div><a class="namedAnchor" name="kap5.7"></a><div data-level="3" data-id="KAPITTEL_1-5-7" data-refID="kap5.7" class="morTag_k kapittel" id="KAPITTEL_1-5-7"><h4 class="  ">5.7 Markeringsskilt</h4><p data-uid="0" class="morTag_a avsnitt">Markeringsskilt gir opplysninger om en farleds videre forløp, eller om hindringer i eller nær en farled.</p></div><a class="namedAnchor" name="kap5.8"></a><div data-level="3" data-id="KAPITTEL_1-5-8" data-refID="kap5.8" class="morTag_k kapittel" id="KAPITTEL_1-5-8"><h4 class="  ">5.8 Farvannsskiltene</h4><p data-uid="0" class="morTag_a avsnitt">Farvannsskiltene skal ha utforming som det fremgår under.</p></div><a class="namedAnchor" name="kap5.9"></a><div data-level="3" data-id="KAPITTEL_1-5-9" data-refID="kap5.9" class="morTag_k kapittel" id="KAPITTEL_1-5-9"><h4 class="  ">5.9 Varselskilt</h4><p data-uid="0" class="morTag_am no-text-indent avsnitt"></p><div class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  morTableWidthPercent95"><colgroup><col class="morTableWidthPercent54" span="1"/><col class="morTableWidthPercent22" span="1"/></colgroup><tbody><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Kabelferge</em><br/>Anvendelse:<br/>Angir kabelstyrt eller kabeldrevet ferge.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-04-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-04-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-04-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Livsfarlig ledning</em><br/>Anvendelse:<br/>Angir strømførende ledning med livsfarlig spenning.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-05-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-05-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-05-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Vertikal klaring og sikker vertikal klaring</em><br/>Anvendelse:<br/>Angir vertikal klaring under bru eller lignende og sikker vertikal klaring under luftlinje med elektrisk energi eller elektronisk kommunikasjon.<br/>Ved lave bruer kan skiltet «Annen fare» med underskilt «Lav bru» anvendes.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-06-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-06-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-06-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Horisontal klaring</em><br/>Anvendelse:<br/>Angir horisontal klaring i en farledsinnsnevring, utdypet renne eller lignende.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-07-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-07-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-07-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Bevegelig bru</em><br/>Anvendelse:<br/>Angir alle typer bevegelig bru, for eksempel klaffebru og svingbru.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-08-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-08-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-08-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Annen fare</em><br/>Anvendelse:<br/>Angir en fare som det ikke finnes eget skilt for. Farens art skal angis på underskilt.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-09-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-09-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-09-02.jpg"/></a></td></tr></tbody></table></div></div><a class="namedAnchor" name="kap5.10"></a><div data-level="3" data-id="KAPITTEL_1-5-10" data-refID="kap5.10" class="morTag_k kapittel" id="KAPITTEL_1-5-10"><h4 class="  ">5.10 Forbudsskilt</h4><p data-uid="0" class="morTag_am no-text-indent avsnitt"></p><div class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  morTableWidthPercent95"><colgroup><col class="morTableWidthPercent54" span="1"/><col class="morTableWidthPercent22" span="1"/></colgroup><tbody><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Dykking forbudt</em><br/>Anvendelse:<br/>Angir at dykking er forbudt. Forbud kan være gitt ved ordensforskrift eller lignende.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-10-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-10-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-10-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Ankring forbudt</em><br/>Anvendelse:<br/>Angir at ankring er forbudt.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-11-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-11-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-11-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Sjøtrafikk forbudt</em><br/>Anvendelse:<br/>Angir at sjøtrafikk er forbudt innenfor et sjøområde.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-12-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-12-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-12-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Fartsgrense</em><br/>Anvendelse:<br/>Angir høyeste tillatte fart (for eksempel 5 knop).</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-13-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-13-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-13-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Fartsgrense opphører</em><br/>Anvendelse:<br/>Angir at fartsgrense opphører.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-14-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-14-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-14-02.jpg"/></a></td></tr></tbody></table></div></div><a class="namedAnchor" name="kap5.11"></a><div data-level="3" data-id="KAPITTEL_1-5-11" data-refID="kap5.11" class="morTag_k kapittel" id="KAPITTEL_1-5-11"><h4 class="  ">5.11 Opplysningsskilt</h4><p data-uid="0" class="morTag_am no-text-indent avsnitt"></p><div class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  morTableWidthPercent95"><colgroup><col class="morTableWidthPercent54" span="1"/><col class="morTableWidthPercent22" span="1"/></colgroup><tbody><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Sakte fart</em><br/>Anvendelse:<br/>Angir at fartøyer skal utvise forsiktighet og avpasse farten.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-15-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-15-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-15-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Anropskanal VHF</em><br/>Anvendelse:<br/>Angir anropskanal som skal brukes for å kontakte havn eller lignende.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-16-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-16-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-16-02.jpg"/></a></td></tr></tbody></table></div></div><a class="namedAnchor" name="kap5.12"></a><div data-level="3" data-id="KAPITTEL_1-5-12" data-refID="kap5.12" class="morTag_k kapittel" id="KAPITTEL_1-5-12"><h4 class="  ">5.12 Underskilt</h4><p data-uid="0" class="morTag_am no-text-indent avsnitt"></p><div class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  morTableWidthPercent95"><colgroup><col class="morTableWidthPercent54" span="1"/><col class="morTableWidthPercent22" span="1"/></colgroup><tbody><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Strekningens lengde fra skiltet i meter</em><br/>Anvendelse:<br/>Angir strekning fra hovedskiltet i meter (m).</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-17-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-17-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-17-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Strekningens lengde fra skiltet i nautiske mil</em><br/>Anvendelse:<br/>Angir strekning fra skiltet i nautiske mil (M).</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-18-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-18-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-18-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Strekningens lengde bortenfor skiltet i meter</em><br/>Anvendelse:<br/>Angir en strekning som begynner bortenfor hovedskiltet i meter (m).</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-19-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-19-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-19-02.jpg"/></a><br/></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Strekningens lengde bortenfor skiltet i nautiske mil</em><br/>Anvendelse:<br/>Angir en strekning som begynner bortenfor hovedskiltet i nautiske mil (M).</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-20-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-20-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-20-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Tid</em><br/>Anvendelse:<br/>Angir tiden for når hovedskiltet gjelder.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-21-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-21-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-21-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Dato</em><br/>Anvendelse:<br/>Angir dato for når hovedskiltet gjelder.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-22-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-22-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-22-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Fartøy større enn ... BT</em><br/>Anvendelse:<br/>Angir størrelsen i bruttotonn (BT) på fartøy hovedskiltet gjelder for.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-23-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-23-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-23-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Kabel, rørledning, vannledning, avløpsledning</em><br/>Anvendelse:<br/>Angir at hovedskiltet gjelder kabel, rørledning eller lignende sjøledning.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-24-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-24-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-24-02.jpg"/></a><br/><a href="/static/SF/sf-20121219-1329-v1-25-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-25-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-25-02.jpg"/></a><br/><a href="/static/SF/sf-20121219-1329-v1-26-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-26-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-26-02.jpg"/></a><br/><a href="/static/SF/sf-20121219-1329-v1-27-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-27-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-27-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Lav bru</em><br/>Anvendelse:<br/>Angir at hovedskiltet gjelder lav bru.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-28-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-28-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-28-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Virkeområde</em><br/>Anvendelse:<br/>Angir hovedskiltets virkeområde en eller begge sider i meter (m).</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-29-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-29-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-29-02.jpg"/></a></td></tr></tbody></table></div></div><a class="namedAnchor" name="kap5.13"></a><div data-level="3" data-id="KAPITTEL_1-5-13" data-refID="kap5.13" class="morTag_k kapittel" id="KAPITTEL_1-5-13"><h4 class="  ">5.13 Markeringsskilt</h4><p data-uid="0" class="morTag_am no-text-indent avsnitt"></p><div class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_0  body_margin_1 body_border_0 font_  morTableWidthPercent95"><colgroup><col class="morTableWidthPercent54" span="1"/><col class="morTableWidthPercent22" span="1"/></colgroup><tbody><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Sidemarkering styrbord</em><br/>Anvendelse:<br/>Angir sidemarkering til styrbord i forhold til merkesystemets hovedretning for begrenset høyde under bru.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-30-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-30-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-30-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Sidemarkering babord</em><br/>Anvendelse:<br/>Angir sidemarkering til babord i forhold til merkesystemets hovedretning for begrenset høyde under bru.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-31-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-31-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-31-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Beste punkt for passering</em><br/>Anvendelse:<br/>Angir beste punkt for passering under bru.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-32-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-32-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-32-02.jpg"/></a></td></tr><tr><td class="  morTableVerticalAlignTop morTableAlignLeft"><em class=" ">Overett</em><br/>Anvendelse:<br/>Viser traseen på sjøbunnen for kabel, rørledning eller lignende sjøledning.<br/>Merknad:<br/>Som overettmerker bør likesidede trekanter anvendes.<br/>Trekantene skal ha rød bunnfarge og en vertikal gul stripe på midten.<br/>Trekanten nærmest sjøen monteres med spissen opp og trekanten lengst fra sjøen over dette og med spissen ned.</td><td class="  morTableVerticalAlignTop morTableAlignCenter"><a href="/static/SF/sf-20121219-1329-v1-33-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v1-33-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v1-33-02.jpg"/></a></td></tr></tbody></table></div></div></div></div><a class="namedAnchor" name="vedlegg2"></a><div data-level="1" data-id="KAPITTEL_2" data-refID="vedlegg2" class="morTag_b kapittel" id="KAPITTEL_2"><h2 class="  ">Vedlegg 2 – Merking av akvakulturanlegg</h2><a class="namedAnchor" name="kap1"></a><div data-level="2" data-id="KAPITTEL_2-1" data-refID="kap1" class="morTag_o kapittel" id="KAPITTEL_2-1"><h3 class="  ">1. Innledning</h3><p data-uid="0" class="morTag_a avsnitt">For å ivareta hensynet til en sikker ferdsel til sjøs skal akvakulturanlegg merkes slik at de til enhver tid er godt synlige for sjøfarende.</p><p data-uid="0" class="morTag_a avsnitt">Vedlegget beskriver hvordan merking av akvakulturanlegg i sjø skal utføres.</p><p data-uid="0" class="morTag_a avsnitt">Eieren eller den som er ansvarlig for et akvakulturanlegg skal sørge for at det til enhver tid er forskriftsmessig merket, og at merkingen ellers er i samsvar med eventuelle spesielle vilkår som fremgår av tillatelsen til å etablere dette.</p><p data-uid="0" class="morTag_a avsnitt">Merking av anlegg for havbeite, dvs. akvakultur av krepsdyr, bløtdyr og pigghuder i form av bunnkultur uten at akvakulturdyrene blir holdt i fangenskap, omfattes ikke av vedlegget. Det vises til at fylkeskommunen kan pålegge og godkjenne merking av anlegg for havbeite, jf. <a data-id="forskrift/2003-08-28-1110/§29" class=" reference" href="/forskrift/2003-08-28-1110/%C2%A729">forskrift 28. august 2003 nr. 1110 om tildeling og drift ved havbeiteverksemd § 29</a>.</p></div><a class="namedAnchor" name="kap2"></a><div data-level="2" data-id="KAPITTEL_2-2" data-refID="kap2" class="morTag_o kapittel" id="KAPITTEL_2-2"><h3 class="  ">2. Generelt</h3><a class="namedAnchor" name="kap2.1"></a><div data-level="3" data-id="KAPITTEL_2-2-1" data-refID="kap2.1" class="morTag_k kapittel" id="KAPITTEL_2-2-1"><h4 class="  ">2.1 Søknad og tillatelse</h4><p data-uid="0" class="morTag_a avsnitt">Etablering av akvakulturanlegg krever tillatelse fra Kystverket etter <a data-id="lov/2019-06-21-70/§27" class=" reference" href="/lov/2019-06-21-70/%C2%A727">havne- og farvannsloven § 27</a> og <a data-id="forskrift/2009-12-03-1449" class=" reference" href="/forskrift/2009-12-03-1449">forskrift 3. desember 2009 nr. 1449 om tiltak som krever tillatelse fra Kystverket</a>.</p><p data-uid="0" class="morTag_a avsnitt">Merking av akvakulturanlegg skal skje i samsvar med dette vedlegget til forskrift om farvannsskilt og navigasjonsinnretninger (jf. <a data-id="forskrift/2012-12-19-1329/§5" class=" reference" href="/forskrift/2012-12-19-1329/%C2%A75">§ 5</a>). Det kreves ikke egen tillatelse for etablering av navigasjonsinnretninger (IALA spesialmerke) med unntak for radarsvarer (racon) og AIS navigasjonsinnretning.</p></div><a class="namedAnchor" name="kap2.2"></a><div data-level="3" data-id="KAPITTEL_2-2-2" data-refID="kap2.2" class="morTag_k kapittel" id="KAPITTEL_2-2-2"><h4 class="  ">2.2 Forskrifter og standarder</h4><p data-uid="0" class="morTag_a avsnitt">Merking av akvakulturanlegg i sjø etter dette vedlegget må sees i sammenheng med de til enhver tid gjeldende forskrifter og standarder på området, herunder også International Marine Aids to Navigation and Lighthouse Authorities Association (IALA) anbefalinger og veiledninger.</p></div><a class="namedAnchor" name="kap2.3"></a><div data-level="3" data-id="KAPITTEL_2-2-3" data-refID="kap2.3" class="morTag_k kapittel" id="KAPITTEL_2-2-3"><h4 class="  ">2.3 Opphør av drift på lokalitet</h4><p data-uid="0" class="morTag_a avsnitt">Ved opphør av drift på lokalitet enten ved flytting, nedlegging eller på annen måte skal anlegg eller gjenværende deler av anlegg være merket så lenge de fortsatt kan utgjøre en fare for sjøverts ferdsel.</p></div></div><a class="namedAnchor" name="kap3"></a><div data-level="2" data-id="KAPITTEL_2-3" data-refID="kap3" class="morTag_o kapittel" id="KAPITTEL_2-3"><h3 class="  ">3. Merking</h3><a class="namedAnchor" name="kap3.1"></a><div data-level="3" data-id="KAPITTEL_2-3-1" data-refID="kap3.1" class="morTag_k kapittel" id="KAPITTEL_2-3-1"><h4 class="  ">3.1 Merking av ytterpunkt</h4><p data-uid="0" class="morTag_a avsnitt">Ytterpunkt på et akvakulturanlegg skal merkes med IALA spesialmerke med en utforming slik det går frem av pkt. 3.3 under.</p><p data-uid="0" class="morTag_a avsnitt">Avstanden mellom ytterpunkt som er merket skal være 200 meter eller mindre.</p><p data-uid="0" class="morTag_a avsnitt">Som ytterpunkter regnes de punkter der anleggets forankringer eller fortøyninger er festet, eller et punkt hvor tau, wire, kjetting eller lignende som del av anleggets forankring eller fortøyning har en slik dybde at det ikke er til hinder for sjøtrafikken og ikke kan skade eller skades av denne. Ytterpunkt er hjørnepunkt og punkter mellom hjørnepunktene.</p></div><a class="namedAnchor" name="kap3.2"></a><div data-level="3" data-id="KAPITTEL_2-3-2" data-refID="kap3.2" class="morTag_k kapittel" id="KAPITTEL_2-3-2"><h4 class="  ">3.2 Bøyer til forankring eller fortøyning mv.</h4><p data-uid="0" class="morTag_a avsnitt">Bøyer til forankring eller fortøyning av et akvakulturanlegg skal ha gul farge som for et IALA spesialmerke.</p><p data-uid="0" class="morTag_a avsnitt">Bøyer til forankring eller fortøyning av et akvakulturanlegg kan benyttes til samtidig å merke ytterpunkt på anlegget.</p></div><a class="namedAnchor" name="kap3.3"></a><div data-level="3" data-id="KAPITTEL_2-3-3" data-refID="kap3.3" class="morTag_k kapittel" id="KAPITTEL_2-3-3"><h4 class="  ">3.3 IALA-spesialmerke</h4><p data-uid="0" class="morTag_a avsnitt">For IALA-spesialmerke som anvendes til formål etter dette vedlegget gjelder krav til utrustning som følger:</p><a class="namedAnchor" name="kap3.3.1"></a><div data-level="4" data-id="KAPITTEL_2-3-3-1" data-refID="kap3.3.1" class="morTag_u kapittel" id="KAPITTEL_2-3-3-1"><h5 class="  ">3.3.1 Overflatefarge</h5><p data-uid="0" class="morTag_a avsnitt">Gul overflatefarge skal være innenfor de verdier som er angitt med hjørnekoordinater i henhold til CIE (International Commission on Illumination) standard kromatiske diagram i tabellen under.</p><p data-uid="0" class="morTag_m no-text-indent marg"><em class=" ">Tabell 5. Fargekoordinater for vanlig overflatefarge i dagslys</em></p><div class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  tabell"><table class="lovdataDocumentTable  margin_1 border_1  body_margin_1 body_border_1 font_  morTableWidthPercent95"><colgroup><col class="morTableWidthPercent8" span="2"/><col class="morTableWidthPercent9" span="1"/><col class="morTableWidthPercent8" span="1"/><col class="morTableWidthPercent9" span="1"/><col class="morTableWidthPercent8" span="1"/><col class="morTableWidthPercent9" span="1"/><col class="morTableWidthPercent8" span="1"/><col class="morTableWidthPercent9" span="1"/></colgroup><thead><tr><th class="  morTableVerticalAlignTop morTableAlignLeft"></th><th colspan="2" class=" complexTable morTableVerticalAlignTop morTableAlignCenter">1</th><th colspan="2" class=" complexTable morTableVerticalAlignTop morTableAlignCenter">2</th><th colspan="2" class=" complexTable morTableVerticalAlignTop morTableAlignCenter">3</th><th colspan="2" class=" complexTable morTableVerticalAlignTop morTableAlignCenter">4</th></tr><tr><th class="  morTableVerticalAlignTop morTableAlignLeft"></th><th class="  morTableVerticalAlignTop morTableAlignCenter">x</th><th class="  morTableVerticalAlignTop morTableAlignCenter">Y</th><th class="  morTableVerticalAlignTop morTableAlignCenter">x</th><th class="  morTableVerticalAlignTop morTableAlignCenter">y</th><th class="  morTableVerticalAlignTop morTableAlignCenter">x</th><th class="  morTableVerticalAlignTop morTableAlignCenter">y</th><th class="  morTableVerticalAlignTop morTableAlignCenter">x</th><th class="  morTableVerticalAlignTop morTableAlignCenter">y</th></tr></thead><tbody><tr><td class=" complexTable morTableVerticalAlignBottom morTableAlignLeft">Gul</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">0,522</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">0,477</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">0,470</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">0,440</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">0,427</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">0,483</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">0,465</td><td class=" complexTable morTableVerticalAlignBottom morTableAlignCenter">0,534</td></tr></tbody></table></div><p data-uid="0" class="morTag_a avsnitt">Standardfargene RAL 1023 TRAFIKKGUL og NCS S 1080-Y GUL møter kravet til gul overflatefarge.</p></div><a class="namedAnchor" name="kap3.3.2"></a><div data-level="4" data-id="KAPITTEL_2-3-3-2" data-refID="kap3.3.2" class="morTag_u kapittel" id="KAPITTEL_2-3-3-2"><h5 class="  ">3.3.2 Dagslysfluoriserende gul refleks</h5><p data-uid="0" class="morTag_a avsnitt">Spesialmerket skal ha panel med dagslysfluoriserende gul skiltfolie.</p><p data-uid="0" class="morTag_a avsnitt">Retrorefleksjonskoeffisient, luminansfaktorer og fargekoordinater for dagslysfluoriserende gul skiltfolie skal møte krav som fremgår av Håndbok R310 Trafikksikkerhetsutstyr Tekniske krav – Del 1 Trafikkskilt (Vegdirektoratet).</p></div><a class="namedAnchor" name="kap3.3.3"></a><div data-level="4" data-id="KAPITTEL_2-3-3-3" data-refID="kap3.3.3" class="morTag_u kapittel" id="KAPITTEL_2-3-3-3"><h5 class="  ">3.3.3 Lyssignal</h5><p data-uid="0" class="morTag_a avsnitt">Spesialmerket skal gi et lyssignal med følgende egenskaper:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Farge: Gul</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Karakter (benevnelse): Oc Y 2s</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Periode: 2 sekunder med 1,25 sekund lys / 0,75 sekund mørke (arbeidssyklus 62,5&nbsp;%)</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Lysvidde: 3 nautiske mil</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Tilgjengelighet: 99,8&nbsp;% beregnet over en kontinuerlig periode på 3 år</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Lyssignal skal være synkronisert.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Ved beregning av lysintensitet for å møte kravet til lysvidde skal IALA anbefalinger følges. Det skal forutsettes at atmosfærisk transmisjonsfaktor, T<sub class=" sub">M</sub> = 0,74 (meteorologisk sikt 10 nautiske mil).</p><p data-uid="0" class="morTag_a avsnitt">Kystverket kan i særlige tilfeller gi unntak fra kravet om lysvidde og kravet om synkronisering. Dette forutsetter en nærmere vurdering med hensyn til sikkerhet og fremkommelighet for sjøfarende, og andre relevante forhold.</p><p data-uid="0" class="morTag_a avsnitt">Lyssignal skal normalt tennes og slukkes når det omgivende lysnivået er på henholdsvis 50–100 lux og 150–200 lux.</p></div><a class="namedAnchor" name="kap3.3.4"></a><div data-level="4" data-id="KAPITTEL_2-3-3-4" data-refID="kap3.3.4" class="morTag_u kapittel" id="KAPITTEL_2-3-3-4"><h5 class="  ">3.3.4 Radarreflektor</h5><p data-uid="0" class="morTag_a avsnitt">Spesialmerket skal ha en radarreflektor med et radartverrsnitt på minst 7,5m​<sup class=" sup">2</sup> i X-båndet og 0,5m​<sup class=" sup">2</sup> i S-båndet.</p><p data-uid="0" class="morTag_a avsnitt">Radarreflektoren bør monteres så høyt som praktisk mulig på spesialmerket.</p></div></div><a class="namedAnchor" name="kap3.4"></a><div data-level="3" data-id="KAPITTEL_2-3-4" data-refID="kap3.4" class="morTag_k kapittel" id="KAPITTEL_2-3-4"><h4 class="  ">3.4 Annen merking</h4><p data-uid="0" class="morTag_a avsnitt">I tillegg kan akvakulturanlegget merkes med:</p><a class="namedAnchor" name="kap3.4.1"></a><div data-level="4" data-id="KAPITTEL_2-3-4-1" data-refID="kap3.4.1" class="morTag_u kapittel" id="KAPITTEL_2-3-4-1"><h5 class="  ">3.4.1 Indirekte lys (flomlys)</h5><p data-uid="0" class="morTag_a avsnitt">Et akvakulturanlegg kan være lyssatt for arbeid i mørke eller annet formål, og slik at det samtidig er synlig for sjøfarende.</p><p data-uid="0" class="morTag_a avsnitt">Indirekte lys bør gi et midlere luminansnivå på akvakulturanlegget på 2 cd/m​<sup class=" sup">2</sup> ved lyse omgivelser og 1 cd/m​<sup class=" sup">2</sup> ved mørke omgivelser.</p><p data-uid="0" class="morTag_a avsnitt">Når et akvakulturanlegg er indirekte belyst bør dets lokalitetsnummer og navnet på den eller de som innehar tillatelse på lokaliteten belyses særskilt.</p><p data-uid="0" class="morTag_a avsnitt">Lys på akvakulturanlegg skal ikke være til sjenanse for eller blende sjøfarende.</p></div><a class="namedAnchor" name="kap3.4.2"></a><div data-level="4" data-id="KAPITTEL_2-3-4-2" data-refID="kap3.4.2" class="morTag_u kapittel" id="KAPITTEL_2-3-4-2"><h5 class="  ">3.4.2 Radarsvarer (racon)</h5><p data-uid="0" class="morTag_a avsnitt">Et akvakulturanlegg kan bli utrustet med radarsvarer (racon) for å sikre at dette kan oppdages eller er synlig der hvor lyssignal ikke anses å være tilstrekkelig, og det er hensiktsmessig å bruke radar for identifikasjon.</p><p data-uid="0" class="morTag_a avsnitt">Radarsvarer (racon) skal kunne svare marine radarer i 3- og 10-cm frekvensbåndene.</p><p data-uid="0" class="morTag_a avsnitt">I 10-cm frekvensbåndet gjelder dette kravet ikke for NT (New Technology) radar.</p><p data-uid="0" class="morTag_a avsnitt">Etablering av radarsvarer (racon) krever særskilt tillatelse fra Kystverket.</p></div><a class="namedAnchor" name="kap3.4.3"></a><div data-level="4" data-id="KAPITTEL_2-3-4-3" data-refID="kap3.4.3" class="morTag_u kapittel" id="KAPITTEL_2-3-4-3"><h5 class="  ">3.4.3 AIS (Automatic Identification System) navigasjonsinnretning</h5><p data-uid="0" class="morTag_a avsnitt">Et akvakulturanlegg kan bli utrustet med AIS navigasjonsinnretning for å sikre at dette kan oppdages eller er synlig der hvor lyssignal ikke anses å være tilstrekkelig, og det er hensiktsmessig å bruke AIS for identifikasjon.</p><p data-uid="0" class="morTag_a avsnitt">Etablering av AIS navigasjonsinnretning krever særskilt tillatelse fra Kystverket. Det krever også radiolisens samt identitet utstedt av Telenor Maritim Radio.</p></div></div><a class="namedAnchor" name="kap3.5"></a><div data-level="3" data-id="KAPITTEL_2-3-5" data-refID="kap3.5" class="morTag_k kapittel" id="KAPITTEL_2-3-5"><h4 class="  ">3.5 Anvisning til utførelse av IALA spesialmerke mv.</h4><a class="namedAnchor" name="kap3.5.1"></a><div data-level="4" data-id="KAPITTEL_2-3-5-1" data-refID="kap3.5.1" class="morTag_u kapittel" id="KAPITTEL_2-3-5-1"><h5 class="  ">3.5.1 Montering av utstyr</h5><p data-uid="0" class="morTag_a avsnitt">Utstyret bør monteres på en 1,75–2 meter høy mast eller lignende.</p><p data-uid="0" class="morTag_a avsnitt">Montasjen bør være i følgende rekkefølge ovenfra og ned:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">lyssignal</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">radarreflektor</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">-</td><td class=" morTableVerticalAlignTop morTableAlignLeft">reflekspanel.</td></tr></table></div><a class="namedAnchor" name="kap3.5.2"></a><div data-level="4" data-id="KAPITTEL_2-3-5-2" data-refID="kap3.5.2" class="morTag_u kapittel" id="KAPITTEL_2-3-5-2"><h5 class="  ">3.5.2 Bære- og støttekonstruksjoner</h5><p data-uid="0" class="morTag_a avsnitt">Bære- og støttekonstruksjon bør tilfredsstille krav til oppsettingsutstyr etter Håndbok R310 Trafikksikkerhetsutstyr Tekniske krav – Del 5 Oppsettingsutstyr (Vegdirektoratet), så langt disse er anvendelige.</p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><em class=" ">Eksempler på merking av akvakulturanlegg</em></p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><em class=" ">Figur 3. Flytende akvakulturanlegg i sjø – oversikt</em></p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><a href="/static/SF/sf-20121219-1329-v2-34-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v2-34-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v2-34-02.jpg"/></a></p><p data-uid="0" class="morTag_am no-text-indent avsnitt">Figur 4. Flytende akvakulturanlegg i sjø – IALA spesialmerke</p><p data-uid="0" class="morTag_am no-text-indent avsnitt"><a href="/static/SF/sf-20121219-1329-v2-35-02.jpg?timestamp=1784499405739"><img src="/static/SF/sf-20121219-1329-v2-35-02.jpg?timestamp=1784499405739" style="max-width:100%" alt="sf-20121219-1329-v2-35-02.jpg"/></a></p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="forskrift/2014-12-19-1813" class=" reference" href="/LTI/forskrift/2014-12-19-1813">forskrift 19 des 2014 nr. 1813</a> (i kraft 1 jan 2015).</td></tr></table></div></div></div></div></div></div></div>
+		</div>
+	</div>
+	<ul class="pager">
+
+		<li class="previous">
+        
+		</li>
+				<li class="complete">
+
+				</li>
+		<li class="next ">
+
+		</li>
+	</ul>
+
+
+	</div> <!-- / Wrapper-->
+
+	<div class="modal fade" id="deleModal" tabindex="-1" role="dialog" aria-labelledby="del" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<p id="del" class="modal-title">Del dokument</p>
+				</div>
+						<div class="modal-body">
+							<input id="urlTextInput" aria-label="Lenken som fører til denne siden" class="form-control dele-url" value="https://lovdata.no/forskrift/2012-12-19-1329" autoselect/>
+							<a class="btn btn-primary btn-block URL" tabindex="0" role="button">Kopier URL</a>
+							<a class="btn btn-primary btn-block twitter" href="" target="_blank" role="button">Del på Twitter</a>
+							<a class="btn btn-primary btn-block facebook" href="" target="_blank" role="button">Del på Facebook</a>
+							<a class="btn btn-primary btn-block linkedin" href="" target="_blank" role="button">Del på LinkedIn</a>
+							<a class="btn btn-primary btn-block email" href="" role="button">Del på e-post</a>
+						</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+</main>
+
+	<script type="text/javascript">
+		$('.btn.btn-primary.btn-block.URL').click(function () {
+			$(".btn.btn-primary.btn-block.URL").select();
+			// Copy text to clipboard
+			document.execCommand('copy');
+		});
+		$(document).ready(function () {
+			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+			if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i) || isSafari) { // iOS + Safari does not like to have this decoded
+			} else if (location.hash != '' && decodeURIComponent(location.hash) != location.hash) {
+				location.hash = decodeURIComponent(location.hash);
+			} else if (window.location.hash == '') {
+			}
+		});
+	</script>
+
+
+
+<aside role="region" aria-labelledby="faq" class="help closed hidden-xs">
+	<h1 class="sr-only" id="faq">Brukerveiledning</h1>
+	<div class="open-help">
+		<button aria-label="Åpne informasjon om brukerveiledning" aria-expanded="false">
+			<span aria-hidden="true" class="toggle-open ss-icon ss-symbolicons-block">&#x2753;</span>
+			<span aria-hidden="true" class="toggle-close ss-icon ss-symbolicons-block">&#x2421;</span>
+		</button>
+		<noscript>
+			<a aria-label="Gå til hjelpeside" class="open-help-noscript" href="/info/faq"></a>
+		</noscript>
+	</div>
+	<div class="help-container hiddenSidePanel" aria-hidden="true">
+		<h2>Trenger du brukerveiledning?</h2>
+		<p><a class="infolink" href="/info/faq">Få svar på ofte stilte spørsmål her (FAQ)</a></p>
+		<p>Lovdata kan dessverre ikke svare på spørsmål angående juridiske problemer. Lovdata kan heller ikke bidra med å tolke regelverket eller finne frem til rettsregler som passer i et bestemt tilfelle. Kontakt den offentlige etaten spørsmålet gjelder, eventuelt advokat eller rettshjelper hvis du har behov for slik bistand.</p>
+
+		<h2>Fant du ikke det du lette etter?</h2>
+		<p>Send en e-post til <a class="infolink" href="mailto:support@lovdata.no">support@lovdata.no</a></p>
+	</div>
+</aside>
+<footer class="footer">
+	<a href="/info/personvern#cookies" class="cookieInfo" aria-hidden="true"><i class="ss-icon ss-symbolicons-line">&#x1F36A;</i><span class="cookie-label">Om informasjonskapsler</span></a>
+	<ul class="footer-nav">
+		<li><a lang="en" href="/info/information_in_english">Information in English</a></li>
+		<li class="ld-hidden-xs"><p tabindex="0" class="popover-parent" data-placement="top" data-toggle="popover" data-trigger="focus hover" title="" data-content="Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.">Juster tekststørrelse<span class="sr-only">Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.</span></p></li>
+		<li class="visible-xs"><a href="/info/faq">Hjelp</a></li>
+		<li><a href="/info/kontakt">Kontakt</a></li>
+		<li><a href="/info/brukeravtale">Brukeravtale</a></li>
+	</ul>
+</footer>
+
+	</body>
+</html>
+

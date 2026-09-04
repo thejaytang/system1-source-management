@@ -1,0 +1,16 @@
+{
+  "enabled": false,
+  "timezone": "Europe/Oslo",
+  "catch_up_enabled": true,
+  "poll_interval_minutes": 30,
+  "notifications": true,
+  "routine": {
+    "days": ["MON", "TUE", "WED", "THU", "FRI"],
+    "time": "09:00"
+  },
+  "full_check": {
+    "days": ["SUN"],
+    "time": "09:00"
+  }
+}
+

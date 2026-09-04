@@ -1,0 +1,1415 @@
+{
+  "run_id": "20260901T095607126620+0200",
+  "generated_at": "2026-09-01T09:56:07+02:00",
+  "architecture": "1 Leader + 3 bounded modules",
+  "execute_collection": false,
+  "overall_status": "REVIEW",
+  "user_message": "49 operation(s) require human attention in Human Operation Desktop.",
+  "awakened_modules": [
+    "discovery_and_intake",
+    "retrieval_and_monitoring",
+    "governance_and_qa"
+  ],
+  "sleeping_modules": [],
+  "module_results": [
+    {
+      "module": "discovery_and_intake",
+      "status": "PASS",
+      "purpose": "Coverage checks and controlled discovery intake",
+      "discovery": {
+        "stage": "01_discovery",
+        "purpose": "Coverage and candidate-inventory gate",
+        "source_count": 87,
+        "duplicate_source_ids": [],
+        "duplicate_official_urls": [
+          "https://asc-aqua.org/producers/asc-standards/species-standards/salmon-cod/",
+          "https://globalgap.org/what-we-offer/solutions/grasp/",
+          "https://globalgap.org/what-we-offer/solutions/ifa-aquaculture/",
+          "https://programme-centre.asc-aqua.org/resource-hub/?filter=farm"
+        ],
+        "no_official_url": [],
+        "equivalent_provenance_gaps": [],
+        "status": "PASS"
+      }
+    },
+    {
+      "module": "retrieval_and_monitoring",
+      "status": "PASS",
+      "purpose": "Monitor, retrieve, validate and preserve source snapshots",
+      "monitoring": {
+        "stage": "02_update_monitor",
+        "purpose": "Determine which sources can be checked in this run",
+        "eligible_count": 79,
+        "downloadable_count": 70,
+        "missing_retrieval_url": [
+          "CS006",
+          "CS007",
+          "CS008",
+          "CS009",
+          "CS012",
+          "CS017",
+          "CS018",
+          "CS019",
+          "CS020"
+        ],
+        "update_model_counts": {
+          "ROLLING": 59,
+          "VERSIONED": 28
+        },
+        "acquisition_channel_counts": {
+          "OFFICIAL_WEBSITE": 87
+        },
+        "status": "PASS"
+      },
+      "collection": {
+        "stage": "04_collection",
+        "purpose": "Download, validate, name, archive and store original-format snapshots",
+        "executed": false,
+        "status": "DRY_RUN"
+      }
+    },
+    {
+      "module": "governance_and_qa",
+      "status": "PASS",
+      "purpose": "Selection governance, metadata audit and monthly quality assurance",
+      "assessment": {
+        "stage": "03_selection_review",
+        "purpose": "Verify that the initial source-quality assessment is complete",
+        "selection_status_counts": {
+          "INCLUDE": 44,
+          "PENDING": 42,
+          "EXCLUDE": 1
+        },
+        "issues": [],
+        "status": "PASS"
+      },
+      "metadata": {
+        "stage": "05_metadata_completion",
+        "purpose": "Verify workbook-to-file consistency and summarize final state",
+        "stored_count": 70,
+        "download_status_counts": {
+          "SUCCESS": 70,
+          "FAIL": 1,
+          "PAYWALL_BLOCKED": 7,
+          "NOT_RUN": 9
+        },
+        "audit_issues": [],
+        "status": "PASS"
+      },
+      "monthly_qa": {
+        "status": "ALREADY_CREATED",
+        "batch_month": "2026-08",
+        "generated_count": 0,
+        "operation_ids": []
+      }
+    }
+  ],
+  "human_operation_desktop": {
+    "cycle": {
+      "manual_intake": {
+        "scanned_count": 0,
+        "added_count": 0,
+        "candidates": []
+      },
+      "decision_processing": {
+        "processed_count": 0,
+        "waiting_count": 0,
+        "retry_results": {}
+      },
+      "resolved_review_reconciliation": {
+        "resolved_count": 0,
+        "operation_ids": []
+      },
+      "discovery_gate": {
+        "candidate_count": 0,
+        "added_count": 0,
+        "operation_ids": []
+      },
+      "archive": {
+        "row_visibility_updates": 6
+      }
+    },
+    "post_agent_discovery_gate": {
+      "candidate_count": 0,
+      "added_count": 0,
+      "operation_ids": []
+    },
+    "post_agent_review_reconciliation": {
+      "resolved_count": 0,
+      "operation_ids": []
+    },
+    "review_queue_sync": {
+      "added_count": 49,
+      "operation_ids": [
+        "REV-5aa99f8061bd9a8a",
+        "REV-36b4eae27648a0bb",
+        "REV-ddd5e0d517f54b21",
+        "REV-37be44f040b0221a",
+        "REV-e1b9984b8dbf099d",
+        "REV-35fdfb127760a13f",
+        "REV-bd47432545bcf8a8",
+        "REV-7e2142b52e74cdac",
+        "REV-ef2dc79be44bccaa",
+        "REV-2ce535f4e6712122",
+        "REV-742a16ab41f0f292",
+        "REV-5174de308c700a1a",
+        "REV-0e36f742486c7c06",
+        "REV-452219cc3d1e0fc4",
+        "REV-1de43c57fd4623e1",
+        "REV-7dd1d206338c10bf",
+        "REV-3ae4ac9abb967fd5",
+        "REV-4117313456561af0",
+        "REV-d736ed663fc1cd86",
+        "REV-50137bac5ddb581c",
+        "REV-8d839ea813eaadd4",
+        "REV-8c9dbb8843623574",
+        "REV-e2829ee24c1ac8f8",
+        "REV-a94c080d6f764c55",
+        "REV-9efc49061509a02b",
+        "REV-8ec86d47e03cb317",
+        "REV-791c48e9a13995ee",
+        "REV-f25716047df6d4d2",
+        "REV-e57f7b7eba9c879d",
+        "REV-b134394d8814e274",
+        "REV-65cc9b72f82a1517",
+        "REV-2b21e65c125764ca",
+        "REV-7ab45ddf03d04bba",
+        "REV-a83853ec70568bf6",
+        "REV-9dd82554e7f744c9",
+        "REV-43f9c213d0832d6c",
+        "REV-b1c5771ca3049926",
+        "REV-f4df9771110ecfba",
+        "REV-6ee15032c5ad4135",
+        "REV-51be56a6003d6701",
+        "REV-d2b5e769e970f685",
+        "REV-4f593eeaa739e38e",
+        "REV-ac2ac15a78aa26c7",
+        "REV-c2b9895af289d87d",
+        "REV-df99c61a8298cf6c",
+        "REV-f07646805e606465",
+        "REV-c76834380fc94fb3",
+        "REV-148b67a05bb9041a",
+        "REV-2947de6406780777"
+      ],
+      "superseded_count": 49,
+      "superseded_operation_ids": [
+        "REV-5a38e2c846da87f2",
+        "REV-778299194db7ebbc",
+        "REV-c0d0c6e81b4104ff",
+        "REV-5a368d2a1657cd27",
+        "REV-62751c59a66c6a1d",
+        "REV-af45076e6262b2a1",
+        "REV-64b96f6ce11e0034",
+        "REV-8894a57f04ce2796",
+        "REV-5214575831eeb70e",
+        "REV-ce7aaed511f69969",
+        "REV-3073be5b0db89d79",
+        "REV-301ed53bf0adec93",
+        "REV-16013a2add91919e",
+        "REV-fbbd147b79c87105",
+        "REV-f54a8f5c53ce4fe7",
+        "REV-8872582ab90c10ad",
+        "REV-ddd02e0d3f82138e",
+        "REV-a73de1b0ec41d41a",
+        "REV-9ecc78b700cc34a9",
+        "REV-beff403a206a6350",
+        "REV-550fc55c7afd30ff",
+        "REV-f7e513d3ac05fd66",
+        "REV-be855437b042dc29",
+        "REV-8319d3f2fb4e1a05",
+        "REV-9a310e18a85a2e64",
+        "REV-0eff5961ab3160a2",
+        "REV-b39d1649620a2d3e",
+        "REV-5c7b29945d5ca3e1",
+        "REV-c877d3279e3b7c50",
+        "REV-a1519927338ed1f6",
+        "REV-0c593b44a19c5a8f",
+        "REV-565e876ffeb3a989",
+        "REV-1eacbdadf7698db5",
+        "REV-3fdefe7f9888274e",
+        "REV-9853d40d6dbd9e44",
+        "REV-31515b2e7f40399a",
+        "REV-e27652c414f662de",
+        "REV-bdb8f8520eecd860",
+        "REV-d5788fe74dcada53",
+        "REV-0f090f336f06848d",
+        "REV-0aaeb18cdf1173c4",
+        "REV-e2b8e990ffaa8a7f",
+        "REV-23b8f7a9ea8e3785",
+        "REV-5b0f91bee7830e8c",
+        "REV-6d35dd892819bbc9",
+        "REV-22e0e1dc464d8702",
+        "REV-a0afc8bc731a3303",
+        "REV-5f9522f7d2d7dc43",
+        "REV-86e144db90d2cf51"
+      ]
+    },
+    "open_operations": {
+      "open_count": 49,
+      "oldest_days": 0,
+      "items": [
+        {
+          "operation_id": "REV-5aa99f8061bd9a8a",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS013",
+          "trigger": "DUPLICATE_OFFICIAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-36b4eae27648a0bb",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS014",
+          "trigger": "DUPLICATE_OFFICIAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-ddd5e0d517f54b21",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA006",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-37be44f040b0221a",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA008",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-e1b9984b8dbf099d",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA014",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-35fdfb127760a13f",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA018",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-bd47432545bcf8a8",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA019",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-7e2142b52e74cdac",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA020",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-ef2dc79be44bccaa",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA021",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-2ce535f4e6712122",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA022",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-742a16ab41f0f292",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA028",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-5174de308c700a1a",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA030",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-0e36f742486c7c06",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA033",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-452219cc3d1e0fc4",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA034",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-1de43c57fd4623e1",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA035",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-7dd1d206338c10bf",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA036",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-3ae4ac9abb967fd5",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA037",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-4117313456561af0",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA038",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-d736ed663fc1cd86",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA049",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-50137bac5ddb581c",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA051",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-8d839ea813eaadd4",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA052",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-8c9dbb8843623574",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA053",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-e2829ee24c1ac8f8",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA054",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-a94c080d6f764c55",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA056",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-9efc49061509a02b",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA057",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-8ec86d47e03cb317",
+          "operation_type": "SELECTION_REVIEW",
+          "source_id": "PA010",
+          "trigger": "SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-791c48e9a13995ee",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS003",
+          "trigger": "DUPLICATE_OFFICIAL_URL",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-f25716047df6d4d2",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS004",
+          "trigger": "DUPLICATE_OFFICIAL_URL",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-e57f7b7eba9c879d",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS005",
+          "trigger": "DUPLICATE_OFFICIAL_URL",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-b134394d8814e274",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS006",
+          "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-65cc9b72f82a1517",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS007",
+          "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-2b21e65c125764ca",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS008",
+          "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-7ab45ddf03d04bba",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS009",
+          "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-a83853ec70568bf6",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS010",
+          "trigger": "DUPLICATE_OFFICIAL_URL",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-9dd82554e7f744c9",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS011",
+          "trigger": "DUPLICATE_OFFICIAL_URL",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-43f9c213d0832d6c",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS012",
+          "trigger": "MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-b1c5771ca3049926",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS015",
+          "trigger": "DUPLICATE_OFFICIAL_URL",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-f4df9771110ecfba",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS016",
+          "trigger": "DUPLICATE_OFFICIAL_URL",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-6ee15032c5ad4135",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS017",
+          "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-51be56a6003d6701",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS018",
+          "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-d2b5e769e970f685",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS019",
+          "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-4f593eeaa739e38e",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "CS020",
+          "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-ac2ac15a78aa26c7",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "SB001",
+          "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-c2b9895af289d87d",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "SB002",
+          "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-df99c61a8298cf6c",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "SB003",
+          "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-f07646805e606465",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "SB004",
+          "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-c76834380fc94fb3",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "SB005",
+          "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-148b67a05bb9041a",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "SB006",
+          "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        },
+        {
+          "operation_id": "REV-2947de6406780777",
+          "operation_type": "SOURCE_REVIEW",
+          "source_id": "SB007",
+          "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+          "program_status": "PENDING",
+          "days_open": 0
+        }
+      ]
+    }
+  },
+  "human_review": {
+    "open_count": 49,
+    "overdue_count": 0,
+    "oldest_days": 4,
+    "threshold_days": 60,
+    "items": [
+      {
+        "review_id": "5aa99f8061bd9a8a",
+        "source_id": "CS013",
+        "source_title": "GLOBALG.A.P. General Regulations - Rules for individual producers",
+        "trigger": "DUPLICATE_OFFICIAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 6 current source records. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "a4b32bdfa34df8c1"
+      },
+      {
+        "review_id": "36b4eae27648a0bb",
+        "source_id": "CS014",
+        "source_title": "GLOBALG.A.P. General Regulations - Rules for producer groups and multisite producers with QMS",
+        "trigger": "DUPLICATE_OFFICIAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 6 current source records. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "dc7b27619b286367"
+      },
+      {
+        "review_id": "ddd5e0d517f54b21",
+        "source_id": "PA006",
+        "source_title": "Organic Production and Labelling Regulations",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "4717e576c84b25bf"
+      },
+      {
+        "review_id": "37be44f040b0221a",
+        "source_id": "PA008",
+        "source_title": "Water Framework Regulations",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "96e4c615d2b91fb3"
+      },
+      {
+        "review_id": "e1b9984b8dbf099d",
+        "source_id": "PA014",
+        "source_title": "Animal Health Personnel Act",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "c9623a88e39de75b"
+      },
+      {
+        "review_id": "35fdfb127760a13f",
+        "source_id": "PA018",
+        "source_title": "Ship Safety and Security Act",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "fb32dae56dd71dfb"
+      },
+      {
+        "review_id": "bd47432545bcf8a8",
+        "source_id": "PA019",
+        "source_title": "Regulation on transport of aquaculture animals",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "9651fe8325b6f217"
+      },
+      {
+        "review_id": "7e2142b52e74cdac",
+        "source_id": "PA020",
+        "source_title": "Regulation on slaughterhouses and processing facilities for aquaculture animals",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "20fc4ca8d2d665c1"
+      },
+      {
+        "review_id": "ef2dc79be44bccaa",
+        "source_id": "PA021",
+        "source_title": "Regulation on permits for aquaculture of salmon, trout and rainbow trout (Salmon Allocation Regulations)",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "6db0fe9372e89942"
+      },
+      {
+        "review_id": "2ce535f4e6712122",
+        "source_id": "PA022",
+        "source_title": "Regulation on technical standards for land-based aquaculture facilities for fish",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "3b2aaffd2543fda8"
+      },
+      {
+        "review_id": "742a16ab41f0f292",
+        "source_id": "PA028",
+        "source_title": "Norwegian Aquaculture Register",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "f83da9ad99ded9d5"
+      },
+      {
+        "review_id": "5174de308c700a1a",
+        "source_id": "PA030",
+        "source_title": "Regulation on special requirements for aquaculture-related activities in or near national salmon rivers and fjords",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "9ef1698aea4dc199"
+      },
+      {
+        "review_id": "0e36f742486c7c06",
+        "source_id": "PA033",
+        "source_title": "Regulation on catch-based aquaculture",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "961116de0bfc1b22"
+      },
+      {
+        "review_id": "452219cc3d1e0fc4",
+        "source_id": "PA034",
+        "source_title": "Regulation on coordination and time limits for processing aquaculture applications",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "a5bb098f53ca6e6e"
+      },
+      {
+        "review_id": "1de43c57fd4623e1",
+        "source_id": "PA035",
+        "source_title": "Regulation on reactions for violations of the Aquaculture Act",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "4705ef1400f3e530"
+      },
+      {
+        "review_id": "7dd1d206338c10bf",
+        "source_id": "PA036",
+        "source_title": "Regulation on permits for aquaculture of species other than salmon, trout and rainbow trout",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "6bb89bf0a049d4e3"
+      },
+      {
+        "review_id": "3ae4ac9abb967fd5",
+        "source_id": "PA037",
+        "source_title": "Regulation on fees and charges relating to aquaculture activities",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "7e95d61fc6189d7e"
+      },
+      {
+        "review_id": "4117313456561af0",
+        "source_id": "PA038",
+        "source_title": "Regulation on sea ranching",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "4ebf9779fd95fe42"
+      },
+      {
+        "review_id": "d736ed663fc1cd86",
+        "source_id": "PA049",
+        "source_title": "Regulation on working environment, safety and health for persons working on board ships",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "28ef53b178a4c87a"
+      },
+      {
+        "review_id": "50137bac5ddb581c",
+        "source_id": "PA051",
+        "source_title": "Planning and Building Act",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "4c4ed3328fea548a"
+      },
+      {
+        "review_id": "8d839ea813eaadd4",
+        "source_id": "PA052",
+        "source_title": "Cultural Heritage Act",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "b37bd0a993151977"
+      },
+      {
+        "review_id": "8c9dbb8843623574",
+        "source_id": "PA053",
+        "source_title": "Water Resources Act",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "9614b995a94f1c52"
+      },
+      {
+        "review_id": "e2829ee24c1ac8f8",
+        "source_id": "PA054",
+        "source_title": "Marine Nature Protection Act",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "a6e948b1b71c84b9"
+      },
+      {
+        "review_id": "a94c080d6f764c55",
+        "source_id": "PA056",
+        "source_title": "Fiskeridirektoratet guidance for land-based aquaculture facilities",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "bbfc453cefa22e55"
+      },
+      {
+        "review_id": "9efc49061509a02b",
+        "source_id": "PA057",
+        "source_title": "Guidance for condition assessment of land-based aquaculture facilities",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-28",
+        "days_open": 4,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "cb54028299e2c786"
+      },
+      {
+        "review_id": "8ec86d47e03cb317",
+        "source_id": "PA010",
+        "source_title": "Regulation (EU) 2016/429 on transmissible animal diseases (Animal Health Law)",
+        "trigger": "SELECTION_PENDING",
+        "issue_codes": [
+          "SELECTION_PENDING"
+        ],
+        "review_since": "2026-08-31",
+        "days_open": 1,
+        "severity": "OPEN",
+        "reason": "operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance.",
+        "recommended_action": "Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "324b9f8d0c033311"
+      },
+      {
+        "review_id": "791c48e9a13995ee",
+        "source_id": "CS003",
+        "source_title": "ASC Salmon Audit Manual",
+        "trigger": "DUPLICATE_OFFICIAL_URL",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 2 current source records.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it.",
+        "review_fingerprint": "8e2d0c61b0acc423"
+      },
+      {
+        "review_id": "f25716047df6d4d2",
+        "source_id": "CS004",
+        "source_title": "ASC Salmon and Cod Standard",
+        "trigger": "DUPLICATE_OFFICIAL_URL",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 2 current source records.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it.",
+        "review_fingerprint": "8e2d0c61b0acc423"
+      },
+      {
+        "review_id": "e57f7b7eba9c879d",
+        "source_id": "CS005",
+        "source_title": "ASC Farm and Feed Certification and Accreditation Requirements",
+        "trigger": "DUPLICATE_OFFICIAL_URL",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 5 current source records.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it.",
+        "review_fingerprint": "8e2d0c61b0acc423"
+      },
+      {
+        "review_id": "b134394d8814e274",
+        "source_id": "CS006",
+        "source_title": "ASC Group Requirements for Farms",
+        "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "MISSING_RETRIEVAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 5 current source records. | The source has no exact retrieval target. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance, version_currency, traceability.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Provide the complete official HTML target when available, otherwise the original official file URL. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "a8fb8727ba3cf175"
+      },
+      {
+        "review_id": "65cc9b72f82a1517",
+        "source_id": "CS007",
+        "source_title": "ASC Data Submission Procedure",
+        "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "MISSING_RETRIEVAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 5 current source records. | The source has no exact retrieval target. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: version_currency, traceability.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Provide the complete official HTML target when available, otherwise the original official file URL. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "722143290d029054"
+      },
+      {
+        "review_id": "2b21e65c125764ca",
+        "source_id": "CS008",
+        "source_title": "GLOBALG.A.P. IFA v6 Smart for aquaculture - Principles and criteria",
+        "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "MISSING_RETRIEVAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 6 current source records. | The source has no exact retrieval target. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: version_currency, traceability.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Provide the complete official HTML target when available, otherwise the original official file URL. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "e34d05e249d96eab"
+      },
+      {
+        "review_id": "7ab45ddf03d04bba",
+        "source_id": "CS009",
+        "source_title": "GLOBALG.A.P. IFA v6 Smart for aquaculture - Checklist",
+        "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "MISSING_RETRIEVAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 6 current source records. | The source has no exact retrieval target. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: version_currency, traceability.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Provide the complete official HTML target when available, otherwise the original official file URL. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "5c340da7c8cb07d3"
+      },
+      {
+        "review_id": "a83853ec70568bf6",
+        "source_id": "CS010",
+        "source_title": "GLOBALG.A.P. General Regulations - Rules for aquaculture scope",
+        "trigger": "DUPLICATE_OFFICIAL_URL",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 6 current source records.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it.",
+        "review_fingerprint": "8e2d0c61b0acc423"
+      },
+      {
+        "review_id": "9dd82554e7f744c9",
+        "source_id": "CS011",
+        "source_title": "GLOBALG.A.P. GRASP v2 - Principles and criteria",
+        "trigger": "DUPLICATE_OFFICIAL_URL",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 4 current source records.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it.",
+        "review_fingerprint": "8e2d0c61b0acc423"
+      },
+      {
+        "review_id": "43f9c213d0832d6c",
+        "source_id": "CS012",
+        "source_title": "GLOBALG.A.P. Compound Feed Manufacturing Standard",
+        "trigger": "MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "MISSING_RETRIEVAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The source has no exact retrieval target. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: version_currency, traceability.",
+        "recommended_action": "Provide the complete official HTML target when available, otherwise the original official file URL. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "4d68edbca4cba1c8"
+      },
+      {
+        "review_id": "b1c5771ca3049926",
+        "source_id": "CS015",
+        "source_title": "GLOBALG.A.P. trademarks use: Policy and guidelines",
+        "trigger": "DUPLICATE_OFFICIAL_URL",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 6 current source records.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it.",
+        "review_fingerprint": "8e2d0c61b0acc423"
+      },
+      {
+        "review_id": "f4df9771110ecfba",
+        "source_id": "CS016",
+        "source_title": "GLOBALG.A.P. GRASP - General Rules",
+        "trigger": "DUPLICATE_OFFICIAL_URL",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 4 current source records.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it.",
+        "review_fingerprint": "8e2d0c61b0acc423"
+      },
+      {
+        "review_id": "6ee15032c5ad4135",
+        "source_id": "CS017",
+        "source_title": "GLOBALG.A.P. GRASP v2 National Interpretation Guideline for Norway",
+        "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "MISSING_RETRIEVAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 4 current source records. | The source has no exact retrieval target. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: version_currency, traceability.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Provide the complete official HTML target when available, otherwise the original official file URL. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "47937a715a6d7d5c"
+      },
+      {
+        "review_id": "51be56a6003d6701",
+        "source_id": "CS018",
+        "source_title": "ASC Vocabulary",
+        "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "MISSING_RETRIEVAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 5 current source records. | The source has no exact retrieval target. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: version_currency, traceability.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Provide the complete official HTML target when available, otherwise the original official file URL. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "722143290d029054"
+      },
+      {
+        "review_id": "d2b5e769e970f685",
+        "source_id": "CS019",
+        "source_title": "ASC Data Submission Requirements",
+        "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "MISSING_RETRIEVAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 5 current source records. | The source has no exact retrieval target. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: version_currency, traceability.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Provide the complete official HTML target when available, otherwise the original official file URL. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "722143290d029054"
+      },
+      {
+        "review_id": "4f593eeaa739e38e",
+        "source_id": "CS020",
+        "source_title": "GLOBALG.A.P. GRASP v2 - Checklist",
+        "trigger": "DUPLICATE_OFFICIAL_URL; MISSING_RETRIEVAL_URL; SELECTION_PENDING",
+        "issue_codes": [
+          "DUPLICATE_OFFICIAL_URL",
+          "MISSING_RETRIEVAL_URL",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "The official URL is shared by 4 current source records. | The source has no exact retrieval target. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: traceability.",
+        "recommended_action": "Confirm whether this record is a distinct source, correct its identity, or exclude it. | Provide the complete official HTML target when available, otherwise the original official file URL. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "70a786f917c19d10"
+      },
+      {
+        "review_id": "ac2ac15a78aa26c7",
+        "source_id": "SB001",
+        "source_title": "NS 9415:2021+AC:2024 Floating aquaculture farms - Site survey, design, execution and use",
+        "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+        "issue_codes": [
+          "PAYWALL_BLOCKED",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "Official access is restricted by a paywall or licence; provide an authorised copy or retrieval route. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: access_permission.",
+        "recommended_action": "Place an authorised copy in Data/00_Human_Intake or record an authorised retrieval route. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "fc67d7e2c66ec775"
+      },
+      {
+        "review_id": "c2b9895af289d87d",
+        "source_id": "SB002",
+        "source_title": "NS 9410:2016 Environmental monitoring of benthic impact from marine fish farms",
+        "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+        "issue_codes": [
+          "PAYWALL_BLOCKED",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "Official access is restricted by a paywall or licence; provide an authorised copy or retrieval route. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: version_currency, access_permission.",
+        "recommended_action": "Place an authorised copy in Data/00_Human_Intake or record an authorised retrieval route. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "286f98bc643f8b4c"
+      },
+      {
+        "review_id": "df99c61a8298cf6c",
+        "source_id": "SB003",
+        "source_title": "NS 9416:2013 Land-based aquaculture facilities for fish",
+        "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+        "issue_codes": [
+          "PAYWALL_BLOCKED",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "Official access is restricted by a paywall or licence; provide an authorised copy or retrieval route. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance, version_currency, access_permission.",
+        "recommended_action": "Place an authorised copy in Data/00_Human_Intake or record an authorised retrieval route. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "a4e6dc82dd52d67f"
+      },
+      {
+        "review_id": "f07646805e606465",
+        "source_id": "SB004",
+        "source_title": "NS 5814:2021+AC:2023 Requirements for risk assessments",
+        "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+        "issue_codes": [
+          "PAYWALL_BLOCKED",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "Official access is restricted by a paywall or licence; provide an authorised copy or retrieval route. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance, access_permission.",
+        "recommended_action": "Place an authorised copy in Data/00_Human_Intake or record an authorised retrieval route. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "34adc8837c637011"
+      },
+      {
+        "review_id": "c76834380fc94fb3",
+        "source_id": "SB005",
+        "source_title": "NS-ISO 31000:2018 Risk management - Guidelines",
+        "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+        "issue_codes": [
+          "PAYWALL_BLOCKED",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "Official access is restricted by a paywall or licence; provide an authorised copy or retrieval route. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance, access_permission.",
+        "recommended_action": "Place an authorised copy in Data/00_Human_Intake or record an authorised retrieval route. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "548147995b1a1620"
+      },
+      {
+        "review_id": "148b67a05bb9041a",
+        "source_id": "SB006",
+        "source_title": "NS-EN ISO 9001:2015 Quality management systems - Requirements",
+        "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+        "issue_codes": [
+          "PAYWALL_BLOCKED",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "Official access is restricted by a paywall or licence; provide an authorised copy or retrieval route. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance, access_permission.",
+        "recommended_action": "Place an authorised copy in Data/00_Human_Intake or record an authorised retrieval route. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "63c31a202fe3bc5c"
+      },
+      {
+        "review_id": "2947de6406780777",
+        "source_id": "SB007",
+        "source_title": "NS 3424:2012 Condition survey of construction works - Content and execution",
+        "trigger": "PAYWALL_BLOCKED; SELECTION_PENDING",
+        "issue_codes": [
+          "PAYWALL_BLOCKED",
+          "SELECTION_PENDING"
+        ],
+        "review_since": null,
+        "days_open": null,
+        "severity": "OPEN",
+        "reason": "Official access is restricted by a paywall or licence; provide an authorised copy or retrieval route. | operator_selection_decision is PENDING; mandatory assessment is not HIGH: scope_relevance, access_permission.",
+        "recommended_action": "Place an authorised copy in Data/00_Human_Intake or record an authorised retrieval route. | Review the human-governed source fields and choose INCLUDE, PENDING or EXCLUDE in Human Operation Desktop.",
+        "review_fingerprint": "9aba8c319a136f6d"
+      }
+    ]
+  }
+}

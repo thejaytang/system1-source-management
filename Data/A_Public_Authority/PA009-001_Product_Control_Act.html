@@ -1,0 +1,621 @@
+
+<!DOCTYPE html
+>
+<html lang="no" class="no-js">
+
+<head>
+	
+	<!-- Le styles -->
+	<link href="/resources/css/bootstrap.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-block/ss-symbolicons-block.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-symbolicons-line/ss-symbolicons-line.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/feed/ss-feed-icons.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-standard/ss-standard.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/fonts/ss-social-regular/ss-social.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/select2/select2.css?26-08-20-1607" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+	<!-- Modaal -->
+	<link rel="stylesheet" href="/resources/css/modaal.min.css">
+
+		<link href="/resources/css/app.css?26-08-20-1607" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<link href="/resources/css/ld-ie.css?26-08-20-1607" rel="stylesheet">
+	<![endif]-->
+		<link href="/resources/css/document/lovdata.document.gratis.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.tables.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.web.css?26-08-20-1607" rel="stylesheet">
+	<link href="/resources/css/lovdata.document.css?26-08-20-1607" rel="stylesheet">
+
+
+	<!-- Le scripts -->
+	<script src="/resources/js/jquery-3.7.1.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/mathjax/tex-mml-chtml.js?26-08-20-1607"></script>
+		<script>
+			var dev = false;
+		</script>
+		<!-- Plausible -->
+		<script defer data-domain="lovdata.no" src="https://plausible.io/js/plausible.js"></script>
+		<!-- End Plausible -->
+
+	<script src="/resources/js/modernizr.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/bootstrap.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/jquery.throttle.js?26-08-20-1607"></script>
+	<script src="/resources/js/jquery.form.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/json2.js?26-08-20-1607"></script>
+	<script src="/resources/js/jstorage.js?26-08-20-1607"></script>
+	<script src="/resources/select2/select2.min.js?26-08-20-1607"></script>
+	<script src="/resources/js/app.js?26-08-20-1607"></script>
+		<script src="/resources/js/app-lovdata.js?26-08-20-1607"></script>
+	<script src="/resources/js/highlighter.js?26-08-20-1607"></script>
+	<!-- Modaal -->
+	<script src="/resources/js/modaal.min.js"></script>
+
+	<link rel="icon" href="/resources/img/logo/new/lovdata-logosymbol-stortingsrod.svg" type="image/svg+xml" sizes="16x16 32x32 48x48 64x64">
+	<link rel="apple-touch-icon-precomposed" href="/resources/img/logo/new/lovdata-logosymbol-stortingsrod.svg" type="image/svg+xml" sizes="152x152">
+
+	<meta charset="utf-8">
+	<title>Lov om kontroll med produkter og forbrukertjenester (produktkontrolloven) - Lovdata</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="google-site-verification" content="ENJVlOsNC5zBiaC_PChgiRbBrUBjN6P-Owo6nwS9--Q"/>
+	<meta name="application-name" content="Lovdata"/>
+	<meta property="fb:admins" content="711945576, 714678011"/>
+		<meta name="robots" content="noodp">
+		<meta name="description" content="Produktkontrolloven - prodktrl">
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:description" content="Produktkontrolloven - prodktrl">
+		<meta name="twitter:site" content="@lovdata"/>
+		<meta name="twitter:title" content="Lov om kontroll med produkter og forbrukertjenester (produktkontrolloven)"/>
+</head>
+
+	<body class="template-document">
+
+	<div aria-hidden="true" class="print-logo">
+		<img src="/resources/img/logo/new/lovdata-logo-primaer.svg" alt="Lovdata-logo"/>
+	</div>
+
+	<div id="skiplinks">
+		<a href="#main-content">Til hovedinnhold</a>
+	</div>
+
+<header>
+	<div class="ld-navbar" id="ld-navbar">
+
+		<a class="logo" href="/" aria-label="Til forsiden"></a>
+
+				<button class="open-search" aria-label="Åpne søk">
+			<i class="ss-icon ss-symbolicons-block" aria-hidden="true">&#x1F50D;</i>
+		</button>
+
+		<div class="middleContainer">
+			<a tabindex="0" role="button" aria-label="Åpne/lukk meny" class="menu_toggler" aria-expanded="false">
+				<span></span>
+			</a>
+
+			<form class="mainSearch" role="search" id="sok" action="/sok" METHOD="get">
+
+
+				<script>
+					document.addEventListener("DOMContentLoaded", function () {
+						const searchInput = document.getElementById("globSearch");
+						const form = document.querySelector("form");
+
+						form.addEventListener("submit", function () {
+							searchInput.classList.add("loading");
+						});
+
+						searchInput.addEventListener('keydown', event => { //Turn textarea into input.
+							if (event.code === 'Enter') {
+								event.preventDefault();
+								form.submit();
+								searchInput.classList.add("loading");
+							}
+						});
+					});
+
+					var searchInDocumentPlaceholder = '';
+					var searchInDocument = '';
+
+					// JavaScript function to monitor input and apply changes
+					document.addEventListener("DOMContentLoaded", function () {
+						const searchInput = document.getElementById("globSearch");
+						const form = document.getElementById("sok");
+						const wordCounter = document.getElementById("word-counter");
+						const freeSearchHelpText = document.getElementById("freesearch-help-text");
+						const bottomInfo = document.getElementById("search-bottom-info");
+
+						searchInput.placeholder = 'Søk med opp til fem søkeord eller skriv lengre for å gjøre et frisøk'
+
+						// Handle changes to the form class and action
+						searchInput.addEventListener("input", function () {
+							var startsWithQuote = (searchInput.value.startsWith("\"") || searchInput.value.startsWith("\'") || searchInput.value.startsWith("«"));
+							var blankSpaceCount = (searchInput.value.match(/ ./g) || []).length;
+							if (blankSpaceCount !== 0) {
+								blankSpaceCount += 1;
+							}
+
+							if (blankSpaceCount > 5 && !startsWithQuote) {
+								wordCounter.style.visibility = "visible"
+								searchInput.classList.add("expanded");
+
+								// Change the form action to "/frisok"
+								form.setAttribute("action", "/frisok");
+								form.setAttribute("method", "POST");
+								wordCounter.innerHTML = searchInput.value.length + "/500";
+								freeSearchHelpText.innerHTML = 'Nå gjør du et frisøk. Du kan stille et spørsmål, forklare en situasjon eller beskrive hva du leter etter.'
+								searchInput.classList.add("frisok-icon")
+							} else {
+								if (blankSpaceCount === 0) {
+									bottomInfo.style.display = "none"
+								} else {
+									bottomInfo.style.display = "flex"
+									wordCounter.innerHTML = blankSpaceCount + "/5";
+									freeSearchHelpText.innerHTML = 'Bruk mer enn fem søkeord for å gjøre et frisøk.'
+								}
+
+								searchInput.classList.remove("expanded");
+								searchInput.classList.remove("frisok-icon")
+
+								form.setAttribute("action", "/sok"); // Set the form action back to "/sok"
+								form.setAttribute("method", "GET");
+							}
+						});
+
+						const updateHeightOfSearchBox = () => {
+							var expandedSearchField = 0
+							searchInput.style.height = 'auto';
+							const newHeightOfInput = expandedSearchField + searchInput.scrollHeight;
+							searchInput.style.height = newHeightOfInput + 'px';
+						};
+						searchInput.addEventListener('input', updateHeightOfSearchBox);
+					});
+				</script>
+
+				<div class="search">
+					<label class="sr-only" for="globSearch">Søketekst</label>
+					<span class="search-box-container">
+						<div class="search-box-container-absolute">
+							<textarea class="search-input" type="text" id="globSearch" name="q"
+							
+							placeholder="Søk med opp til fem søkeord eller skriv lengre for å gjøre et frisøk"></textarea>
+							<div class="search-bottom-info" id="search-bottom-info">
+								<div class="freesearch-help-text" id="freesearch-help-text"></div>
+								<div class="word-counter" id="word-counter" title="Dersom du bruker mer enn fem søkeord vil du utføre et frisøk"></div>
+							</div>
+						</div>
+					</span>
+					<input type="submit" class="submit" value="Søk">
+					<div class="close-mobile-search">Avbryt</div>
+				</div>
+			</form>
+		</div>
+		<a class="pro-login" href="/pro&#x2f;NL&#x2f;lov&#x2f;1976-06-11-79" title="Logg inn"><span>Logg inn</span><i class="ss-icon ss-symbolicons-block">&#x1F512;</i></a>
+	</div>
+</header>
+	<nav aria-labelledby="menuHeader">
+		<h1 class="sr-only" id="menuHeader">Hovedmeny</h1>
+		<!-- Menu content -->
+		<div class="leftPanel">
+		<div class="left-menu" aria-hidden="true">
+			<div class="menu-item-container hidden">
+				<ul class="top-level-menu">
+					<li class="resIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl" aria-expanded="false">Rettskilder</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="lovIcon second-level-icon resources">
+								<div class="gmi-container leftIcon">
+									<a class="gliding-menu-item" href="/register/lover">Lover</a>
+								</div>
+							</li>
+							<li class="sntForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/forskrifter">Sentrale forskrifter mv.</a></div>
+							</li>
+							<li class="lokForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/lokaleForskrifter">Lokale forskrifter</a></div>
+							</li>
+							<li class="ltIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/lovtidend">Norsk Lovtidend</a></div>
+							</li>
+							<li class="storVedIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/stortingsvedtak">Stortingsvedtak</a></div>
+							</li>
+							<li class="eosIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/eosAvtalen">EØS-avtalen</a></div>
+							</li>
+							<li class="traIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/traktater">Norges traktater</a></div>
+							</li>
+							<li class="decIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/avgjørelser">Rettsavgjørelser</a></div>
+							</li>
+							<li class="trrIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/trygderetten">Trygderettssaker</a></div>
+							</li>
+							<li class="tarIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/tariffavtaler">Tariffavtaler</a></div>
+							</li>
+							<li class="htuIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/husleietvistutvalget">Husleietvistutvalget</a></div>
+							</li>
+							<li class="sphIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/sph">Statens Personalhåndbok</a></div>
+							</li>
+							<li class="lovIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/loverEngelsk">Translated acts</a></div>
+							</li>
+							<li class="sntForIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/forskrifterEngelsk">Translated regulations</a></div>
+							</li>
+							<li class="decIcon second-level-icon resources">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/register/avgjørelserEngelsk">Translated decisions</a></div>
+							</li>
+						</ul>
+					</li>
+					<li class="servIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl">Tjenester</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="proIcon second-level-icon">
+								<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://pro.lovdata.no">Lovdata Pro</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="https://www.europalov.no">Europalov.no</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/api">API</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/rss">RSS-feed</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/eli">ELI (beta)</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/publikasjoner">E-publikasjoner</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/tjenester/tidsskrift">Tidsskrifter</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="https://hjelp.lovdata.no/article/170-sokeoppdrag-og-utskrifter">Søkeoppdrag</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="http://hjelp.lovdata.no/article/97-kursinformasjon">Kurs</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/eksamen">Eksamen</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/landslov">Landsloven</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/22juli">22. juli-saken</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/advokater">Advokatoversikt</a>
+								</div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container">
+									<a class="gliding-menu-item" href="/info/lenker">Lenker</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="infIcon top-level">
+						<div class="gmi-container leftIcon">
+							<button class="gliding-menu-item menuTgl">Om Lovdata</button>
+						</div>
+						<ul class="second-level-menu hiddenSubMenu" aria-hidden="true">
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/om_lovdata">Generell informasjon</a></div>
+							</li>
+							<li>
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/brukeravtale">Brukeravtale</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/redaktoransvar">Redaktøransvar</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/kontakt">Kontakt oss</a></div>
+							</li>
+							<li class="extLink">
+								<div class="gmi-container"><a class="gliding-menu-item" href="/info/milopolicy">Miljøpolicy</a></div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="top-level-menu">
+					<li class="menuItm grlIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item grl" href="https://grunnloven.lovdata.no">Grunnloven</a></div>
+					</li>
+					<li class="menuItm cookIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="/info/personvern">Personvern</a></div>
+					</li>
+					<li class="menuItm linkedinIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.linkedin.com/company/lovdata/">Linkedin</a></div>
+					</li>
+					<li class="menuItm twitIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.twitter.com/lovdata">Twitter</a></div>
+					</li>
+					<li class="menuItm faceIcon top-level btmIcon">
+						<div class="gmi-container leftIcon"><a class="gliding-menu-item" href="https://www.facebook.com/lovdata">Facebook</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</nav>
+
+<main id="main-content" class="docMain">
+
+
+	<script type="text/javascript">
+		var documentURL = "/dokument/NL/lov/1976-06-11-79";
+	</script>
+
+	<section aria-labelledby="toolHeader">
+		<h1 class="sr-only" id="toolHeader">Verktøylinje</h1>
+		<div class="fixed-header">
+			<div class="dropdown-wrap">
+				<div class="bgcDoc">
+					<p aria-hidden="true">Lov om kontroll med produkter og forbrukertjenester (produktkontrolloven)</p>
+				</div>
+			</div>
+			<a class="open-meta-list open-meta-list-dropdown"><i class="ss-icon  ss-symbolicons-block">&#xEE00;</i></a>
+			<ul class="meta-list">
+						<li class="innholdsfortegnelse-parent-li">
+							<a role="button" tabindex="0" class="innholdsfortegnelse-parent " data-placement="bottom" title="Innholdsfortegnelse" aria-expanded="false"><i aria-hidden="true" class="ss-icon ss-symbolicons-block">&#xED50;</i><span class="text">Innholdsfortegnelse</span><i aria-hidden="true" class="ss-icon ss-standard navigatedown">&#xF501;</i><i aria-hidden="true" class="ss-icon ss-standard navigateup">&#xF500;</i></a>
+						</li>
+						<li>
+							<a class="lovens-forskrifter" data-placement="bottom" title="Lovens forskrifter" href="/referanse/hjemmel?dokID=NL/lov/1976-06-11-79">
+								<i aria-hidden="true" class="ss-icon ss-feed">&#63232;</i>
+								<span class="text">Lovens forskrifter</span></a>
+						</li>
+				<li>
+					<a role="button" aria-label="Skriv ut" href="javascript:print()" class="tooltip-parent" data-toggle="tooltip" data-placement="bottom" title="Skriv ut"><i aria-hidden="true" class="ss-icon ss-symbolicons-block">&#x2399;</i></a>
+				</li>
+						<li>
+							<a role="button" tabindex="0" aria-label="Del dokument" class="tooltip-parent share-dokument" data-toggle="tooltip" data-placement="bottom" title="Del dokument" data-id="https://lovdata.no/lov/1976-06-11-79"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i></a>
+						</li>
+			</ul>
+			<ul class="meta-list-dropdown">
+						<li class="mobile-only"><a href="/referanse/hjemmel?dokID=NL/lov/1976-06-11-79"><i aria-hidden="true" class="ss-icon ss-feed">
+									&#63232;</i>Lovens forskrifter</a></li>
+				<li class="mobile-only"><a><i class="ss-icon ss-symbolicons-block">&#x2399;</i>Skriv ut</a></li>
+						<li><a tabindex="0" role="button" class="share-dokument" data-id="https://lovdata.no/lov/1976-06-11-79"><i aria-hidden="true" class="ss-icon  ss-symbolicons-block">&#xF601;</i>Del dokument</a></li>
+			</ul>
+		</div>
+
+				<div class="innholdsfortegnelse-child " aria-hidden="true">
+					<p class="instruction sr-only" tabindex="-1">Trykk Escape for å lukke innholdsfortegnelse</p>
+					<div class="search-in-innholdsfortegnelse">
+						<label for="innhSearch">Søk i innholdsfortegnelse <span class="sr-only">(listen oppdateres idet du skriver)</span></label>
+						<input type="text" class="form-control" placeholder="Skriv søketekst her ..." id="innhSearch">
+					</div>
+					<div class="scroll">
+						<ul class="document-index" id="innhdocview document-index">
+							<li class="document-index-item"><a href="/dokument/NL/lov/1976-06-11-79">Produktkontrolloven - prodktrl</a>
+								<ul class="document-index listing" id="innhdocview document-index">
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A71#%C2%A71" data-target="%C2%A71">§ 1. Lovens formål </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A72#%C2%A72" data-target="%C2%A72">§ 2. Lovens saklige virkeområde </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A72a#%C2%A72a" data-target="%C2%A72a">§ 2 a. Definisjoner </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A73#%C2%A73" data-target="%C2%A73">§ 3. Aktsomhetsplikt m.v. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A73a#%C2%A73a" data-target="%C2%A73a">§ 3 a. Substitusjonsplikt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A73b#%C2%A73b" data-target="%C2%A73b">§ 3 b. Kriterier for vurdering av sikkerheten ved forbrukerprodukter og forbrukertjenester </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A74#%C2%A74" data-target="%C2%A74">§ 4. Myndighet for Kongen. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A74a#%C2%A74a" data-target="%C2%A74a">§ 4a. Energieffektivitetskrav </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A74b#%C2%A74b" data-target="%C2%A74b">§ 4 b. Myndighet for tilsynsmyndigheten </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A75#%C2%A75" data-target="%C2%A75">§ 5. Opplysningsplikt. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A75a#%C2%A75a" data-target="%C2%A75a">§ 5 a. Oppbevaring av dokumenter for sporing av forbrukerprodukter </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A76#%C2%A76" data-target="%C2%A76">§ 6. Midlertidig forbud. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A76a#%C2%A76a" data-target="%C2%A76a">§ 6 a. Tilbakekall m.v. av produkter og forbrukertjenester. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A76b#%C2%A76b" data-target="%C2%A76b">§ 6 b. Meldeplikt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A77#%C2%A77" data-target="%C2%A77">§ 7. Godkjenning av produkt. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A78#%C2%A78" data-target="%C2%A78">§ 8. Tilsyn. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A78a#%C2%A78a" data-target="%C2%A78a">§ 8 a. Gebyrer. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A79#%C2%A79" data-target="%C2%A79">§ 9. Rett til informasjon om produkter som foreligger hos offentlig organ </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A710#%C2%A710" data-target="%C2%A710">§ 10. Rett til informasjon om produkter fra produsent, importør, bearbeider, omsetter eller bruker av produkt </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A711#%C2%A711" data-target="%C2%A711">§ 11. Taushetsplikt. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A712#%C2%A712" data-target="%C2%A712">§ 12. Straffansvar. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A712a#%C2%A712a" data-target="%C2%A712a">§ 12 a. Overtredelsesgebyr. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A713#%C2%A713" data-target="%C2%A713">§ 13. Tvangsmulkt. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A714#%C2%A714" data-target="%C2%A714">§ 14. Lovens stedlige virkeområde. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A715#%C2%A715" data-target="%C2%A715">§ 15. Bestemmelser til gjennomføring av loven. </a>
+						</li>
+						<li class="document-index-item">
+							<a href="/dokument/NL/lov/1976-06-11-79/%C2%A716#%C2%A716" data-target="%C2%A716">§ 16. Ikrafttreden – oppheving av og endring i andre lover. </a>
+
+						</li>
+						</ul>
+
+						<div class="empty">Ditt søk ga dessverre ingen treff.</div>
+					</div>
+
+				</div>
+	</section>
+
+
+	<div class="outer-main-content ">
+		<div class="lt-inner-main-content main-content" > 
+			<div class="header inner-max-width">
+				<p class="hjemmel small gray"></p>
+			</div>
+
+			<div id="map" class="map"></div>
+
+<div id="maincolOneColumn"><div id="lovdataDocument" class=" commentWidget desktop"><div class=" metaWrapper" id="documentMeta"><table style="width:100%" class="metaTitle"><tr><td class="metaTitleEmblem mediumIcons lightgray"></td><td class="metaTitleText"><h1>Lov om kontroll med produkter og forbrukertjenester (produktkontrolloven)</h1></td></tr></table><table class=" meta" style="width:100%"><tbody><tr class="odd"><th class=" metafieldLabel">Dato</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_dato">LOV-1976-06-11-79</td></tr><tr class="even"><th class=" metafieldLabel">Departement</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_departement">Justis- og beredskapsdepartementet</td></tr><tr class="odd"><th class=" metafieldLabel">Sist endret</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_endret"><a data-id="lov/2025-04-25-12" class=" reference" href="/lov/2025-04-25-12">LOV-2025-04-25-12</a> fra 01.01.2026</td></tr><tr class="even"><th class=" metafieldLabel">Ikrafttredelse</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_ikraft">01.09.1977</td></tr><tr class="odd"><th class=" metafieldLabel">Rettet</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_rettet">24.08.2021 (faglige fotnoter fjernet, UU-tilpasset)</td></tr><tr class="even"><th class=" metafieldLabel">Korttittel</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_korttittel">Produktkontrolloven – prodktrl</td></tr><tr class="odd"><th class=" metafieldLabel">EØS/EU/Schengen</th><td class=" metavalue morTableAlignLeft morTableVerticalAlignTop" id="metaField_eoshenvisning"><a data-id="avtale/avt-1992-05-02-1-v2" class=" reference" href="/avtale/avt-1992-05-02-1-v2">EØS-avtalen vedlegg II</a> kap. XIX<br/>nr. 3h (direktiv <a data-id="eu/32001l0095" class=" reference" href="/eu/32001l0095">2001/95/EF</a>).</td></tr></tbody></table></div><div class="metaBottom"></div><hr class="red"/><p data-uid="0" class="morTag_mf small no-text-indent marg">Jf. <em class=" ">tidligere</em> lov 19 juni 1970 nr. 68. <a data-id="lov/1993-06-11-68" class=" reference" href="/lov/1993-06-11-68">Lovens tittel endret ved lov 11 juni 1993 nr. 68</a>. Jf. bl.a. lov 21 des 2005 nr. 102, <a data-id="lov/2008-06-27-71/§29-7" class=" reference" href="/lov/2008-06-27-71/%C2%A729-7">pbl. § 29-7</a>.</p><hr class="red"/><div class="dokument-intro snl-summary"><h2>Kort om loven</h2><div>
+ <p class="snl-lastchanged">Sist endret 11.10.2023</p>
+ <p>Produktkontrolloven er en norsk lov som stiller krav til produkter og forbrukertjenester for å forebygge helseskade eller miljøforstyrrelser. Loven omfatter et generelt ansvar ved fremstilling av produkter i tillegg til etablering av en statlig produktkontroll.</p>
+ <p>Loven avløste flere spredte regler i lovgivningen og enkeltstående avtaler med ulike industriaktører. Bakgrunnen for lovforslaget var et påtrengende behov for kontroll av nye produkter i forbindelse med etterkrigstidens industriutvikling. Særlig kunne kommersialisering og masseproduksjon av nye kjemiske komponenter i produkter medføre langsiktig risiko for mennesker, økosystemer og miljøet som helhet. Det fantes ikke tilstrekkelig kunnskap om økologisk påvirkning og opphopning eller nedbrytning av de nye stoffene som industrien tok i bruk. Det var heller ikke overordnet tilsyn eller kontroll med det samlede nivået for avfallsproduksjon, forurensning og bruk av kjemiske stoffer. Som følge av manglende kunnskap kunne ukjente konsekvenser gjøre seg gjeldende ved ulike stadier av produktets levetid. Loven etablerte derfor et generelt ansvar for industriell fremstilling og massedistribusjon av produkter.</p>
+ <p class="snl-readmore"><a href="https://snl.no/produktkontrolloven" target="_blank" rel="noopener" class="snl-anchor">Les mer i Store norske leksikon</a>.</p>
+</div></div><hr class="red"/><div id="documentBody"><a class="documentPart_scrollMargin" name="§1"></a><a name="PARAGRAF_1"></a><div data-id="PARAGRAF_1" class="morTag_p paragraf" id="PARAGRAF_1"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 1.</span><span class=" paragrafTittel "><em class=" ">Lovens formål</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Denne lov har til formål å:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">forebygge at produkter og forbrukertjenester medfører helseskade, herunder sørge for at forbrukerprodukter og forbrukertjenester er sikre,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">forebygge at produkter medfører miljøforstyrrelse, bl.a. i form av forstyrrelse av økosystemer, forurensning, avfall, støy og lignende,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">forebygge miljøforstyrrelse ved å fremme effektiv bruk av energi i produkter.</td></tr></table><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1993-04-02-38" class=" reference" href="/LTI/lov/1993-04-02-38">lover 2 apr 1993 nr. 38</a>, <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">11 juni 1993 nr. 68</a>, <a data-id="lov/1999-06-25-53" class=" reference" href="/LTI/lov/1999-06-25-53">25 juni 1999 nr. 53</a>, <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§1" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§2"></a><a name="PARAGRAF_2"></a><div data-id="PARAGRAF_2" class="morTag_p paragraf" id="PARAGRAF_2"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 2.</span><span class=" paragrafTittel "><em class=" ">Lovens saklige virkeområde</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Denne lov kommer til anvendelse på produksjon, herunder utprøving, innførsel, omsetning, bruk og annen behandling av produkt og forbrukertjenester.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan ved forskrift eller enkeltvedtak bestemme at produkt eller forbrukertjeneste helt eller delvis skal være unntatt fra lovens virkeområde.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1993-04-02-38" class=" reference" href="/LTI/lov/1993-04-02-38">lover 2 apr 1993 nr. 38</a>, <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">11 juni 1993 nr. 68</a>, <a data-id="lov/2002-06-21-34" class=" reference" href="/LTI/lov/2002-06-21-34">21 juni 2002 nr. 34</a> (ikr. 1 juli 2002), <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§2" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§2a"></a><a name="PARAGRAF_2a"></a><div data-id="PARAGRAF_2a" class="morTag_p paragraf" id="PARAGRAF_2a"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 2 a.</span><span class=" paragrafTittel "><em class=" ">Definisjoner</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Med produkt menes råvare, hjelpestoff, halvfabrikat og ferdig vare av ethvert slag.</p><p data-uid="0" class="morTag_a avsnitt">Med forbruker menes en fysisk person som ikke hovedsakelig handler som ledd i næringsvirksomhet.</p><p data-uid="0" class="morTag_a avsnitt">Med forbrukerprodukt menes ethvert produkt som er beregnet på forbrukere eller som med rimelighet kan forventes brukt av forbrukere.</p><p data-uid="0" class="morTag_a avsnitt">Med sikkert forbrukerprodukt menes et forbrukerprodukt som med utgangspunkt i normale bruksvilkår eller bruksvilkår som med rimelighet kan forventes, ikke medfører en uakseptabel risiko for helseskade, som ikke er i samsvar med et høyt vernenivå for menneskers helse og sikkerhet.</p><p data-uid="0" class="morTag_a avsnitt">Med forbrukertjenester menes tjenester som tilbys fysiske personer hovedsakelig utenfor næringsvirksomhet.</p><p data-uid="0" class="morTag_a avsnitt">Med sikker forbrukertjeneste menes en tjeneste som med utgangspunkt i normale vilkår for gjennomføring eller vilkår for gjennomføring som med rimelighet kan forventes, ikke medfører en uakseptabel risiko for helseskade, som ikke er i samsvar med et høyt vernenivå for menneskers helse og sikkerhet.</p><p data-uid="0" class="morTag_a avsnitt">Med harmonisert standard menes europeisk standard som er utarbeidet i overensstemmelse med mandat fra EU-kommisjonen og EFTA, og som er offentliggjort i EF-tidende og i EØS-tillegget til disse.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">lov 29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§2a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§3"></a><a name="PARAGRAF_3"></a><div data-id="PARAGRAF_3" class="morTag_p paragraf" id="PARAGRAF_3"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 3.</span><span class=" paragrafTittel "><em class=" ">Aktsomhetsplikt m.v.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Den som produserer, innfører, omsetter, bruker eller på annen måte behandler produkt som kan medføre virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a>, skal vise aktsomhet og treffe rimelige tiltak for å forebygge og begrense slik virkning.</p><p data-uid="0" class="morTag_a avsnitt">Den som eier eller leder virksomhet som tilbyr forbrukertjenester, eller utfører arbeid i slik virksomhet, skal vise aktsomhet og treffe rimelige tiltak for å forebygge at forbrukertjenesten medfører helseskade. Mottaker av forbrukertjeneste skal vise aktsomhet ved benyttelse av tjenesten.</p><p data-uid="0" class="morTag_a avsnitt">Den som produserer eller innfører produkt plikter å skaffe seg slik kunnskap som er nødvendig for å vurdere om det kan medføre virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a>.</p><p data-uid="0" class="morTag_a avsnitt">Den som eier eller leder virksomhet som tilbyr forbrukertjenester, plikter å skaffe seg slik kunnskap som er nødvendig for å kunne vurdere faren for helseskade.</p><p data-uid="0" class="morTag_a avsnitt">Personer som nevnt i tredje og fjerde ledd plikter å gi bruker av forbrukerprodukt og mottaker av en forbrukertjeneste tilstrekkelig og relevant informasjon slik at disse settes i stand til å vurdere sikkerheten ved disse og eventuelt sikre seg mot fare, med mindre dette klart fremgår uten slik informasjon. Informasjonen skal være tydelig, lett tilgjengelig og tilpasset brukerens og mottakerens behov. Slike opplysninger medfører ikke fritak fra lovens øvrige krav.</p><p data-uid="0" class="morTag_a avsnitt">Denne paragraf gjelder ikke for et produkts energieffektivitet.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">lover 11 juni 1993 nr. 68</a>, <a data-id="lov/1999-06-25-53" class=" reference" href="/LTI/lov/1999-06-25-53">25 juni 1999 nr. 53</a>, <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§3" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§3a"></a><a name="PARAGRAF_3a"></a><div data-id="PARAGRAF_3a" class="morTag_p paragraf" id="PARAGRAF_3a"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 3 a.</span><span class=" paragrafTittel "><em class=" ">Substitusjonsplikt</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Virksomhet som bruker produkt med innhold av kjemisk stoff som kan medføre virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a> skal vurdere om det finnes alternativ som medfører mindre risiko for slik virkning. Virksomheten skal i så fall velge dette alternativet, hvis det kan skje uten urimelig kostnad eller ulempe.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/1999-08-20-70" class=" reference" href="/LTI/lov/1999-08-20-70">lov 20 aug 1999 nr. 70</a> (ikr. 1 jan 2000).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§3a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§3b"></a><a name="PARAGRAF_3b"></a><div data-id="PARAGRAF_3b" class="morTag_p paragraf" id="PARAGRAF_3b"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 3 b.</span><span class=" paragrafTittel "><em class=" ">Kriterier for vurdering av sikkerheten ved forbrukerprodukter og forbrukertjenester</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Dersom annet ikke følger av fjerde ledd, skal forbrukerprodukter anses å være sikre, jf. <a data-id="lov/1976-06-11-79/§2a" class=" reference" href="/lov/1976-06-11-79/%C2%A72a">§ 2 a</a> fjerde ledd, når de er i overensstemmelse med nasjonal standard som oppfyller kravene i harmonisert standard.</p><p data-uid="0" class="morTag_a avsnitt">Dersom harmonisert standard som nevnt i første ledd ikke foreligger, eller der denne ikke er dekkende for det aktuelle produkt, skal produktets sikkerhet vurderes ved særlig å ta hensyn til:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Nasjonale standarder som ikke er nevnt i første ledd.</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Kommisjonsrekommandasjoner som angir retningslinjer for produktsikkerhetsvurderingen.</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Regler for god praksis for produktsikkerhet som gjelder på det aktuelle området.</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Det gjeldende tekniske utviklingsnivå.</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">e.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Det sikkerhetsnivå som med rimelighet kan forventes av brukeren.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Første og annet ledd gjelder tilsvarende ved vurdering av om forbrukertjenester anses å være sikre, jf. <a data-id="lov/1976-06-11-79/§2a" class=" reference" href="/lov/1976-06-11-79/%C2%A72a">§ 2 a</a> sjette ledd.</p><p data-uid="0" class="morTag_a avsnitt">Bestemmelsene i denne paragraf er ikke til hinder for at det fattes vedtak etter <a data-id="lov/1976-06-11-79/§4" class=" reference" href="/lov/1976-06-11-79/%C2%A74">§§ 4</a>, <a data-id="lov/1976-06-11-79/§6" class=" reference" href="/lov/1976-06-11-79/%C2%A76">6</a> og 6 a i tilfeller der det viser seg at forbrukerproduktet eller forbrukertjenesten, til tross for overensstemmelse med kriteriene oppstilt i første og annet ledd, ikke er sikker.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">lov 29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§3b" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§4"></a><a name="PARAGRAF_4"></a><div data-id="PARAGRAF_4" class="morTag_p paragraf" id="PARAGRAF_4"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 4.</span><span class=" paragrafTittel "><em class=" ">Myndighet for Kongen.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Når det finnes påkrevet for å forebygge at produkt medfører virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a>, kan Kongen treffe vedtak om:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">produksjon, innførsel, omsetning, merking, bruk og annen behandling av produkt,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">retur- og panteordninger, gjenvinning og avfallsbehandling m.v. av produkt,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">hvordan produkt skal være innrettet eller sammensatt, og maksimalgrenser for støy og utslipp av forurensende stoffer fra produkt,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">at produkt ikke kan produseres, innføres eller omsettes uten godkjenning,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">e.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">forbud mot produksjon, innførsel, omsetning og bruk av produkt.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Når det finnes påkrevet for å forebygge at forbrukertjeneste medfører helseskade, kan Kongen treffe vedtak om:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">offentliggjøring av advarsels- eller sikkerhetsinformasjon</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">krav til kvalifikasjoner hos den som utfører arbeid knyttet til forbrukertjenesten</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">krav til driften</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">at forbrukertjeneste ikke kan tilbys uten godkjenning</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">e.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">forbud mot å tilby forbrukertjenesten</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Vedtak i medhold av første og annet ledd skal i alminnelighet treffes ved forskrift og gjelde produkter eller forbrukertjenester av en viss art. Det kan fastsettes at de bare skal gjelde for visse geografiske områder.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">lover 11 juni 1993 nr. 68</a>, <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§4" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§4a"></a><a name="PARAGRAF_4a"></a><div data-id="PARAGRAF_4a" class="morTag_p paragraf" id="PARAGRAF_4a"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 4a.</span><span class=" paragrafTittel "><em class=" ">Energieffektivitetskrav</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">For å fremme energieffektive produkter, kan Kongen treffe vedtak om:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">maksimalgrenser for produkts energibruk, herunder metode for beregning av maksimalt tillatt energibruk, hvem som skal foreta beregningen og fremgangsmåter for prøving;</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">produksjon og omsetning av produkt;</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">merking av produkt, herunder utformingen av merkingen og om at produkt som omsettes i strid med vedtak om merking skal trekkes tilbake fra markedet;</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">teknisk dokumentasjon, herunder hvem som skal utarbeide denne og hvor lenge dokumentasjonen skal stå til rådighet for eventuelt tilsyn. Den tekniske dokumentasjonen skal så langt det er nødvendig for vurderingen av produktets energieffektivitet omfatte konstruksjonen av, fremstillingen av og virkemåten til produktet;</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">e.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">skriftlig erklæring om samsvar mellom merking og reell energibruk, herunder oppbevaring av slik erklæring.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Vedtak i medhold av første ledd skal i alminnelighet treffes ved forskrift og gjelde produkter av en viss art.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/1999-06-25-53" class=" reference" href="/LTI/lov/1999-06-25-53">lov 25 juni 1999 nr. 53</a>, endret ved <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">lov 29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§4a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§4b"></a><a name="PARAGRAF_4b"></a><div data-id="PARAGRAF_4b" class="morTag_p paragraf" id="PARAGRAF_4b"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 4 b.</span><span class=" paragrafTittel "><em class=" ">Myndighet for tilsynsmyndigheten</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Tilsynsmyndigheten kan treffe enkeltvedtak som er nødvendige for gjennomføringen av bestemmelser gitt i eller i medhold av <a data-id="lov/1976-06-11-79/§3" class=" reference" href="/lov/1976-06-11-79/%C2%A73">§§ 3</a>, <a data-id="lov/1976-06-11-79/§3a" class=" reference" href="/lov/1976-06-11-79/%C2%A73a">3 a</a>, <a data-id="lov/1976-06-11-79/§3b" class=" reference" href="/lov/1976-06-11-79/%C2%A73b">3 b</a>, 4, 5, 6 a, 6 b, 8 og 12 a.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2020-06-19-86" class=" reference" href="/LTI/lov/2020-06-19-86">lov 19 juni 2020 nr. 86</a> (ikr. 1 juli 2020 iflg. <a data-id="forskrift/2020-06-19-1273" class=" reference" href="/LTI/forskrift/2020-06-19-1273">res. 19 juni 2020 nr. 1273</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§4b" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§5"></a><a name="PARAGRAF_5"></a><div data-id="PARAGRAF_5" class="morTag_p paragraf" id="PARAGRAF_5"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 5.</span><span class=" paragrafTittel "><em class=" ">Opplysningsplikt.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Enhver plikter etter pålegg av Kongen å gi de opplysninger som er nødvendig for gjennomføring av gjøremål etter loven. Offentlige myndigheter plikter å gi opplysninger uten hinder av taushetsplikt. Kongen kan bestemme i hvilken form opplysningene skal gis.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan kreve at den som produserer, innfører eller omsetter produkt fremlegger representativ prøve av produktet vederlagsfritt eller sørger for eller bekoster undersøkelser som finnes nødvendig for å vurdere et produkts egenskaper og virkninger.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan bestemme at kostnadene ved fremleggelse av representativ prøve eller undersøkelser som nevnt i annet ledd skal fordeles på flere produsenter, importører eller omsettere, eller at de helt eller delvis skal dekkes av det offentlige. Kostnadene og refusjon for kostnadene er tvangsgrunnlag for utlegg.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1992-06-26-86" class=" reference" href="/LTI/lov/1992-06-26-86">lover 26 juni 1992 nr. 86</a>, <a data-id="lov/2000-12-08-85" class=" reference" href="/LTI/lov/2000-12-08-85">8 des 2000 nr. 85</a> (ikr. 1 jan 2001 iflg. <a data-id="forskrift/2000-12-08-1234" class=" reference" href="/LTI/forskrift/2000-12-08-1234">res. 8 des 2000 nr. 1234</a>), <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>), <a data-id="lov/2020-06-19-86" class=" reference" href="/LTI/lov/2020-06-19-86">19 juni 2020 nr. 86</a> (ikr. 1 juli 2020 iflg. <a data-id="forskrift/2020-06-19-1273" class=" reference" href="/LTI/forskrift/2020-06-19-1273">res. 19 juni 2020 nr. 1273</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§5" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§5a"></a><a name="PARAGRAF_5a"></a><div data-id="PARAGRAF_5a" class="morTag_p paragraf" id="PARAGRAF_5a"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 5 a.</span><span class=" paragrafTittel "><em class=" ">Oppbevaring av dokumenter for sporing av forbrukerprodukter</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Enhver som distribuerer forbrukerprodukter skal ha tilgjengelig opplysninger som er nødvendig for å kunne spesifisere og spore produktenes opprinnelse. Opplysningene skal holdes tilgjengelig for kontroll i 5 år fra utgangen av det året de mottas.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">lov 29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§5a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§6"></a><a name="PARAGRAF_6"></a><div data-id="PARAGRAF_6" class="morTag_p paragraf" id="PARAGRAF_6"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 6.</span><span class=" paragrafTittel "><em class=" ">Midlertidig forbud.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Kongen kan når særlige grunner foreligger nedlegge midlertidig forbud mot produksjon, innførsel, omsetning, bruk eller annen behandling av produkt, eller mot å tilby forbrukertjeneste, inntil tilstrekkelige opplysninger er fremlagt i overensstemmelse med <a data-id="lov/1976-06-11-79/§5" class=" reference" href="/lov/1976-06-11-79/%C2%A75">§ 5</a>. Det samme gjelder dersom det er skjellig grunn til å trekke de framlagte opplysninger i tvil.</p><p data-uid="0" class="morTag_a avsnitt">Når det finnes påkrevet for å vurdere produktets egenskaper, eller helserisiko ved forbrukertjenesten, og for å fastsette nærmere bestemmelser i henhold til <a data-id="lov/1976-06-11-79/§4" class=" reference" href="/lov/1976-06-11-79/%C2%A74">§ 4</a>, kan det nedlegges forbud som nevnt i første ledd i inntil 6 måneder regnet fra det tidspunkt det foreligger tilstrekkelige opplysninger. Når særskilte grunner taler for det, kan et slikt forbud forlenges i ytterligere 6 måneder.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1992-06-26-86" class=" reference" href="/LTI/lov/1992-06-26-86">lover 26 juni 1992 nr. 86</a>, <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">11 juni 1993 nr. 68</a>, <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§6" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§6a"></a><a name="PARAGRAF_6a"></a><div data-id="PARAGRAF_6a" class="morTag_p paragraf" id="PARAGRAF_6a"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 6 a.</span><span class=" paragrafTittel "><em class=" ">Tilbakekall m.v. av produkter og forbrukertjenester.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Kongen kan fatte vedtak etter denne paragrafen hvis det foreligger en uakseptabel risiko for at et produkt medfører helseskade eller miljøforstyrrelse som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a> første ledd, eller for at forbrukertjeneste medfører uakseptabel risiko for helseskade.</p><p data-uid="0" class="morTag_a avsnitt">Vedtak kan gå ut på at det gis pålegg til den som produserer, innfører, bearbeider, omsetter, bruker eller på annen måte behandler produkt om å treffe tiltak, alene eller i samarbeid, for å redusere risikoen ved produktet, herunder:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Offentliggjøre advarselsinformasjon e.l. til distributør eller brukere av produktet.</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Tilbakekalle produktet fra brukere eller distributører.</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Uskadeliggjøre produktet.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">For forbrukertjenester kan vedtak gå ut på at den ansvarlige for virksomheten som har ytet tjenesten, skal</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Offentliggjøre advarselsinformasjon til brukere</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">Rette det forhold som skaderisikoen skyldes</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Det kan videre treffes vedtak om forbud mot eksport av produkter og forbrukertjenester som utgjør en uakseptabel risiko som nevnt i første ledd. Vedkommende myndighet kan selv iverksette tiltak etter annet og tredje ledd. Kostnadene ved dette kan kreves refundert av den som kunne ha fått pålegg om slikt tiltak.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/1990-06-15-33" class=" reference" href="/LTI/lov/1990-06-15-33">lov 15 juni 1990 nr. 33</a>, endret ved <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">lover 11 juni 1993 nr. 68</a>, <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§6a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§6b"></a><a name="PARAGRAF_6b"></a><div data-id="PARAGRAF_6b" class="morTag_p paragraf" id="PARAGRAF_6b"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 6 b.</span><span class=" paragrafTittel "><em class=" ">Meldeplikt</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Produsent, importør eller distributør som vet eller burde vite at produkt vedkommende har gjort tilgjengelig for bruker utgjør en uakseptabel risiko for virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a>, skal straks informere tilsynsmyndighetene om dette.</p><p data-uid="0" class="morTag_a avsnitt">Ved melding av forbrukerprodukter som ikke er sikre, skal informasjonen til tilsynsmyndighetene også inneholde opplysninger om de tiltak som er iverksatt for å forhindre at produktet medfører en uakseptabel risiko for forbruker.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan gi nærmere regler om krav til meldeplikten og om når det kan gjøres unntak fra denne.</p><p data-uid="0" class="morTag_a avsnitt">Meldeplikten etter første og annet ledd gjelder tilsvarende for den som eier eller leder virksomhet som tilbyr forbrukertjenester og som vet eller burde vite at denne utgjør en uakseptabel risiko for helseskade.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/1990-06-15-33" class=" reference" href="/LTI/lov/1990-06-15-33">lov 15 juni 1990 nr. 33</a>, endret ved <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">lover 11 juni 1993 nr. 68</a>, <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§6b" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§7"></a><a name="PARAGRAF_7"></a><div data-id="PARAGRAF_7" class="morTag_p paragraf" id="PARAGRAF_7"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 7.</span><span class=" paragrafTittel "><em class=" ">Godkjenning av produkt.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Departementet kan gi forskrift om saksbehandlingsregler til utfylling av reglene i <a data-id="lov/2009-06-19-103" class=" reference" href="/lov/2009-06-19-103">tjenesteloven</a> for søknad om godkjenning av produkt, herunder om saksbehandlingsfrist og rettsvirkninger av fristoverskridelse. Unntak fra <a data-id="lov/2009-06-19-103/§11" class=" reference" href="/lov/2009-06-19-103/%C2%A711">tjenesteloven § 11</a> annet ledd kan bare gjøres når det er begrunnet ut fra tvingende allmenne hensyn, herunder hensynet til privatpersoners beskyttelsesverdige interesser.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">lover 11 juni 1993 nr. 68</a>, <a data-id="lov/2009-06-19-103" class=" reference" href="/LTI/lov/2009-06-19-103">19 juni 2009 nr. 103</a> (ikr. 28 des 2009 iflg. <a data-id="forskrift/2009-06-19-672" class=" reference" href="/LTI/forskrift/2009-06-19-672">res. 19 juni 2009 nr. 672</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§7" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§8"></a><a name="PARAGRAF_8"></a><div data-id="PARAGRAF_8" class="morTag_p paragraf" id="PARAGRAF_8"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 8.</span><span class=" paragrafTittel "><em class=" ">Tilsyn.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Kongen bestemmer hvem som skal føre tilsyn med gjennomføringen av denne lov.</p><p data-uid="0" class="morTag_a avsnitt">Tilsynsmyndigheten skal ha fri adgang til bygning, transportmiddel, lager, innretning, område m.v. hvor produkt som kan medføre virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a>, befinner seg, eller hvor forbrukertjeneste som kan medføre helseskade, tilbys.</p><p data-uid="0" class="morTag_a avsnitt">Tilsynsmyndigheten kan også foreta nødvendig prøvetaking og kontroll med slike produkter eller utstyr m.v. som benyttes til slike forbrukertjenester.</p><p data-uid="0" class="morTag_a avsnitt">Med mindre tungtveiende hensyn tilsier noe annet, skal tilsynsmyndigheten utferdige skriftlig rapport om resultatet av kontrollen.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan gi forskrifter om internkontroll og internkontrollsystemer for å sikre at krav fastsatt i eller i medhold av denne lov overholdes.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/1990-07-27-52" class=" reference" href="/LTI/lov/1990-07-27-52">lov 27 juli 1990 nr. 52</a>, endret ved <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">lover 11 juni 1993 nr. 68</a>, <a data-id="lov/2000-12-08-85" class=" reference" href="/LTI/lov/2000-12-08-85">8 des 2000 nr. 85</a> (ikr. 1 jan 2001 iflg. <a data-id="forskrift/2000-12-08-1234" class=" reference" href="/LTI/forskrift/2000-12-08-1234">res. 8 des 2000 nr. 1234</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§8" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§8a"></a><a name="PARAGRAF_8a"></a><div data-id="PARAGRAF_8a" class="morTag_p paragraf" id="PARAGRAF_8a"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 8 a.</span><span class=" paragrafTittel "><em class=" ">Gebyrer.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Kongen kan gi forskrift om gebyrer for behandling av søknader om tillatelser o.l. etter denne lov eller forskrift fastsatt i medhold av loven, og for kontrolltiltak som gjennomføres for å sikre at loven eller vedtak i medhold av loven blir fulgt. Gebyrene settes slik at de samlet ikke overstiger produktkontrollmyndighetenes kostnader med saksbehandlingen eller kontrollordningen.</p><p data-uid="0" class="morTag_a avsnitt">Gebyret er tvangsgrunnlag for utlegg.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/1986-05-16-22" class=" reference" href="/LTI/lov/1986-05-16-22">lov 16 mai 1986 nr. 22</a>, endret ved <a data-id="lov/1993-06-11-83" class=" reference" href="/LTI/lov/1993-06-11-83">lov 11 juni 1993 nr. 83</a>.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§8a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§9"></a><a name="PARAGRAF_9"></a><div data-id="PARAGRAF_9" class="morTag_p paragraf" id="PARAGRAF_9"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 9.</span><span class=" paragrafTittel "><em class=" ">Rett til informasjon om produkter som foreligger hos offentlig organ </em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Enhver har rett til å få informasjon fra et offentlig organ om produkter som har eller kan ha virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a>, så framt informasjonen foreligger hos vedkommende organ, og det ikke er gjort unntak fra informasjonsretten etter loven her. Med offentlig organ menes organ slik det er definert i <a data-id="lov/2003-05-09-31/§5" class=" reference" href="/lov/2003-05-09-31/%C2%A75">miljøinformasjonsloven § 5</a> første ledd.</p><p data-uid="0" class="morTag_a avsnitt">Et krav om informasjon kan avvises dersom det er for generelt formulert eller ikke gir tilstrekkelig grunnlag for å identifisere hva kravet gjelder. Før et krav avvises, skal informasjonssøkeren i rimelig grad gis veiledning til å utforme kravet på en måte som gjør at det kan behandles.</p><p data-uid="0" class="morTag_a avsnitt">Krav om informasjon kan avslås dersom det er et reelt og saklig behov for det i det enkelte tilfelle og informasjonen eller dokumentet informasjonen finnes i, kan unntas fra offentlighet i medhold av <a data-id="lov/2006-05-19-16/kap3" class=" reference" href="/lov/2006-05-19-16/kap3">offentleglova kapittel 3</a>. Ved vurderingen av om det foreligger reelt og saklig behov, skal de miljø- og samfunnsmessige interessene som ivaretas ved å utlevere informasjonen, veies mot de interessene som ivaretas ved et avslag. Dersom de miljø- og samfunnsmessige interessene veier tyngst, skal informasjonen utleveres.</p><p data-uid="0" class="morTag_a avsnitt">Krav om informasjon som er underlagt lovbestemt taushetsplikt, avslås med mindre noe annet følger av <a data-id="lov/1976-06-11-79/§11" class=" reference" href="/lov/1976-06-11-79/%C2%A711">§ 11</a> annet ledd.</p><p data-uid="0" class="morTag_a avsnitt">Avslag på krav om informasjon kan påklages. For øvrig gjelder reglene i <a data-id="lov/2003-05-09-31/§6" class=" reference" href="/lov/2003-05-09-31/%C2%A76">miljøinformasjonsloven §§ 6</a>, <a data-id="lov/2003-05-09-31/§10" class=" reference" href="/lov/2003-05-09-31/%C2%A710">10</a> annet og fjerde ledd, <a data-id="lov/2003-05-09-31/§11" class=" reference" href="/lov/2003-05-09-31/%C2%A711">11</a> tredje ledd, <a data-id="lov/2003-05-09-31/§13" class=" reference" href="/lov/2003-05-09-31/%C2%A713">13</a> og <a data-id="lov/2003-05-09-31/§15" class=" reference" href="/lov/2003-05-09-31/%C2%A715">15</a> om betaling, saksbehandling og klage mv., samt forskrifter gitt i medhold av <a data-id="lov/2003-05-09-31/§7" class=" reference" href="/lov/2003-05-09-31/%C2%A77">§ 7</a>, tilsvarende så langt de passer.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Opphevet ved <a data-id="lov/1991-06-14-30" class=" reference" href="/LTI/lov/1991-06-14-30">lov 14 juni 1991 nr. 30</a>, tilføyd igjen ved <a data-id="lov/2003-05-09-31" class=" reference" href="/LTI/lov/2003-05-09-31">lov 9 mai 2003 nr. 31</a> (ikr. 1 jan 2004 iflg. <a data-id="forskrift/2003-12-05-1431" class=" reference" href="/LTI/forskrift/2003-12-05-1431">res. 5 des 2003 nr. 1431</a>), endret ved <a data-id="lov/2006-05-19-16" class=" reference" href="/LTI/lov/2006-05-19-16">lov 19 mai 2006 nr. 16</a> (ikr. 1 jan 2009 iflg. <a data-id="forskrift/2008-10-17-1118" class=" reference" href="/LTI/forskrift/2008-10-17-1118">res. 17 okt 2008 nr. 1118</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§9" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§10"></a><a name="PARAGRAF_10"></a><div data-id="PARAGRAF_10" class="morTag_p paragraf" id="PARAGRAF_10"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 10.</span><span class=" paragrafTittel "><em class=" ">Rett til informasjon om produkter fra produsent, importør, bearbeider, omsetter eller bruker av produkt</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Enhver har rett til å få informasjon om</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">produktet inneholder komponenter eller har egenskaper som kan medføre virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a>,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">hvilke komponenter eller egenskaper dette er,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">hvordan produktet må håndteres for å unngå virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a>,</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">vesentlige helseskader eller miljøforstyrrelser som produksjonen og distribusjonen av produktet forårsaker, og</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">e.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">hvem som er produsent eller importør av produktet.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Informasjon etter første ledd kan kreves fra produsent, importør, bearbeider, omsetter eller bruker av produktet.</p><p data-uid="0" class="morTag_a avsnitt">Rett til informasjon i henhold til første ledd bokstav d gjelder også informasjon om virkninger på miljøet som følge av produksjon eller distribusjon av produkt utenfor Norges grenser, i den grad slik informasjon er tilgjengelig. Virksomheten skal rette forespørsel til foregående salgsledd dersom dette er nødvendig for å besvare kravet.</p><p data-uid="0" class="morTag_a avsnitt">Krav om informasjon kan avvises dersom det er for generelt formulert eller ikke gir tilstrekkelig grunnlag for å identifisere hva kravet gjelder.</p><p data-uid="0" class="morTag_a avsnitt">Krav om informasjon kan avslås dersom</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">kravet er åpenbart urimelig, eller</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">informasjonen som etterspørres angår tekniske innretninger og framgangsmåter, samt drifts- eller forretningsforhold som det vil være av konkurransemessig betydning å hemmeligholde av hensyn til den som opplysningene angår.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Avslag på krav om informasjon kan påklages. For øvrig gjelder reglene i <a data-id="lov/2003-05-09-31/§6" class=" reference" href="/lov/2003-05-09-31/%C2%A76">miljøinformasjonsloven §§ 6</a>, <a data-id="lov/2003-05-09-31/§17" class=" reference" href="/lov/2003-05-09-31/%C2%A717">17</a> tredje ledd, <a data-id="lov/2003-05-09-31/§18" class=" reference" href="/lov/2003-05-09-31/%C2%A718">18</a> og <a data-id="lov/2003-05-09-31/§19" class=" reference" href="/lov/2003-05-09-31/%C2%A719">19</a> om betaling, saksbehandling og klage, samt forskrifter gitt i medhold av <a data-id="lov/2003-05-09-31/§7" class=" reference" href="/lov/2003-05-09-31/%C2%A77">§ 7</a>, tilsvarende så langt de passer.</p><p data-uid="0" class="morTag_a avsnitt">Produsent, importør, bearbeider og omsetter av produkter skal gi informasjon som omfattes av denne paragrafen, til etterfølgende salgsledd.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Opphevet ved <a data-id="lov/1986-07-11-51" class=" reference" href="/LTI/lov/1986-07-11-51">lov 11 juli 1986 nr. 51</a>, tilføyd igjen ved <a data-id="lov/2003-05-09-31" class=" reference" href="/LTI/lov/2003-05-09-31">lov 9 mai 2003 nr. 31</a> (ikr. 1 jan 2004 iflg. <a data-id="forskrift/2003-12-05-1431" class=" reference" href="/LTI/forskrift/2003-12-05-1431">res. 5 des 2003 nr. 1431</a>), endret ved <a data-id="lov/2005-04-29-23" class=" reference" href="/LTI/lov/2005-04-29-23">lov 29 apr 2005 nr. 23</a> (ikr. 1 mai 2005 iflg. <a data-id="forskrift/2005-04-29-396" class=" reference" href="/LTI/forskrift/2005-04-29-396">res. 29 apr 2005 nr. 396</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§10" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§11"></a><a name="PARAGRAF_11"></a><div data-id="PARAGRAF_11" class="morTag_p paragraf" id="PARAGRAF_11"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 11.</span><span class=" paragrafTittel "><em class=" ">Taushetsplikt.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Med de begrensninger som følger av vedkommendes gjøremål etter loven, skal enhver bevare taushet om det han under utføring av tjeneste eller arbeid etter loven får kjennskap til om produktets sammensetning, egenskaper, produksjonsmetoder, forskningsresultater, planer, prognoser, forretningsmessige analyser og berekninger og forretningshemmeligheter ellers som andre foretak vil kunne utnytte til sin egen drift til skade for det foretaket som har gitt opplysningen. Opplysningene kan heller ikke utnyttes i vedkommendes egen virksomhet.</p><p data-uid="0" class="morTag_a avsnitt">Taushetsplikten er ikke til hinder for at det gis opplysninger om produkts virkning som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a> og om nødvendig en forklaring av årsaken til denne, samt opplysninger om forholdsregler for å hindre eller redusere virkninger som nevnt i <a data-id="lov/1976-06-11-79/§1" class=" reference" href="/lov/1976-06-11-79/%C2%A71">§ 1</a>.</p><p data-uid="0" class="morTag_a avsnitt">Taushetsplikten skal heller ikke være til hinder for utveksling av informasjon (samordning) som forutsatt i <a data-id="lov/1997-06-06-35" class=" reference" href="/lov/1997-06-06-35">lov om Oppgaveregisteret</a>.</p><p data-uid="0" class="morTag_a avsnitt">På samme måte og med tilsvarende begrensninger gjelder taushetsplikt for det noen under utføring av gjøremål etter loven får kjennskap til om forbrukertjenester og tjenesteytende virksomhet.</p><p data-uid="0" class="morTag_a avsnitt">Offentlig organ som definert i <a data-id="lov/2003-05-09-31/§5" class=" reference" href="/lov/2003-05-09-31/%C2%A75">miljøinformasjonsloven § 5</a> første ledd, kan kreve at den som gir informasjon til organet, eller som et krav om informasjon berører, skal identifisere hvilken del av informasjonen som det vil være av konkurransemessig betydning å hemmeligholde, og gi en begrunnelse for dette.</p><p data-uid="0" class="morTag_a avsnitt">Før opplysninger underlagt lovbestemt taushetsplikt utleveres i medhold av <a data-id="lov/1976-06-11-79/§11" class=" reference" href="/lov/1976-06-11-79/%C2%A711">§ 11</a> annet ledd, skal den opplysningene gjelder, gis anledning til å uttale seg innen en passende svarfrist.</p><p data-uid="0" class="morTag_a avsnitt">Dersom organet vil utlevere informasjon som er underlagt lovbestemt taushetsplikt, skal den som informasjonen gjelder, varsles om det. Avgjørelsen om utlevering kan påklages etter reglene i <a data-id="lov/2003-05-09-31/§15" class=" reference" href="/lov/2003-05-09-31/%C2%A715">miljøinformasjonsloven § 15</a>. Klagen har oppsettende virkning.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1993-06-11-68" class=" reference" href="/LTI/lov/1993-06-11-68">lover 11 juni 1993 nr. 68</a>, <a data-id="lov/1997-06-06-35" class=" reference" href="/LTI/lov/1997-06-06-35">6 juni 1997 nr. 35</a> (ikr. 1 nov 1997), <a data-id="lov/2003-05-09-31" class=" reference" href="/LTI/lov/2003-05-09-31">9 mai 2003 nr. 31</a> (ikr. 1 jan 2004 iflg. <a data-id="forskrift/2003-12-05-1431" class=" reference" href="/LTI/forskrift/2003-12-05-1431">res. 5 des 2003 nr. 1431</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§11" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§12"></a><a name="PARAGRAF_12"></a><div data-id="PARAGRAF_12" class="morTag_p paragraf" id="PARAGRAF_12"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 12.</span><span class=" paragrafTittel "><em class=" ">Straffansvar.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Den som forsettlig eller uaktsomt overtrer bestemmelser gitt i eller i medhold av denne lov, eller som bryter vilkår fastsatt med hjemmel i <a data-id="lov/1976-06-11-79/§7" class=" reference" href="/lov/1976-06-11-79/%C2%A77">§ 7</a>, straffes med bøter, fengsel i inntil 1 år eller begge deler, så fremt ikke strengere straffebestemmelse kommer til anvendelse.</p><p data-uid="0" class="morTag_a avsnitt">Har overtredelsen voldt fare for menneskers liv eller helbred, stor skade eller ulempe på miljøet, eller det for øvrig foreligger særdeles skjerpende omstendigheter, kan fengsel inntil 3 år anvendes, så fremt ikke strengere straffebestemmelse kommer til anvendelse.</p><p data-uid="0" class="morTag_a avsnitt">Første og andre ledd gjelder ikke overtredelse av <a data-id="lov/1976-06-11-79/§9" class=" reference" href="/lov/1976-06-11-79/%C2%A79">§§ 9</a>, <a data-id="lov/1976-06-11-79/§10" class=" reference" href="/lov/1976-06-11-79/%C2%A710">10</a> og <a data-id="lov/1976-06-11-79/§11" class=" reference" href="/lov/1976-06-11-79/%C2%A711">11</a> femte ledd. Overtredelse av <a data-id="lov/1976-06-11-79/§3" class=" reference" href="/lov/1976-06-11-79/%C2%A73">§ 3</a> straffes bare dersom den skjer forsettlig eller ved grov uaktsomhet.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1981-03-13-6" class=" reference" href="/LTI/lov/1981-03-13-6">lover 13 mars 1981 nr. 6</a>, <a data-id="lov/1985-06-14-71" class=" reference" href="/LTI/lov/1985-06-14-71">14 juni 1985 nr. 71</a>, <a data-id="lov/1991-07-20-66" class=" reference" href="/LTI/lov/1991-07-20-66">20 juli 1991 nr. 66</a>, <a data-id="lov/2003-05-09-31" class=" reference" href="/LTI/lov/2003-05-09-31">9 mai 2003 nr. 31</a> (ikr. 1 jan 2004 iflg. <a data-id="forskrift/2003-12-05-1431" class=" reference" href="/LTI/forskrift/2003-12-05-1431">res. 5 des 2003 nr. 1431</a>), <a data-id="lov/2015-06-19-65" class=" reference" href="/LTI/lov/2015-06-19-65">19 juni 2015 nr. 65</a> (ikr. 1 okt 2015), <a data-id="lov/2019-06-21-54" class=" reference" href="/LTI/lov/2019-06-21-54">21 juni 2019 nr. 54</a> (ikr. 1 juli 2019 iflg. <a data-id="forskrift/2019-06-21-786" class=" reference" href="/LTI/forskrift/2019-06-21-786">res. 21 juni 2019 nr. 786</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§12" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§12a"></a><a name="PARAGRAF_12a"></a><div data-id="PARAGRAF_12a" class="morTag_p paragraf" id="PARAGRAF_12a"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 12 a.</span><span class=" paragrafTittel "><em class=" ">Overtredelsesgebyr.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Kongen kan gi forskrift om ileggelse av overtredelsesgebyr til den som:</p><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">a.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtrer aktsomhets- og tiltaksplikt i <a data-id="lov/1976-06-11-79/§3" class=" reference" href="/lov/1976-06-11-79/%C2%A73">§ 3</a> første ledd</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">b.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtrer aktsomhets- og tiltaksplikt i <a data-id="lov/1976-06-11-79/§3" class=" reference" href="/lov/1976-06-11-79/%C2%A73">§ 3</a> andre ledd første punktum</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">c.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtrer informasjonsplikt i <a data-id="lov/1976-06-11-79/§3" class=" reference" href="/lov/1976-06-11-79/%C2%A73">§ 3</a> femte ledd</td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">d.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtrer substitusjonsplikt i <a data-id="lov/1976-06-11-79/§3a" class=" reference" href="/lov/1976-06-11-79/%C2%A73a">§ 3 a</a></td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">e.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtrer forskrifter eller enkeltvedtak etter <a data-id="lov/1976-06-11-79/§4" class=" reference" href="/lov/1976-06-11-79/%C2%A74">§ 4</a> eller <a data-id="lov/1976-06-11-79/§4a" class=" reference" href="/lov/1976-06-11-79/%C2%A74a">§ 4a</a></td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">f.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtrer plikt i <a data-id="lov/1976-06-11-79/§5a" class=" reference" href="/lov/1976-06-11-79/%C2%A75a">§ 5 a</a></td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">g.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtrer forbud etter <a data-id="lov/1976-06-11-79/§6" class=" reference" href="/lov/1976-06-11-79/%C2%A76">§ 6</a></td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">h.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtrer vedtak etter <a data-id="lov/1976-06-11-79/§6a" class=" reference" href="/lov/1976-06-11-79/%C2%A76a">§ 6 a</a></td></tr></table><table data-level="1" class="morTag_n leftMargin_1 listeItem avsnitt no-text-indent" style="width:100%"><tr><td data-level="1" class="morTag_n leftMargin_1 listeitemNummer morTableVerticalAlignTop morTableAlignRight morTableWidthPercent5">i.</td><td class=" morTableVerticalAlignTop morTableAlignLeft">overtrer meldeplikt i eller etter <a data-id="lov/1976-06-11-79/§6b" class=" reference" href="/lov/1976-06-11-79/%C2%A76b">§ 6 b</a>.</td></tr></table><p data-uid="0" class="morTag_a avsnitt">Fysiske personer kan bare ilegges overtredelsesgebyr for forsettlige eller uaktsomme overtredelser.</p><p data-uid="0" class="morTag_a avsnitt">Kongen kan gi forskrift om utmålingen av overtredelsesgebyr.</p><p data-uid="0" class="morTag_a avsnitt">Adgangen til å ilegge overtredelsesgebyr foreldes 2 år etter at overtredelsen er opphørt. Fristen avbrytes ved at det gis forhåndsvarsel eller fattes vedtak om overtredelsesgebyr.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Tilføyd ved <a data-id="lov/2019-06-21-54" class=" reference" href="/LTI/lov/2019-06-21-54">lov 21 juni 2019 nr. 54</a> (ikr. 1 juli 2019 iflg. <a data-id="forskrift/2019-06-21-786" class=" reference" href="/LTI/forskrift/2019-06-21-786">res. 21 juni 2019 nr. 786</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§12a" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§13"></a><a name="PARAGRAF_13"></a><div data-id="PARAGRAF_13" class="morTag_p paragraf" id="PARAGRAF_13"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 13.</span><span class=" paragrafTittel "><em class=" ">Tvangsmulkt.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Ved overtredelse av vilkår, påbud eller forbud gitt med hjemmel i denne lov, kan Kongen ilegge tvangsmulkt. Pålegg om mulkt er tvangsgrunnlag for utlegg.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1977-06-03-53" class=" reference" href="/LTI/lov/1977-06-03-53">lover 3 juni 1977 nr. 53</a>, <a data-id="lov/1992-06-26-86" class=" reference" href="/LTI/lov/1992-06-26-86">26 juni 1992 nr. 86</a>, <a data-id="lov/2025-04-25-12" class=" reference" href="/LTI/lov/2025-04-25-12">25 april 2025 nr. 12</a> (i kraft 1 jan 2026 iflg. <a data-id="forskrift/2025-06-10-967" class=" reference" href="/LTI/forskrift/2025-06-10-967">res. 10 juni 2025 nr. 967</a>).</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§13" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§14"></a><a name="PARAGRAF_14"></a><div data-id="PARAGRAF_14" class="morTag_p paragraf" id="PARAGRAF_14"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 14.</span><span class=" paragrafTittel "><em class=" ">Lovens stedlige virkeområde.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Denne lov gjelder i riket, herunder Svalbard og Jan Mayen, ombord på norske skip eller luftfartøy i områder som ikke er undergitt noen stats høyhetsrett og på anlegg og innretninger på den norske kontinentalsokkel. Kongen kan ved enkeltvedtak eller forskrift gjøre unntak fra første punktum og gi utfyllende bestemmelser om lovens rekkevidde.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§14" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§15"></a><a name="PARAGRAF_15"></a><div data-id="PARAGRAF_15" class="morTag_p paragraf" id="PARAGRAF_15"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 15.</span><span class=" paragrafTittel "><em class=" ">Bestemmelser til gjennomføring av loven.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Kongen kan gi nærmere bestemmelser til gjennomføring av denne lov, herunder om samarbeidet mellom ulike myndigheter.</p><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§15" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div><a class="documentPart_scrollMargin" name="§16"></a><a name="PARAGRAF_16"></a><div data-id="PARAGRAF_16" class="morTag_p paragraf" id="PARAGRAF_16"><h2 class="paragrafHeader"><span class=" paragrafhode "><span class=" paragrafValue ">§ 16.</span><span class=" paragrafTittel "><em class=" ">Ikrafttreden – oppheving av og endring i andre lover.</em></span></span></h2><p data-uid="0" class="morTag_a avsnitt">Denne lov trer i kraft fra den tid Kongen bestemmer.<sup class=" fotnoteref"><a href="#fotnote_1" class="supAnchor fotnoteref" id="fotnoteref_1">​1</a></sup> Fra samme dag oppheves – – –.</p><table class="textList fotnote avsnitt liste" style="width:100%"><tr><td data-id="fotnote_0" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_0"></span>0</td><td class="fotnote" data-id="fotnoteContent_0"><span class="namedAnchor" data-id="fotnoteContent_0"></span>Endret ved <a data-id="lov/1977-06-03-53" class=" reference" href="/LTI/lov/1977-06-03-53">lov 3 juni 1977 nr. 53</a>.</td></tr><tr><td data-id="fotnote_1" class="morTag_fn fotnoteNummer"><span class="namedAnchor" data-id="fotnoteNummer_1"></span><a href="#fotnoteref_1" id="fotnote_1">1</a></td><td class="fotnote" data-id="fotnoteContent_1"><span class="namedAnchor" data-id="fotnoteContent_1"></span>Fra 1 sep 1977 iflg. res. 5 aug 1977.</td></tr></table><a class="share-paragraf" href="#shareModal" data-toggle="modal" data-target="#shareModal" data-id="https://lovdata.no/lov/1976-06-11-79/§16" role="button"><i class="ss-standard ss-icon ss-icon ss-symbolicons-block link">&#x1F517;</i><span class="share-paragraf-title">Del paragraf</span></a></div></div></div></div>
+		</div>
+	</div>
+	<ul class="pager">
+
+		<li class="previous">
+        
+		</li>
+				<li class="complete">
+
+				</li>
+		<li class="next ">
+
+		</li>
+	</ul>
+
+
+	</div> <!-- / Wrapper-->
+
+	<div class="modal fade" id="deleModal" tabindex="-1" role="dialog" aria-labelledby="del" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<p id="del" class="modal-title">Del dokument</p>
+				</div>
+						<div class="modal-body">
+							<input id="urlTextInput" aria-label="Lenken som fører til denne siden" class="form-control dele-url" value="https://lovdata.no/lov/1976-06-11-79" autoselect/>
+							<a class="btn btn-primary btn-block URL" tabindex="0" role="button">Kopier URL</a>
+							<a class="btn btn-primary btn-block twitter" href="" target="_blank" role="button">Del på Twitter</a>
+							<a class="btn btn-primary btn-block facebook" href="" target="_blank" role="button">Del på Facebook</a>
+							<a class="btn btn-primary btn-block linkedin" href="" target="_blank" role="button">Del på LinkedIn</a>
+							<a class="btn btn-primary btn-block email" href="" role="button">Del på e-post</a>
+						</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+</main>
+
+	<script type="text/javascript">
+		$('.btn.btn-primary.btn-block.URL').click(function () {
+			$(".btn.btn-primary.btn-block.URL").select();
+			// Copy text to clipboard
+			document.execCommand('copy');
+		});
+		$(document).ready(function () {
+			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+			if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i) || isSafari) { // iOS + Safari does not like to have this decoded
+			} else if (location.hash != '' && decodeURIComponent(location.hash) != location.hash) {
+				location.hash = decodeURIComponent(location.hash);
+			} else if (window.location.hash == '') {
+			}
+		});
+	</script>
+
+
+
+<aside role="region" aria-labelledby="faq" class="help closed hidden-xs">
+	<h1 class="sr-only" id="faq">Brukerveiledning</h1>
+	<div class="open-help">
+		<button aria-label="Åpne informasjon om brukerveiledning" aria-expanded="false">
+			<span aria-hidden="true" class="toggle-open ss-icon ss-symbolicons-block">&#x2753;</span>
+			<span aria-hidden="true" class="toggle-close ss-icon ss-symbolicons-block">&#x2421;</span>
+		</button>
+		<noscript>
+			<a aria-label="Gå til hjelpeside" class="open-help-noscript" href="/info/faq"></a>
+		</noscript>
+	</div>
+	<div class="help-container hiddenSidePanel" aria-hidden="true">
+		<h2>Trenger du brukerveiledning?</h2>
+		<p><a class="infolink" href="/info/faq">Få svar på ofte stilte spørsmål her (FAQ)</a></p>
+		<p>Lovdata kan dessverre ikke svare på spørsmål angående juridiske problemer. Lovdata kan heller ikke bidra med å tolke regelverket eller finne frem til rettsregler som passer i et bestemt tilfelle. Kontakt den offentlige etaten spørsmålet gjelder, eventuelt advokat eller rettshjelper hvis du har behov for slik bistand.</p>
+
+		<h2>Fant du ikke det du lette etter?</h2>
+		<p>Send en e-post til <a class="infolink" href="mailto:support@lovdata.no">support@lovdata.no</a></p>
+	</div>
+</aside>
+<footer class="footer">
+	<a href="/info/personvern#cookies" class="cookieInfo" aria-hidden="true"><i class="ss-icon ss-symbolicons-line">&#x1F36A;</i><span class="cookie-label">Om informasjonskapsler</span></a>
+	<ul class="footer-nav">
+		<li><a lang="en" href="/info/information_in_english">Information in English</a></li>
+		<li class="ld-hidden-xs"><p tabindex="0" class="popover-parent" data-placement="top" data-toggle="popover" data-trigger="focus hover" title="" data-content="Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.">Juster tekststørrelse<span class="sr-only">Hold inne Ctrl-tasten (Cmd-tasten på Mac). Trykk samtidig på + for å forstørre eller - for å forminske.</span></p></li>
+		<li class="visible-xs"><a href="/info/faq">Hjelp</a></li>
+		<li><a href="/info/kontakt">Kontakt</a></li>
+		<li><a href="/info/brukeravtale">Brukeravtale</a></li>
+	</ul>
+</footer>
+
+	</body>
+</html>
+

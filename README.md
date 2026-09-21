@@ -15,7 +15,7 @@ System1 maintains the controlled source library used to identify Requirements. I
 
 System1 does not provide legal interpretation, approve client applicability, bypass paywalls, or accept newly discovered sources without a human decision.
 
-System2 Requirement extraction is not delivered as an integrated runtime in this folder. Material under `presentation` and `Others` may describe a retained or future System2 technical design and must not be treated as evidence that the complete pipeline is operational.
+System2 Requirement extraction is not delivered as an integrated runtime in this folder. The published checkout does not include the historical `presentation` or `Others` directories. Historical design material elsewhere must not be treated as evidence that the complete pipeline is operational.
 
 ## Data flow and outputs
 
@@ -56,8 +56,6 @@ The primary business output is a maintained, traceable source package. It includ
 │   ├── F_Client_Internal/
 │   └── Z_Pending_Classification/
 ├── Code/
-├── presentation/
-├── Others/
 ├── Run System - macOS.command
 └── Run System - Windows.cmd
 ```
@@ -70,7 +68,7 @@ Operational rule:
 
 Keep the workbook, `Data`, and `Code` together. All shared paths are relative to this folder.
 
-`presentation` contains the current shareable architecture visual. `Others` contains supporting material and historical presentation variants; verify dates and labels before reusing them as current-state evidence.
+The GitHub presentation lives under `.github/`; this root guide remains the operational entry. Historical presentation directories are not part of this published checkout.
 
 ## Requirements
 

@@ -18,7 +18,7 @@ Read in this order:
 - Treat `Source Register` as program-managed. Normal human changes belong in `Human Operation Desktop`.
 - System1 governs source identity, retrieval, snapshots, selection, provenance, human review, and QA.
 - System1 does not perform legal interpretation and does not represent a completed System2 Requirement-extraction pipeline.
-- Treat `presentation` as the current shareable visual area. Treat variants under `Others` as supporting or historical until their dates and labels are verified.
+- The published checkout does not include the historical `presentation` or `Others` directories. Public presentation pages live under `.github/`; the root README remains the operator entry.
 
 ## Current System1 model
 
